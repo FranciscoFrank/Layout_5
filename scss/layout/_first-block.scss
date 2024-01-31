@@ -1,0 +1,90 @@
+@import "../abstracts/abstracts-dir";
+
+header {
+    background-image: url(../images/background.jpeg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    .wrapper-content {
+        background-color: rgba($third-bg, 0.8);
+
+        #main {
+            #name-nav {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: flex;
+                align-items: center !important;
+                margin-bottom: 65px;
+    
+                p {
+                    margin: 0;
+                }
+                    
+                #name-company {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+    
+                    #main-title {
+                        font-weight: bold;
+                        color: $second-accent-color;
+                        font-size: $large;
+                    }
+    
+                    #theme {
+                            margin-left: 10px;
+                            line-height: 1;
+                            font-size: $small;
+                    }
+                }
+                    
+                #navbar {
+                    li {
+                        font-size: $average !important;
+                    }
+    
+                    a {
+                        color: $second-accent-color;
+                    }
+    
+                    a:hover, a:active {
+                        margin-bottom: 2px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            #text-photo {
+                #int-text {
+                    #what-is {
+                        font-weight: bold;
+                        font-size: $medium;
+                        color: $accent-color;
+                    }
+
+                    #title-text {
+                        font-size: $x-large;
+                        font-weight: 600;
+                        color: $second-accent-color;
+                        line-height: 1;
+                    }
+
+                    #some-text {
+                        margin-bottom: 60px;
+                    }
+                }
+
+                #photo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}

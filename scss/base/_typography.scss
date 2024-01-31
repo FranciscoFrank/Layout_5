@@ -1,1 +1,11 @@
-@import "";
+@import "../abstracts/abstracts-dir";
+
+body {
+    font-family: $SSP, $ss !important;
+    font-size: $main;
+    color: $main-color;
+}
+
+a, label, p {
+    color: $main-color;
+}

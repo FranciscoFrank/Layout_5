@@ -18,6 +18,11 @@
   "homepage": "https://github.com/FranciscoFranko/Layout_5#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.70.0"
   }
 }

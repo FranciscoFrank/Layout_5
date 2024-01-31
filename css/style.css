@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input, button {
+  border: 0;
+  border-radius: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 18px;
+  color: #999999;
+}
+
+a, label, p {
+  color: #999999;
+}
+
+header {
+  background-image: url(../images/background.jpeg);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header .wrapper-content {
+  background-color: rgba(21, 20, 26, 0.8);
+}
+header .wrapper-content #main #name-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center !important;
+  margin-bottom: 65px;
+}
+header .wrapper-content #main #name-nav p {
+  margin: 0;
+}
+header .wrapper-content #main #name-nav #name-company {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .wrapper-content #main #name-nav #name-company #main-title {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+}
+header .wrapper-content #main #name-nav #name-company #theme {
+  margin-left: 10px;
+  line-height: 1;
+  font-size: 9px;
+}
+header .wrapper-content #main #name-nav #navbar li {
+  font-size: 16px !important;
+}
+header .wrapper-content #main #name-nav #navbar a {
+  color: #ffffff;
+}
+header .wrapper-content #main #name-nav #navbar a:hover, header .wrapper-content #main #name-nav #navbar a:active {
+  margin-bottom: 2px;
+  text-decoration: underline;
+}
+header .wrapper-content #main #text-photo #int-text #what-is {
+  font-weight: bold;
+  font-size: 14px;
+  color: #008ed6;
+}
+header .wrapper-content #main #text-photo #int-text #title-text {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+}
+header .wrapper-content #main #text-photo #int-text #some-text {
+  margin-bottom: 60px;
+}
+header .wrapper-content #main #text-photo #photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.wrapper-content {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.container {
+  width: 1170px !important;
+  padding: 0 !important;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.col-6 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+button {
+  font-weight: bold;
+  font-size: 14px !important;
+  padding: 15px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 5px !important;
+  border: 1px solid #999999;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+button:hover {
+  border: 1px solid #008ed6;
+  background-color: #008ed6;
+}
