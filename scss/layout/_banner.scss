@@ -1,0 +1,56 @@
+@import "../abstracts/abstracts-dir";
+
+header {
+    .wrapper-content {
+        #main {
+            .row {
+                margin: 0 !important;
+            }
+            
+            #text-photo {
+                #int-text {
+                    width: 530px;
+                    padding: 0 !important; 
+
+                    #what-is {
+                        font-weight: bold;
+                        font-size: $medium;
+                        color: $accent-color;
+                        margin: 0;
+                        margin-bottom: 15px;
+                    }
+
+                    #title-text {
+                        font-size: $x-large;
+                        font-weight: 600;
+                        color: $second-accent-color;
+                        line-height: 1;
+                    }
+
+                    #some-text {
+                        width: 85%;
+                        font-size: 18px;
+                        margin-bottom: 60px;
+                    }
+
+                    button {
+                        margin-right: 20px;
+                    }
+                }
+
+                #photo {
+                    margin-top: -40px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height: fit-content !important; 
+                    
+                    img {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

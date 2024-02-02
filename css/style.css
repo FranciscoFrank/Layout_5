@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -48,6 +49,16 @@ body {
 
 a, label, p {
   color: #999999;
+}
+
+header {
+  background-image: url(../images/background.jpeg);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -166,14 +177,6 @@ header .wrapper-content #main #name-nav #navbar nav #menu {
 }
 header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu {
   flex-grow: unset;
-  /*a:hover, a:active {
-      margin-bottom: 5px;
-      text-decoration: underline;
-      text-decoration-style: dashed;
-      text-decoration-color: $accent-color;
-      text-decoration-thickness: 5px;
-      text-underline-offset: 15px;
-  }*/
 }
 header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu li, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu li {
   font-size: 16px !important;
@@ -210,6 +213,10 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::
   width: 45%;
   height: 3px;
   background-color: #008ed6;
+}
+
+header .wrapper-content #main .row {
+  margin: 0 !important;
 }
 header .wrapper-content #main #text-photo #int-text {
   width: 530px;
@@ -248,11 +255,6 @@ header .wrapper-content #main #text-photo #photo {
 header .wrapper-content #main #text-photo #photo img {
   margin-right: 40px;
 }
-@media only all and (max-width: 580px) {
-  header #main #name-nav #navbar nav #burger-menu {
-    width: 50% !important;
-  }
-}
 
 .wrapper-content {
   width: 100%;
@@ -260,6 +262,9 @@ header .wrapper-content #main #text-photo #photo img {
   padding: 0;
   margin: 0;
   display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(21, 20, 26, 0.9);
 }
 
 .container {

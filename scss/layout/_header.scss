@@ -153,15 +153,6 @@ header {
                                     color: $second-accent-color;
                                 }
                 
-                                /*a:hover, a:active {
-                                    margin-bottom: 5px;
-                                    text-decoration: underline;
-                                    text-decoration-style: dashed;
-                                    text-decoration-color: $accent-color;
-                                    text-decoration-thickness: 5px;
-                                    text-underline-offset: 15px;
-                                }*/
-
                                 a:hover, a:active {
                                     position: relative;
                                     text-decoration: none;
@@ -186,71 +177,11 @@ header {
 
                                     background-color: $accent-color;
                                 }
-                                
                             }
                         }
                     }
                 }
             }
-
-            #text-photo {
-                #int-text {
-                    width: 530px;
-                    padding: 0 !important; 
-
-                    #what-is {
-                        font-weight: bold;
-                        font-size: $medium;
-                        color: $accent-color;
-                        margin: 0;
-                        margin-bottom: 15px;
-                    }
-
-                    #title-text {
-                        font-size: $x-large;
-                        font-weight: 600;
-                        color: $second-accent-color;
-                        line-height: 1;
-                    }
-
-                    #some-text {
-                        width: 85%;
-                        font-size: 18px;
-                        margin-bottom: 60px;
-                    }
-
-                    button {
-                        margin-right: 20px;
-                    }
-                }
-
-                #photo {
-                    margin-top: -40px;
-                    height: auto;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    height: fit-content !important; 
-                    
-                    img {
-                        margin-right: 40px;
-                    }
-                }
-            }
         }
-    }
-
-    @include burger-menu {
-        #main {
-            #name-nav {
-                #navbar {
-                    nav {
-                        #burger-menu {
-                            width: 50% !important;
-                        }
-                    }
-                }  
-            }
-        }  
     }
 }
