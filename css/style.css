@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -83,7 +84,7 @@ header .wrapper-content #main #name-nav {
   padding-bottom: 20px;
   display: flex;
   align-items: center !important;
-  margin-bottom: 65px !important;
+  margin-bottom: 45px !important;
 }
 header .wrapper-content #main #name-nav p {
   margin: 0 !important;
@@ -214,12 +215,16 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::
   height: 3px;
   background-color: #008ed6;
 }
+@media only all and (max-width: 575px) {
+  header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu {
+    width: 45%;
+  }
+}
 
 header .wrapper-content #main .row {
   margin: 0 !important;
 }
 header .wrapper-content #main #text-photo #int-text {
-  width: 530px;
   padding: 0 !important;
 }
 header .wrapper-content #main #text-photo #int-text #what-is {
@@ -236,24 +241,66 @@ header .wrapper-content #main #text-photo #int-text #title-text {
   line-height: 1;
 }
 header .wrapper-content #main #text-photo #int-text #some-text {
-  width: 85%;
+  width: 83%;
   font-size: 18px;
   margin-bottom: 60px;
 }
 header .wrapper-content #main #text-photo #int-text button {
   margin-right: 20px;
+  margin-bottom: 45px;
+}
+@media only all and (max-width: 992px) {
+  header .wrapper-content #main #text-photo #int-text {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+}
+@media only all and (max-width: 575px) {
+  header .wrapper-content #main #text-photo #int-text #what-is {
+    font-size: 12px;
+  }
+  header .wrapper-content #main #text-photo #int-text #title-text {
+    font-size: 36px;
+  }
+  header .wrapper-content #main #text-photo #int-text #some-text {
+    font-size: 16px;
+  }
+}
+@media only all and (max-width: 380px) {
+  header .wrapper-content #main #text-photo #int-text #title-text {
+    font-size: 24px;
+  }
+  header .wrapper-content #main #text-photo #int-text #some-text {
+    font-size: 14px;
+  }
+  header .wrapper-content #main #text-photo #int-text .button-wrapper button {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-right: 10px !important;
+    font-size: 12px !important;
+  }
 }
 header .wrapper-content #main #text-photo #photo {
   margin-top: -40px;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: -moz-fit-content !important;
   height: fit-content !important;
+  justify-content: flex-end;
+  padding: 0 !important;
 }
 header .wrapper-content #main #text-photo #photo img {
-  margin-right: 40px;
+  padding-right: 35px !important;
+  width: 450px;
+  height: auto;
+  display: none;
+}
+@media only all and (min-width: 992px) {
+  header .wrapper-content #main #text-photo #photo img {
+    display: block;
+  }
 }
 
 .wrapper-content {
@@ -270,12 +317,16 @@ header .wrapper-content #main #text-photo #photo img {
 .container {
   width: 1170px !important;
   padding: 0 !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
   margin: 0 auto;
   height: 100%;
 }
 
+@media only all and (max-width: 575px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 .col-6 {
   height: -moz-fit-content !important;
   height: fit-content !important;

@@ -1,8 +1,29 @@
 @import "abstracts/variables/breack-point";
 
-//
-@mixin burger-menu {
-    @media only all and (max-width: $burger-menu) {
+//Hide photo
+@mixin hp {
+    @media only all and (min-width: $hp) {
+        @content;
+    }
+}
+
+//Text edits
+@mixin te {
+    @media only all and (max-width: $hp) {
+        @content;
+    }
+}
+
+//Container edits & Burger menu edits
+@mixin ee {
+    @media only all and (max-width: $ee) {
+        @content;
+    }
+}
+
+//Buttons edits & Text edits
+@mixin bt {
+    @media only all and (max-width: $bt) {
         @content;
     }
 }

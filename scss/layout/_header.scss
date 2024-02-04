@@ -23,7 +23,7 @@ header {
                 padding-bottom: 20px;
                 display: flex;
                 align-items: center !important;
-                margin-bottom: 65px !important; 
+                margin-bottom: 45px !important; 
     
                 p {
                     margin: 0 !important;
@@ -47,7 +47,7 @@ header {
                     #theme {
                         margin-left: 10px;
                         line-height: 1;
-                        font-size: $small;
+                        font-size: $s-small;
 
                         a {
                             text-decoration: none;
@@ -176,6 +176,12 @@ header {
                                     height: 3px;
 
                                     background-color: $accent-color;
+                                }
+                            }
+
+                            @include ee {
+                                #burger-menu {
+                                    width: 45%;
                                 }
                             }
                         }
