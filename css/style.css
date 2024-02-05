@@ -474,13 +474,16 @@ button:hover {
   font-weight: bold;
   font-size: 14px;
   color: #008ed6;
+  padding: 0;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 #title-text {
   font-weight: 600;
   font-size: 36px;
+  color: #1a1a1a;
+  padding: 0;
+  margin: 0;
 }
 
 .circle {
