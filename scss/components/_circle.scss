@@ -1,0 +1,12 @@
+@import "../abstracts/abstracts-dir";
+
+.circle {
+    border: 1px solid $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 30px;
+}

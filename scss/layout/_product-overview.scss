@@ -1,0 +1,122 @@
+@import "../abstracts/abstracts-dir";
+
+main {
+    .container {
+        #title-block {
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+
+            #title-product {
+                margin-top: 65px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+
+                #what-is {
+                    margin-bottom: 0;
+                }
+
+                #title-text {
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0;
+                    color: $title-color;
+                }
+
+                #underline {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 25px;
+                }
+
+                #underline::before {
+                    position: relative;
+                    content: '';
+                    right: 0.35%;
+                    top: 0;
+                    width: 25px;
+                    height: 3px;
+                    background-color: $accent-color;
+                }
+                
+                #underline::after {
+                    position: relative;
+                    content: '';
+                    top: 0;
+                    left: 0.35%;
+                    width: 25px;
+                    height: 3px;
+                    background-color: $accent-color;
+                }
+            }
+
+            @include ee {
+                #what-is {
+                    font-size: $x-small;
+                }
+
+                #title-text {
+                    line-height: 1;
+                    font-size: $s-large;
+                }
+            }
+
+            @include bt {
+                #title-text {
+                    margin-top: 5px !important;
+                    font-size: $large;
+                }
+            }
+        }
+
+        #wrapper-advantage {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+
+            #icon-advantage {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 280px;
+                margin-bottom: 40px !important;
+
+                #title-advantage {
+                    margin-top: 30px;
+                    font-size: $large;
+                    color: $title-color;
+                    margin-bottom: 5px;
+                }
+
+                #desc-advantage {
+                    width: 90%;
+                    text-align: center;
+                    font-size: $main;
+                }
+            }
+
+            @include ee {
+                flex-direction: column;
+            }
+
+            @include bt {
+                #icon-advantage {
+                    #title-advantage {
+                        font-size: $main !important; 
+                    }
+
+                    #desc-advantage {
+                        font-size: $average !important; 
+                    }
+                }
+            }
+        }
+    }
+}

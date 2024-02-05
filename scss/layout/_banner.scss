@@ -11,17 +11,8 @@ header {
                 #int-text {
                     padding: 0 !important; 
 
-                    #what-is {
-                        font-weight: bold;
-                        font-size: $medium;
-                        color: $accent-color;
-                        margin: 0;
-                        margin-bottom: 15px;
-                    }
-
                     #title-text {
                         font-size: $x-large;
-                        font-weight: 600;
                         color: $second-accent-color;
                         line-height: 1;
                     }

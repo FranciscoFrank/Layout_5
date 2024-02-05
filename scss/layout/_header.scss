@@ -167,6 +167,7 @@ header {
                                     height: 3px;
                                     background-color: $accent-color;
                                 }
+                                
                                 a:hover::after {
                                     content: '';
                                     position: absolute;
@@ -174,14 +175,33 @@ header {
                                     right: 0;
                                     width: 45%;
                                     height: 3px;
-
                                     background-color: $accent-color;
+                                }
+                            }
+
+                            @include te {
+                                #burger-menu {
+                                    a:hover::before {
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                    }
+                                    
+                                    a:hover::after {
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                    }   
+
+                                    a:hover {
+                                        color: darken($main-color, 25%);
+                                    }
                                 }
                             }
 
                             @include ee {
                                 #burger-menu {
-                                    width: 45%;
+                                    width: 45%;                                 
                                 }
                             }
                         }

@@ -1,15 +1,10 @@
 @import "../abstracts/abstracts-dir";
 
 .container {
-    width: 1170px !important; 
+    max-width: 1170px !important; 
     padding: 0 !important; 
     margin: 0 auto;
     height: 100%;
-}
-
-@include ee {
-    .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }

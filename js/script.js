@@ -6,17 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   burgerButton.addEventListener('click', function(event) {
     overlay.style.display = 'block';
+    overlay.style.position = 'fixed'; 
     burgerMenu.classList.add('active');
   });
 
   closeIcons.addEventListener('click', function(event) {
     overlay.style.display = 'none';
+    overlay.style.position = 'absolute';
     burgerMenu.classList.remove('active');
   });
 
   document.addEventListener('click', function(event) {
     if (!burgerMenu.contains(event.target) && event.target !== burgerButton && !burgerButton.contains(event.target)) {
       overlay.style.display = 'none';
+      overlay.style.position = 'absolute';
       burgerMenu.classList.remove('active');
     }
   });
