@@ -33,7 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function() {
-    var photoWidth = $('#s-photo').width();
-    $('#s-details').css('width', 'calc(100% - ' + photoWidth + 'px)');
+    function calculateWidth() {
+      var photoWidth = $('#s-photo').width();
+      $('#s-details').css('width', 'calc(100% - ' + photoWidth + 'px)');
+    }
+
+    calculateWidth();
+
+    $(window).resize(function() {
+      calculateWidth();
+    });
   });
 });
