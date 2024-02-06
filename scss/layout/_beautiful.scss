@@ -1,0 +1,131 @@
+@import "../abstracts/abstracts-dir";
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #f {
+        width: 100% !important;
+        display: flex;
+        padding-bottom: 10px !important;
+        flex-direction: row;
+
+        #f-details {
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #what-is {
+                margin: 0;
+            }
+
+            #title-text {
+                margin: 0;
+            }
+
+            #main-text {
+                width: 83%;
+            }
+
+            .details {
+                margin-top: 15px !important;
+
+                .det-info {
+                    font-size: $main;   
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: $title-color;
+                    margin: 15px !important; 
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+
+                    p {
+                        margin: 0px !important;
+                    }
+
+                    img {
+                        height: 23px !important;
+                        width: auto;
+                        margin: 0 !important;
+                        margin-right: 10px !important;
+                    }
+                }
+            }
+        }
+
+        @include te {
+            #f-photo {
+                display: none;
+            }
+
+            #f-details {
+                width: 100%;
+
+                #underline::before, #underline::before {
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        @include ee {
+            #f-details {
+                align-items: center;
+                text-align: center;
+
+                #underline {
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #main-text {
+                    width: 75%;
+                }
+
+                .details {
+                    margin: 0 auto;
+
+                    .det-info {
+                        flex-direction: column;
+
+                        img {
+                            margin: 0px !important;
+                            height: 30px !important;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include bt {
+            #f-details {
+                #what-is {
+                    font-size: $x-small;
+                }
+
+                #title-text {
+                    font-size: $large;
+                }
+
+                #main-text {
+                    font-size: $medium;
+                }
+
+                .details {
+                    .det-info {
+                        font-size: $medium;
+
+                        img {
+                            height: 25px !important;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

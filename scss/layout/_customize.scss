@@ -1,0 +1,82 @@
+@import "../abstracts/abstracts-dir";
+
+.wrapper-details {
+    background-color: $second-bg;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #s {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+
+            #s-photo {
+                width: fit-content;
+                height: 100%;
+
+                img {
+                    height: auto;
+                    width: 670px;
+                }
+            }
+
+            #s-details {
+                .text {
+                    #main-text {
+                        width: 95% !important;
+                    }
+                }
+            }
+
+            @include te {
+                #s-photo {
+                    display: none;
+                }
+    
+                #s-details {
+                    width: 100% !important;
+    
+                    #underline::before, #underline::before {
+                        right: 0;
+                        left: 0;
+                    }
+                }
+            }
+    
+            @include ee {
+                #s-details {
+                    align-items: center;
+                    text-align: center;
+    
+                    #underline {
+                        align-items: center;
+                        justify-content: center;
+                    }
+    
+                    #main-text {
+                        width: 75%;
+                    }
+                }
+            }
+    
+            @include bt {
+                #s-details {
+                    #what-is {
+                        font-size: $x-small;
+                    }
+    
+                    #title-text {
+                        font-size: $large;
+                    }
+    
+                    #main-text {
+                        font-size: $medium;
+                    }
+                }
+            }
+        }
+    }
+}

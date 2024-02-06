@@ -5,6 +5,9 @@
     padding: 0 !important; 
     margin: 0 auto;
     height: 100%;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+
+    @include cp {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 }

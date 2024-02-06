@@ -7,6 +7,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -218,7 +222,7 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::
   height: 3px;
   background-color: #008ed6;
 }
-@media only all and (max-width: 991px) {
+@media only all and (max-width: 992px) {
   header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::before {
     content: "";
     width: 0;
@@ -259,7 +263,7 @@ header .wrapper-content #main #text-photo #int-text button {
   margin-right: 20px;
   margin-bottom: 45px;
 }
-@media only all and (max-width: 991px) {
+@media only all and (max-width: 992px) {
   header .wrapper-content #main #text-photo #int-text {
     margin: 0 auto;
     width: 100% !important;
@@ -307,40 +311,46 @@ header .wrapper-content #main #text-photo #photo img {
   height: auto;
   display: none;
 }
-@media only all and (min-width: 991px) {
+@media only all and (min-width: 992px) {
   header .wrapper-content #main #text-photo #photo img {
     display: block;
   }
 }
 
-main .container #title-block {
+main #wrapper-overview {
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 50px;
+}
+main #wrapper-overview #overview #title-block {
   width: 100% !important;
   height: 100% !important;
   margin: 0 !important;
 }
-main .container #title-block #title-product {
+main #wrapper-overview #overview #title-block #title-product {
   margin-top: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
 }
-main .container #title-block #title-product #what-is {
+main #wrapper-overview #overview #title-block #title-product #what-is {
   margin-bottom: 0;
 }
-main .container #title-block #title-product #title-text {
+main #wrapper-overview #overview #title-block #title-product #title-text {
   display: inline-block;
   text-align: center;
   margin: 0;
   color: #1a1a1a;
 }
-main .container #title-block #title-product #underline {
+main #wrapper-overview #overview #title-block #title-product #underline {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 25px;
 }
-main .container #title-block #title-product #underline::before {
+main #wrapper-overview #overview #title-block #title-product #underline::before {
   position: relative;
   content: "";
   right: 0.35%;
@@ -349,7 +359,7 @@ main .container #title-block #title-product #underline::before {
   height: 3px;
   background-color: #008ed6;
 }
-main .container #title-block #title-product #underline::after {
+main #wrapper-overview #overview #title-block #title-product #underline::after {
   position: relative;
   content: "";
   top: 0;
@@ -359,21 +369,21 @@ main .container #title-block #title-product #underline::after {
   background-color: #008ed6;
 }
 @media only all and (max-width: 575px) {
-  main .container #title-block #what-is {
+  main #wrapper-overview #overview #title-block #what-is {
     font-size: 12px;
   }
-  main .container #title-block #title-text {
+  main #wrapper-overview #overview #title-block #title-text {
     line-height: 1;
     font-size: 36px;
   }
 }
 @media only all and (max-width: 380px) {
-  main .container #title-block #title-text {
+  main #wrapper-overview #overview #title-block #title-text {
     margin-top: 5px !important;
     font-size: 24px;
   }
 }
-main .container #wrapper-advantage {
+main #wrapper-overview #overview #wrapper-advantage {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -382,35 +392,200 @@ main .container #wrapper-advantage {
   height: 100% !important;
   margin: 0 !important;
 }
-main .container #wrapper-advantage #icon-advantage {
+main #wrapper-overview #overview #wrapper-advantage #icon-advantage {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 280px;
   margin-bottom: 40px !important;
 }
-main .container #wrapper-advantage #icon-advantage #title-advantage {
+main #wrapper-overview #overview #wrapper-advantage #icon-advantage #title-advantage {
   margin-top: 30px;
   font-size: 24px;
   color: #1a1a1a;
   margin-bottom: 5px;
 }
-main .container #wrapper-advantage #icon-advantage #desc-advantage {
+main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advantage {
   width: 90%;
   text-align: center;
   font-size: 18px;
 }
 @media only all and (max-width: 575px) {
-  main .container #wrapper-advantage {
+  main #wrapper-overview #overview #wrapper-advantage {
     flex-direction: column;
   }
 }
 @media only all and (max-width: 380px) {
-  main .container #wrapper-advantage #icon-advantage #title-advantage {
+  main #wrapper-overview #overview #wrapper-advantage #icon-advantage #title-advantage {
     font-size: 18px !important;
   }
-  main .container #wrapper-advantage #icon-advantage #desc-advantage {
+  main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advantage {
     font-size: 16px !important;
+  }
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#details #f {
+  width: 100% !important;
+  display: flex;
+  padding-bottom: 10px !important;
+  flex-direction: row;
+}
+#details #f #f-details {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#details #f #f-details #what-is {
+  margin: 0;
+}
+#details #f #f-details #title-text {
+  margin: 0;
+}
+#details #f #f-details #main-text {
+  width: 83%;
+}
+#details #f #f-details .details {
+  margin-top: 15px !important;
+}
+#details #f #f-details .details .det-info {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #1a1a1a;
+  margin: 15px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+#details #f #f-details .details .det-info p {
+  margin: 0px !important;
+}
+#details #f #f-details .details .det-info img {
+  height: 23px !important;
+  width: auto;
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+@media only all and (max-width: 992px) {
+  #details #f #f-photo {
+    display: none;
+  }
+  #details #f #f-details {
+    width: 100%;
+  }
+  #details #f #f-details #underline::before, #details #f #f-details #underline::before {
+    right: 0;
+    left: 0;
+  }
+}
+@media only all and (max-width: 575px) {
+  #details #f #f-details {
+    align-items: center;
+    text-align: center;
+  }
+  #details #f #f-details #underline {
+    align-items: center;
+    justify-content: center;
+  }
+  #details #f #f-details #main-text {
+    width: 75%;
+  }
+  #details #f #f-details .details {
+    margin: 0 auto;
+  }
+  #details #f #f-details .details .det-info {
+    flex-direction: column;
+  }
+  #details #f #f-details .details .det-info img {
+    margin: 0px !important;
+    height: 30px !important;
+    width: auto;
+  }
+}
+@media only all and (max-width: 380px) {
+  #details #f #f-details #what-is {
+    font-size: 12px;
+  }
+  #details #f #f-details #title-text {
+    font-size: 24px;
+  }
+  #details #f #f-details #main-text {
+    font-size: 14px;
+  }
+  #details #f #f-details .details .det-info {
+    font-size: 14px;
+  }
+  #details #f #f-details .details .det-info img {
+    height: 25px !important;
+    width: auto;
+  }
+}
+
+.wrapper-details {
+  background-color: #f2f2f2;
+}
+.wrapper-details .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-details .container #s {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+}
+.wrapper-details .container #s #s-photo {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.wrapper-details .container #s #s-photo img {
+  height: auto;
+  width: 670px;
+}
+.wrapper-details .container #s #s-details .text #main-text {
+  width: 95% !important;
+}
+@media only all and (max-width: 992px) {
+  .wrapper-details .container #s #s-photo {
+    display: none;
+  }
+  .wrapper-details .container #s #s-details {
+    width: 100% !important;
+  }
+  .wrapper-details .container #s #s-details #underline::before, .wrapper-details .container #s #s-details #underline::before {
+    right: 0;
+    left: 0;
+  }
+}
+@media only all and (max-width: 575px) {
+  .wrapper-details .container #s #s-details {
+    align-items: center;
+    text-align: center;
+  }
+  .wrapper-details .container #s #s-details #underline {
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper-details .container #s #s-details #main-text {
+    width: 75%;
+  }
+}
+@media only all and (max-width: 380px) {
+  .wrapper-details .container #s #s-details #what-is {
+    font-size: 12px;
+  }
+  .wrapper-details .container #s #s-details #title-text {
+    font-size: 24px;
+  }
+  .wrapper-details .container #s #s-details #main-text {
+    font-size: 14px;
   }
 }
 
@@ -430,8 +605,12 @@ main .container #wrapper-advantage #icon-advantage #desc-advantage {
   padding: 0 !important;
   margin: 0 auto;
   height: 100%;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+}
+@media only all and (max-width: 1205px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }
 
 .col-6 {
@@ -474,16 +653,12 @@ button:hover {
   font-weight: bold;
   font-size: 14px;
   color: #008ed6;
-  padding: 0;
-  margin: 0;
 }
 
 #title-text {
   font-weight: 600;
   font-size: 36px;
   color: #1a1a1a;
-  padding: 0;
-  margin: 0;
 }
 
 .circle {
@@ -495,4 +670,37 @@ button:hover {
   width: 90px;
   height: 90px;
   padding: 30px;
+}
+
+#main-text {
+  font-size: 18px !important;
+  color: #999999;
+}
+
+#underline {
+  display: flex;
+  width: 100%;
+  margin: 25px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+#underline::before {
+  position: relative;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #008ed6;
+}
+
+#underline::after {
+  position: relative;
+  content: "";
+  top: 0;
+  left: 1%;
+  width: 25px;
+  height: 3px;
+  background-color: #008ed6;
 }

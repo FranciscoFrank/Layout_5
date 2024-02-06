@@ -1,8 +1,11 @@
+
 document.addEventListener('DOMContentLoaded', function() {
+
   var burgerButton = document.getElementById('burger-button');
   var overlay = document.getElementById('overlay');
   var burgerMenu = document.getElementById('burger-menu');
   var closeIcons = document.getElementById('close-icon');
+
 
   burgerButton.addEventListener('click', function(event) {
     overlay.style.display = 'block';
@@ -10,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerMenu.classList.add('active');
   });
 
+
   closeIcons.addEventListener('click', function(event) {
     overlay.style.display = 'none';
     overlay.style.position = 'absolute';
     burgerMenu.classList.remove('active');
   });
+
 
   document.addEventListener('click', function(event) {
     if (!burgerMenu.contains(event.target) && event.target !== burgerButton && !burgerButton.contains(event.target)) {
@@ -22,5 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
       overlay.style.position = 'absolute';
       burgerMenu.classList.remove('active');
     }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  $(document).ready(function() {
+    var photoWidth = $('#s-photo').width();
+    $('#s-details').css('width', 'calc(100% - ' + photoWidth + 'px)');
   });
 });

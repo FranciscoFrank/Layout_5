@@ -1,6 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
 #main-text {
-    font-weight: $main;
+    font-size: $main !important;
     color: $main-color
 }

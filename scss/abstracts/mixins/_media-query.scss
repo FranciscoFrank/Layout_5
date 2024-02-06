@@ -1,5 +1,12 @@
 @import "abstracts/variables/breack-point";
 
+//Container padding
+@mixin cp {
+    @media only all and (max-width: $cp) {
+        @content;        
+    }
+}
+
 //Hide photo
 @mixin hp {
     @media only all and (min-width: $hp) {
