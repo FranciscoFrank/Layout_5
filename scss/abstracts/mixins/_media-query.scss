@@ -7,6 +7,13 @@
     }
 }
 
+//Photo edits
+@mixin pe {
+    @media only all and (max-width: $pe) {
+        @content;
+    }
+}
+
 //Hide photo
 @mixin hp {
     @media only all and (min-width: $hp) {

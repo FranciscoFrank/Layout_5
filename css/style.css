@@ -552,6 +552,11 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 .wrapper-details .container #s #s-details .text #main-text {
   width: 95% !important;
 }
+@media only all and (max-width: 1100px) {
+  .wrapper-details .container #s #s-photo {
+    width: 540px;
+  }
+}
 @media only all and (max-width: 992px) {
   .wrapper-details .container #s #s-photo {
     display: none;

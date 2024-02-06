@@ -31,6 +31,12 @@
                 }
             }
 
+            @include pe {
+                #s-photo {
+                    width: 540px;
+                }
+            }
+
             @include te {
                 #s-photo {
                     display: none;
