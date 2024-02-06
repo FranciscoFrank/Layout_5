@@ -125,5 +125,9 @@ main {
                 }
             }
         }
+
+        @include ee {
+            margin-bottom: 20px;
+        }
     }
 }

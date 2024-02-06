@@ -423,6 +423,11 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     font-size: 16px !important;
   }
 }
+@media only all and (max-width: 575px) {
+  main #wrapper-overview {
+    margin-bottom: 20px;
+  }
+}
 
 #details {
   display: flex;
@@ -436,7 +441,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   flex-direction: row;
 }
 #details #f #f-details {
-  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -548,6 +552,9 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 .wrapper-details .container #s #s-photo img {
   height: auto;
   width: 670px;
+}
+.wrapper-details .container #s #s-details .text #what-is {
+  margin: 0;
 }
 .wrapper-details .container #s #s-details .text #main-text {
   width: 95% !important;
