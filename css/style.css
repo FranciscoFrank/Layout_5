@@ -553,8 +553,13 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   width: 95% !important;
 }
 @media only all and (max-width: 1100px) {
-  .wrapper-details .container #s #s-photo {
-    width: 540px;
+  .wrapper-details .container #s {
+    margin: 35px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .wrapper-details .container #s #s-photo img {
+    width: 450px !important;
   }
 }
 @media only all and (max-width: 992px) {

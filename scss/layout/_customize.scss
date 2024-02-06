@@ -32,8 +32,14 @@
             }
 
             @include pe {
+                margin: 35px;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+
                 #s-photo {
-                    width: 540px;
+                    img {
+                        width: 450px !important;
+                    }
                 }
             }
 
