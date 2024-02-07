@@ -1,207 +1,204 @@
 @import "../abstracts/abstracts-dir";
 
-header {
-    background-image: url(../images/background.jpeg);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+.bg {
+    background-image: url(../images/background-first.jpeg);
 
     .wrapper-content {
         height: fit-content;
         background-color: rgba($third-bg, 0.9);
 
-        #main {
-            .row {
-                margin: 0 !important;
-            }
-            
-            #name-nav {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                display: flex;
-                align-items: center !important;
-                margin-bottom: 45px !important; 
-    
-                p {
+        header {
+            #main {
+                .row {
                     margin: 0 !important;
                 }
-                    
-                #name-company {
+                
+                #name-nav {
+                    width: 100% !important;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
                     display: flex;
-                    align-items: center;
-                    flex-direction: row;
-    
-                    #main-title {
-                        font-weight: bold;
-                        font-size: $large;
-
-                        a {
-                            text-decoration: none;
-                            color: $second-accent-color;
-                        }
+                    align-items: center !important;
+                    margin-bottom: 45px !important; 
+        
+                    p {
+                        margin: 0 !important;
                     }
-    
-                    #theme {
-                        margin-left: 10px;
-                        line-height: 1;
-                        font-size: $s-small;
-
-                        a {
-                            text-decoration: none;
-                            color: $main-color;
-                        }
-                    }
-                }
-                    
-                #navbar {
-                    display: flex;
-                    justify-content: flex-end;
-
-                    nav {
+                        
+                    #name-company {
                         display: flex;
-                        justify-content: flex-end !important;
-
-                        button {
-                            padding: 0 !important;
-                            padding-right: 10px !important;
-                            padding-left: 10px !important;
-                            padding-top: 5px !important;
-                            padding-bottom: 5px !important; 
-                            border: 1px solid $second-accent-color !important;
-                            z-index: 4;
-
-                            .navbar-toggler-icon {
-                                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                        align-items: center;
+                        flex-direction: row;
+        
+                        #main-title {
+                            font-weight: bold;
+                            font-size: $large;
+    
+                            a {
+                                text-decoration: none;
                                 color: $second-accent-color;
                             }
                         }
-
-                        button:hover {
-                            background-color: transparent !important;
-                        }
-
-                        #burger-menu {
-                            position: fixed;
-                            top: 0;
-                            right: 0;
-                            width: 30%;
-                            height: 100%;
-                            background-color: $main-bg;
-                            transform: translateX(100%); 
-                            transition: transform 0.3s ease;
-                            z-index: 5;
-
-                            .close-icon {
-                                background-color: $second-bg;
-                                padding: 10px;
-                                display: flex;
-                                justify-content: center;
-                                width: 100%;
-                                height: fit-content;
-                                margin-bottom: 5px;
-
-                                img {
-                                    cursor: pointer;
-                                    height: auto;
-                                    width: 20px;
-                                }
-                            }
-
-                            .navbar-nav {
-                                padding: 15px;
-
-                                li {
-                                    a {
-                                        font-size: 20px;
-                                        color: $title-color !important;
-                                    }
-                                }
-                            }
-                        }
-                        
-                        .active {
-                            transform: translateX(0) !important;
-                            position: fixed;
-                        }
-
-                        #menu {
-                            justify-content: flex-end;
-                            padding: 0;
-
-                            #burger-menu, #main-menu {
-                                flex-grow: unset;
+        
+                        #theme {
+                            margin-left: 10px;
+                            line-height: 1;
+                            font-size: $s-small;
     
-                                li {
-                                    font-size: $average !important;
-                                }
-
-                                li:last-child {
-                                    a {
-                                        padding-right: 0 !important;
-                                    }
-                                }                                
-                
-                                a {
-                                    padding: 0 !important;
-                                    margin-top: 8px;
-                                    margin-left: 8px;
-                                    margin-right: 8px;
-                                    padding-bottom: 8px !important;
+                            a {
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+                    }
+                        
+                    #navbar {
+                        display: flex;
+                        justify-content: flex-end;
+    
+                        nav {
+                            display: flex;
+                            justify-content: flex-end !important;
+    
+                            button {
+                                padding: 0 !important;
+                                padding-right: 10px !important;
+                                padding-left: 10px !important;
+                                padding-top: 5px !important;
+                                padding-bottom: 5px !important; 
+                                border: 1px solid $second-accent-color !important;
+                                z-index: 4;
+    
+                                .navbar-toggler-icon {
+                                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
                                     color: $second-accent-color;
                                 }
-                
-                                a:hover, a:active {
-                                    position: relative;
-                                    text-decoration: none;
+                            }
+    
+                            button:hover {
+                                background-color: transparent !important;
+                            }
+    
+                            #burger-menu {
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                width: 30%;
+                                height: 100%;
+                                background-color: $main-bg;
+                                transform: translateX(100%); 
+                                transition: transform 0.3s ease;
+                                z-index: 5;
+    
+                                .close-icon {
+                                    background-color: $second-bg;
+                                    padding: 10px;
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: fit-content;
+                                    margin-bottom: 5px;
+    
+                                    img {
+                                        cursor: pointer;
+                                        height: auto;
+                                        width: 20px;
+                                    }
                                 }
-                                
-                                a:hover::before {
-                                    content: '';
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 0;
-                                    width: 45%;
-                                    height: 3px;
-                                    background-color: $accent-color;
-                                }
-                                
-                                a:hover::after {
-                                    content: '';
-                                    position: absolute;
-                                    bottom: 0;
-                                    right: 0;
-                                    width: 45%;
-                                    height: 3px;
-                                    background-color: $accent-color;
+    
+                                .navbar-nav {
+                                    padding: 15px;
+    
+                                    li {
+                                        a {
+                                            font-size: 20px;
+                                            color: $title-color !important;
+                                        }
+                                    }
                                 }
                             }
-
-                            @include te {
-                                #burger-menu {
+                            
+                            .active {
+                                transform: translateX(0) !important;
+                                position: fixed;
+                            }
+    
+                            #menu {
+                                justify-content: flex-end;
+                                padding: 0;
+    
+                                #burger-menu, #main-menu {
+                                    flex-grow: unset;
+        
+                                    li {
+                                        font-size: $average !important;
+                                    }
+    
+                                    li:last-child {
+                                        a {
+                                            padding-right: 0 !important;
+                                        }
+                                    }                                
+                    
+                                    a {
+                                        padding: 0 !important;
+                                        margin-top: 8px;
+                                        margin-left: 8px;
+                                        margin-right: 8px;
+                                        padding-bottom: 8px !important;
+                                        color: $second-accent-color;
+                                    }
+                    
+                                    a:hover, a:active {
+                                        position: relative;
+                                        text-decoration: none;
+                                    }
+                                    
                                     a:hover::before {
-                                        content: "";
-                                        width: 0;
-                                        height: 0;
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 45%;
+                                        height: 3px;
+                                        background-color: $accent-color;
                                     }
                                     
                                     a:hover::after {
-                                        content: "";
-                                        width: 0;
-                                        height: 0;
-                                    }   
-
-                                    a:hover {
-                                        color: darken($main-color, 25%);
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        width: 45%;
+                                        height: 3px;
+                                        background-color: $accent-color;
                                     }
                                 }
-                            }
-
-                            @include ee {
-                                #burger-menu {
-                                    width: 45%;                                 
+    
+                                @include te {
+                                    #burger-menu {
+                                        a:hover::before {
+                                            content: "";
+                                            width: 0;
+                                            height: 0;
+                                        }
+                                        
+                                        a:hover::after {
+                                            content: "";
+                                            width: 0;
+                                            height: 0;
+                                        }   
+    
+                                        a:hover {
+                                            color: darken($main-color, 25%);
+                                        }
+                                    }
+                                }
+    
+                                @include ee {
+                                    #burger-menu {
+                                        width: 45%;                                 
+                                    }
                                 }
                             }
                         }

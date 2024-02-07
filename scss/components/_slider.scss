@@ -1,0 +1,75 @@
+@import "../abstracts/abstracts-dir";
+
+#review {
+    width: 100%;
+
+    #slider {
+        margin-top: 65px;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: row;
+
+        .slick-list.draggable {
+            margin-bottom: 155px;
+
+            .slick-track {
+                .slick-slide {
+                    padding-bottom: 0px !important;
+                    
+                    #text {
+                        color: $second-accent-color;
+                        font-style: italic;
+                        font-size: $large;
+                    }
+            
+                    #author {
+                        display: flex;
+                        align-items: center;
+            
+                        img {
+                            margin-right: 25px !important;
+                            border-radius: 50%;
+                        }
+            
+                        .texts {
+                            #name-author {
+                                margin: 0 !important;
+                                color: $second-accent-color;
+                                font-size: $average;
+                            }
+            
+                            #job-author {
+                                margin: 0 !important;
+                                color: $second-accent-color;
+                                font-weight: bold;
+                                font-size: $medium;
+                            }
+                        } 
+                    } 
+                }
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                button::before {
+                    color: $main-color;
+                    font-size: 10px !important;
+                }
+            }
+
+            .slick-active {
+                button::before {
+                    font-size: 14px !important;
+                    color: $second-accent-color;
+                }
+            }
+        }
+    }
+}

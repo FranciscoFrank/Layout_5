@@ -11,6 +11,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -59,74 +61,59 @@ a, label, p {
   color: #999999;
 }
 
-header {
-  background-image: url(../images/background.jpeg);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+.bg {
+  background-image: url(../images/background-first.jpeg);
 }
-
-header {
-  background-image: url(../images/background.jpeg);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-header .wrapper-content {
+.bg .wrapper-content {
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(21, 20, 26, 0.9);
 }
-header .wrapper-content #main .row {
+.bg .wrapper-content header #main .row {
   margin: 0 !important;
 }
-header .wrapper-content #main #name-nav {
+.bg .wrapper-content header #main #name-nav {
+  width: 100% !important;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   align-items: center !important;
   margin-bottom: 45px !important;
 }
-header .wrapper-content #main #name-nav p {
+.bg .wrapper-content header #main #name-nav p {
   margin: 0 !important;
 }
-header .wrapper-content #main #name-nav #name-company {
+.bg .wrapper-content header #main #name-nav #name-company {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-header .wrapper-content #main #name-nav #name-company #main-title {
+.bg .wrapper-content header #main #name-nav #name-company #main-title {
   font-weight: bold;
   font-size: 24px;
 }
-header .wrapper-content #main #name-nav #name-company #main-title a {
+.bg .wrapper-content header #main #name-nav #name-company #main-title a {
   text-decoration: none;
   color: #ffffff;
 }
-header .wrapper-content #main #name-nav #name-company #theme {
+.bg .wrapper-content header #main #name-nav #name-company #theme {
   margin-left: 10px;
   line-height: 1;
   font-size: 9px;
 }
-header .wrapper-content #main #name-nav #name-company #theme a {
+.bg .wrapper-content header #main #name-nav #name-company #theme a {
   text-decoration: none;
   color: #999999;
 }
-header .wrapper-content #main #name-nav #navbar {
+.bg .wrapper-content header #main #name-nav #navbar {
   display: flex;
   justify-content: flex-end;
 }
-header .wrapper-content #main #name-nav #navbar nav {
+.bg .wrapper-content header #main #name-nav #navbar nav {
   display: flex;
   justify-content: flex-end !important;
 }
-header .wrapper-content #main #name-nav #navbar nav button {
+.bg .wrapper-content header #main #name-nav #navbar nav button {
   padding: 0 !important;
   padding-right: 10px !important;
   padding-left: 10px !important;
@@ -135,14 +122,14 @@ header .wrapper-content #main #name-nav #navbar nav button {
   border: 1px solid #ffffff !important;
   z-index: 4;
 }
-header .wrapper-content #main #name-nav #navbar nav button .navbar-toggler-icon {
+.bg .wrapper-content header #main #name-nav #navbar nav button .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   color: #ffffff;
 }
-header .wrapper-content #main #name-nav #navbar nav button:hover {
+.bg .wrapper-content header #main #name-nav #navbar nav button:hover {
   background-color: transparent !important;
 }
-header .wrapper-content #main #name-nav #navbar nav #burger-menu {
+.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -153,7 +140,7 @@ header .wrapper-content #main #name-nav #navbar nav #burger-menu {
   transition: transform 0.3s ease;
   z-index: 5;
 }
-header .wrapper-content #main #name-nav #navbar nav #burger-menu .close-icon {
+.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon {
   background-color: #f2f2f2;
   padding: 10px;
   display: flex;
@@ -163,36 +150,36 @@ header .wrapper-content #main #name-nav #navbar nav #burger-menu .close-icon {
   height: fit-content;
   margin-bottom: 5px;
 }
-header .wrapper-content #main #name-nav #navbar nav #burger-menu .close-icon img {
+.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon img {
   cursor: pointer;
   height: auto;
   width: 20px;
 }
-header .wrapper-content #main #name-nav #navbar nav #burger-menu .navbar-nav {
+.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav {
   padding: 15px;
 }
-header .wrapper-content #main #name-nav #navbar nav #burger-menu .navbar-nav li a {
+.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav li a {
   font-size: 20px;
   color: #1a1a1a !important;
 }
-header .wrapper-content #main #name-nav #navbar nav .active {
+.bg .wrapper-content header #main #name-nav #navbar nav .active {
   transform: translateX(0) !important;
   position: fixed;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu {
   justify-content: flex-end;
   padding: 0;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu {
   flex-grow: unset;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu li, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu li {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li {
   font-size: 16px !important;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu li:last-child a, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu li:last-child a {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li:last-child a, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li:last-child a {
   padding-right: 0 !important;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu a {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a {
   padding: 0 !important;
   margin-top: 8px;
   margin-left: 8px;
@@ -200,11 +187,11 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a, header
   padding-bottom: 8px !important;
   color: #ffffff;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover, header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:active, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu a:hover, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu a:active {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover, .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:active, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:active {
   position: relative;
   text-decoration: none;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::before, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu a:hover::before {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -213,7 +200,7 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::
   height: 3px;
   background-color: #008ed6;
 }
-header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::after, header .wrapper-content #main #name-nav #navbar nav #menu #main-menu a:hover::after {
+.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -223,71 +210,71 @@ header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::
   background-color: #008ed6;
 }
 @media only all and (max-width: 992px) {
-  header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::before {
+  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before {
     content: "";
     width: 0;
     height: 0;
   }
-  header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover::after {
+  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after {
     content: "";
     width: 0;
     height: 0;
   }
-  header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu a:hover {
+  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover {
     color: #595959;
   }
 }
 @media only all and (max-width: 575px) {
-  header .wrapper-content #main #name-nav #navbar nav #menu #burger-menu {
+  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu {
     width: 45%;
   }
 }
 
-header .wrapper-content #main .row {
+.bg .wrapper-content #banner .row {
   margin: 0 !important;
 }
-header .wrapper-content #main #text-photo #int-text {
+.bg .wrapper-content #banner #text-photo #int-text {
   padding: 0 !important;
 }
-header .wrapper-content #main #text-photo #int-text #title-text {
+.bg .wrapper-content #banner #text-photo #int-text #title-text {
   font-size: 48px;
   color: #ffffff;
   line-height: 1;
 }
-header .wrapper-content #main #text-photo #int-text #some-text {
+.bg .wrapper-content #banner #text-photo #int-text #some-text {
   width: 83%;
   font-size: 18px;
   margin-bottom: 60px;
 }
-header .wrapper-content #main #text-photo #int-text button {
+.bg .wrapper-content #banner #text-photo #int-text button {
   margin-right: 20px;
   margin-bottom: 45px;
 }
 @media only all and (max-width: 992px) {
-  header .wrapper-content #main #text-photo #int-text {
+  .bg .wrapper-content #banner #text-photo #int-text {
     margin: 0 auto;
     width: 100% !important;
   }
 }
 @media only all and (max-width: 575px) {
-  header .wrapper-content #main #text-photo #int-text #what-is {
+  .bg .wrapper-content #banner #text-photo #int-text #what-is {
     font-size: 12px;
   }
-  header .wrapper-content #main #text-photo #int-text #title-text {
+  .bg .wrapper-content #banner #text-photo #int-text #title-text {
     font-size: 36px;
   }
-  header .wrapper-content #main #text-photo #int-text #some-text {
+  .bg .wrapper-content #banner #text-photo #int-text #some-text {
     font-size: 16px;
   }
 }
 @media only all and (max-width: 380px) {
-  header .wrapper-content #main #text-photo #int-text #title-text {
+  .bg .wrapper-content #banner #text-photo #int-text #title-text {
     font-size: 24px;
   }
-  header .wrapper-content #main #text-photo #int-text #some-text {
+  .bg .wrapper-content #banner #text-photo #int-text #some-text {
     font-size: 14px;
   }
-  header .wrapper-content #main #text-photo #int-text .button-wrapper button {
+  .bg .wrapper-content #banner #text-photo #int-text .button-wrapper button {
     padding-left: 20px !important;
     padding-right: 20px !important;
     padding-top: 10px !important;
@@ -296,7 +283,7 @@ header .wrapper-content #main #text-photo #int-text button {
     font-size: 12px !important;
   }
 }
-header .wrapper-content #main #text-photo #photo {
+.bg .wrapper-content #banner #text-photo #photo {
   margin-top: -40px;
   height: auto;
   display: flex;
@@ -305,14 +292,14 @@ header .wrapper-content #main #text-photo #photo {
   justify-content: flex-end;
   padding: 0 !important;
 }
-header .wrapper-content #main #text-photo #photo img {
+.bg .wrapper-content #banner #text-photo #photo img {
   padding-right: 35px !important;
   width: 450px;
   height: auto;
   display: none;
 }
 @media only all and (min-width: 992px) {
-  header .wrapper-content #main #text-photo #photo img {
+  .bg .wrapper-content #banner #text-photo #photo img {
     display: block;
   }
 }
@@ -429,36 +416,36 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   }
 }
 
-#details {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#details #f {
+.container #f {
   width: 100% !important;
   display: flex;
   padding-bottom: 10px !important;
   flex-direction: row;
 }
-#details #f #f-details {
+.container #f #f-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 4.5%;
 }
-#details #f #f-details #what-is {
+.container #f #f-details #what-is {
   margin: 0;
 }
-#details #f #f-details #title-text {
+.container #f #f-details #title-text {
   margin: 0;
 }
-#details #f #f-details #main-text {
+.container #f #f-details #main-text {
   width: 83%;
 }
-#details #f #f-details .details {
+.container #f #f-details .details {
   margin-top: 15px !important;
 }
-#details #f #f-details .details .det-info {
+.container #f #f-details .details .det-info {
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -468,66 +455,66 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-#details #f #f-details .details .det-info p {
+.container #f #f-details .details .det-info p {
   margin: 0px !important;
 }
-#details #f #f-details .details .det-info img {
+.container #f #f-details .details .det-info img {
   height: 23px !important;
   width: auto;
   margin: 0 !important;
   margin-right: 10px !important;
 }
 @media only all and (max-width: 992px) {
-  #details #f #f-photo {
+  .container #f #f-photo {
     display: none;
   }
-  #details #f #f-details {
+  .container #f #f-details {
     width: 100%;
     margin: 0;
   }
-  #details #f #f-details #underline::before, #details #f #f-details #underline::before {
+  .container #f #f-details #underline::before, .container #f #f-details #underline::before {
     right: 0;
     left: 0;
   }
 }
 @media only all and (max-width: 575px) {
-  #details #f #f-details {
+  .container #f #f-details {
     align-items: center;
     text-align: center;
   }
-  #details #f #f-details #underline {
+  .container #f #f-details #underline {
     align-items: center;
     justify-content: center;
   }
-  #details #f #f-details #main-text {
+  .container #f #f-details #main-text {
     width: 75%;
   }
-  #details #f #f-details .details {
+  .container #f #f-details .details {
     margin: 0 auto;
   }
-  #details #f #f-details .details .det-info {
+  .container #f #f-details .details .det-info {
     flex-direction: column;
   }
-  #details #f #f-details .details .det-info img {
+  .container #f #f-details .details .det-info img {
     margin: 0px !important;
     height: 30px !important;
     width: auto;
   }
 }
 @media only all and (max-width: 380px) {
-  #details #f #f-details #what-is {
+  .container #f #f-details #what-is {
     font-size: 12px;
   }
-  #details #f #f-details #title-text {
+  .container #f #f-details #title-text {
     font-size: 24px;
   }
-  #details #f #f-details #main-text {
+  .container #f #f-details #main-text {
     font-size: 16px !important;
   }
-  #details #f #f-details .details .det-info {
+  .container #f #f-details .details .det-info {
     font-size: 14px;
   }
-  #details #f #f-details .details .det-info img {
+  .container #f #f-details .details .det-info img {
     height: 25px !important;
     width: auto;
   }
@@ -608,15 +595,46 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   }
 }
 
+.bg {
+  background-image: url(../images/background-second.jpeg);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.bg .wrapper-content {
+  background-color: rgba(21, 20, 26, 0.6);
+}
+.bg .wrapper-content .container {
+  height: 640px;
+}
+.bg .wrapper-content .container #title {
+  width: 100%;
+}
+.bg .wrapper-content .container #title #title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg .wrapper-content .container #title #title-block #what-is {
+  margin-top: 65px;
+}
+.bg .wrapper-content .container #title #title-block #title-text {
+  color: #ffffff;
+}
+.bg .wrapper-content .container #title #title-block #underline {
+  margin-bottom: 0px !important;
+  justify-content: center;
+}
+.bg .wrapper-content .container #title #title-block #underline::after {
+  left: 0.5%;
+}
+
 .wrapper-content {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  display: flex;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: rgba(21, 20, 26, 0.9);
 }
 
 .container {
@@ -722,4 +740,68 @@ button:hover {
   width: 25px;
   height: 3px;
   background-color: #008ed6;
+}
+
+.bg {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#review {
+  width: 100%;
+}
+#review #slider {
+  margin-top: 65px;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+}
+#review #slider .slick-list.draggable {
+  margin-bottom: 155px;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide {
+  padding-bottom: 0px !important;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide #text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 24px;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide #author {
+  display: flex;
+  align-items: center;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide #author img {
+  margin-right: 25px !important;
+  border-radius: 50%;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-size: 16px;
+}
+#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#review #slider .slick-dots {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+#review #slider .slick-dots li button::before {
+  color: #999999;
+  font-size: 10px !important;
+}
+#review #slider .slick-dots .slick-active button::before {
+  font-size: 14px !important;
+  color: #ffffff;
 }
