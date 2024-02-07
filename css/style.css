@@ -444,6 +444,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 4.5%;
 }
 #details #f #f-details #what-is {
   margin: 0;
@@ -482,6 +483,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   }
   #details #f #f-details {
     width: 100%;
+    margin: 0;
   }
   #details #f #f-details #underline::before, #details #f #f-details #underline::before {
     right: 0;
@@ -520,7 +522,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     font-size: 24px;
   }
   #details #f #f-details #main-text {
-    font-size: 14px;
+    font-size: 16px !important;
   }
   #details #f #f-details .details .det-info {
     font-size: 14px;
@@ -602,7 +604,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     font-size: 24px;
   }
   .wrapper-details .container #s #s-details #main-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
