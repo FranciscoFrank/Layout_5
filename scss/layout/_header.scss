@@ -1,7 +1,8 @@
 @import "../abstracts/abstracts-dir";
 
-.bg {
+#first-block {
     background-image: url(../images/background-first.jpeg);
+    height: fit-content;
 
     .wrapper-content {
         height: fit-content;

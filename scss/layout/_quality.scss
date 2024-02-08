@@ -1,6 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
-.bg {
+#second-block {
     background-image: url(../images/background-second.jpeg);
     height: fit-content;
 
@@ -8,8 +8,6 @@
         background-color: rgba($third-bg, 0.6);
 
         .container {
-            height: 640px;
-
             #title {
                 width: 100%;
         
