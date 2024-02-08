@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -342,7 +344,6 @@ main #wrapper-overview #overview #title-block #title-product #underline {
 main #wrapper-overview #overview #title-block #title-product #underline::before {
   position: relative;
   content: "";
-  right: 0.35%;
   top: 0;
   width: 25px;
   height: 3px;
@@ -352,7 +353,6 @@ main #wrapper-overview #overview #title-block #title-product #underline::after {
   position: relative;
   content: "";
   top: 0;
-  left: 0.35%;
   width: 25px;
   height: 3px;
   background-color: #008ed6;
@@ -622,6 +622,16 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 #second-block .wrapper-content .container #title #title-block #underline {
   margin-bottom: 0px !important;
   justify-content: center;
+  margin-bottom: 70px !important;
+}
+#pricing #title-pricing #underline:before {
+  right: 0.25% !important;
+}
+#pricing #title-pricing #underline:after {
+  left: 0.25% !important;
+}
+#pricing #card {
+  width: 100%;
 }
 #second-block .wrapper-content .container #title #title-block #underline::after {
   left: 0.5%;
@@ -750,57 +760,98 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-#review {
-  width: 100%;
-}
-#review #slider {
-  margin-top: 65px;
+#plan {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #999999;
+  margin: 15px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   padding: 0 !important;
-  display: flex;
-  flex-direction: row;
 }
-#review #slider .slick-list.draggable {
-  margin-bottom: 155px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide {
-  padding-bottom: 0px !important;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #text {
-  color: #ffffff;
-  font-style: italic;
-  font-size: 24px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author {
-  display: flex;
-  align-items: center;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author img {
-  margin-right: 25px !important;
-  border-radius: 50%;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
-  margin: 0 !important;
-  color: #ffffff;
-  font-size: 16px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
-  margin: 0 !important;
-  color: #ffffff;
+#plan #plan-title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 24px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #999999;
 }
-#review #slider .slick-dots {
+#plan #price-block {
+  width: 100%;
+  border-bottom: 1px solid #999999;
   display: flex;
-  flex-direction: row;
-  margin-bottom: 15px;
+  flex-direction: column;
+}
+#plan #price-block #price {
+  display: flex;
   justify-content: center;
+  vertical-align: top;
+}
+#plan #price-block #price p {
+  margin: 0;
+}
+#plan #price-block #price #currency {
+  margin-top: 13px;
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 600;
+}
+#plan #price-block #price #count {
+  color: #1a1a1a;
+  font-size: 60px;
+  font-weight: 600;
+}
+#plan #price-block #frequency {
+  margin-top: -20px;
+  font-size: 18px;
+}
+#plan #desc-plan {
+  width: 100%;
   align-items: center;
+  text-align: center;
+  margin-top: 40px !important;
+  margin-bottom: 30px !important;
 }
-#review #slider .slick-dots li button::before {
+#plan #desc-plan #text-plan {
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 40px;
   color: #999999;
-  font-size: 10px !important;
 }
-#review #slider .slick-dots .slick-active button::before {
-  font-size: 14px !important;
+#plan #desc-plan #text-plan span {
+  color: #008ed6;
+}
+#plan #desc-plan button {
+  color: #008ed6;
+}
+
+#plan:first-child {
+  margin-left: 0px !important;
+}
+
+#plan:last-child {
+  margin-right: 0px !important;
+}
+
+#plan:hover #plan-title {
+  color: #008ed6;
+}
+#plan:hover #price-block {
+  background-color: #008ed6;
+}
+#plan:hover #price-block #price #currency {
+  color: #ffffff;
+}
+#plan:hover #price-block #price #count {
+  color: #ffffff;
+}
+#plan:hover #price-block #frequency {
+  color: #ffffff;
+}
+#plan:hover #desc-plan button {
+  background-color: #008ed6;
   color: #ffffff;
 }

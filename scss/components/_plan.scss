@@ -1,0 +1,119 @@
+@import "../abstracts/abstracts-dir";
+
+#plan {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $main-color;
+    margin: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+
+    #plan-title {
+        font-weight: bold;
+        font-size: $large;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid $main-color; 
+    }
+
+    #price-block {
+        width: 100%;
+        border-bottom: 1px solid $main-color;
+        display: flex;
+        flex-direction: column;
+
+        #price {
+            display: flex;
+            justify-content: center;
+            vertical-align: top;
+
+            p {
+                margin: 0;
+            }
+
+            #currency {
+                margin-top: 13px;
+                color: $title-color;
+                font-size: $s-large;
+                font-weight: 600;
+            }
+
+            #count {
+                color: $title-color;
+                font-size: $size-count;
+                font-weight: 600;
+            }
+        }
+
+        #frequency {
+            margin-top: -20px;
+            font-size: $main;
+        }
+    }
+
+    #desc-plan {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px !important;
+        margin-bottom: 30px !important;
+
+        #text-plan {
+            margin: 0 auto;
+            width: 75%;
+            margin-bottom: 40px;
+            color: $main-color;
+
+            span {
+                color: $accent-color;
+            }
+        }
+
+        button {
+            color: $accent-color;
+        }
+    }
+}
+
+#plan:first-child {
+    margin-left: 0px !important;
+}
+
+#plan:last-child {
+    margin-right: 0px !important;
+}
+
+#plan:hover {
+    #plan-title {
+        color: $accent-color;
+    }
+
+    #price-block {
+        background-color: $accent-color;
+
+        #price {
+            #currency {
+                color: $second-accent-color;
+            }
+            
+            #count {
+                color: $second-accent-color;
+            }
+        }
+
+        #frequency {
+            color: $second-accent-color;
+        }
+    }
+
+    #desc-plan {
+        button {
+            background-color: $accent-color;
+            color: $second-accent-color;
+        }
+    }
+}
