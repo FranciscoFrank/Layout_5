@@ -50,6 +50,13 @@ $(document).ready(function(){
     autoplay: false,
     arrows: false,
     dots: true,
-    pauseOnHover: true
-  });
+    pauseOnHover: true,
+    responsive: [
+      {
+          breakpoint: 1100,
+          settings: {
+              slidesToShow: 1,
+          },
+      },
+  ]});
 });

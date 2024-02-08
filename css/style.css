@@ -603,23 +603,230 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   height: fit-content;
 }
 #second-block .wrapper-content {
-  background-color: rgba(21, 20, 26, 0.6);
+  background-color: rgba(21, 20, 26, 0.8);
 }
-#second-block .wrapper-content .container #title {
+#second-block .wrapper-content #review-wrapper {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+#second-block .wrapper-content #review-wrapper #title {
   width: 100%;
 }
-#second-block .wrapper-content .container #title #title-block {
+#second-block .wrapper-content #review-wrapper #title #title-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#second-block .wrapper-content .container #title #title-block #what-is {
-  margin-top: 65px;
-}
-#second-block .wrapper-content .container #title #title-block #title-text {
+#second-block .wrapper-content #review-wrapper #title #title-block #title-text {
   color: #ffffff;
 }
-#second-block .wrapper-content .container #title #title-block #underline {
+#second-block .wrapper-content #review-wrapper #title #title-block #underline {
+  margin-bottom: 0px !important;
+  justify-content: center;
+}
+#second-block .wrapper-content #review-wrapper #title #title-block #underline:before {
+  right: 0.25% !important;
+}
+#second-block .wrapper-content #review-wrapper #title #title-block #underline:after {
+  left: 0.25% !important;
+}
+#second-block .wrapper-content #review-wrapper #review {
+  width: 100%;
+}
+#second-block .wrapper-content #review-wrapper #review #slider {
+  margin-top: 85px;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
+  margin-bottom: 155px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide {
+  padding-bottom: 0px !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 24px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author {
+  display: flex;
+  align-items: center;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author img {
+  margin-right: 25px !important;
+  border-radius: 50%;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-size: 16px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned {
+  padding-bottom: 0px !important;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 24px;
+  width: 96% !important;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author {
+  display: flex;
+  align-items: center;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author img {
+  margin-right: 25px !important;
+  border-radius: 50%;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #name-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-size: 16px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #job-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#second-block .wrapper-content #review-wrapper #review #slider ul {
+  margin-left: 5px;
+  z-index: 9;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+#second-block .wrapper-content #review-wrapper #review #slider ul li button::before {
+  color: transparent;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #999999;
+  background-color: transparent;
+}
+#second-block .wrapper-content #review-wrapper #review #slider ul .slick-active button::before {
+  margin-top: -2px;
+  height: 12px;
+  width: 12px;
+  border: none;
+  background-color: #ffffff;
+}
+@media only all and (max-width: 1100px) {
+  #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
+    margin-bottom: 90px !important;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #15141a;
+}
+.wrapper #hook {
+  display: flex;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+.wrapper #hook .row > * {
+  padding: 0 !important;
+}
+.wrapper #hook #content-hook {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper #hook #content-hook .start {
+  text-align: center;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+}
+.wrapper #hook #content-hook .start p {
+  margin: 0;
+}
+.wrapper #hook #content-hook .start #t-text {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.wrapper #hook #content-hook .start #t-hook {
+  color: #ffffff;
+  font-weight: 100 !important;
+  font-size: 36px;
+}
+.wrapper #hook #content-hook .button-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper #hook #content-hook .button-wrapper #download {
+  margin-right: 10px !important;
+}
+.wrapper #hook #content-hook .button-wrapper #view {
+  margin-left: 10px !important;
+}
+.wrapper #hook #content-hook .button-wrapper:first-child {
+  margin-right: 10px !important;
+}
+.wrapper #hook #content-hook .button-wrapper:last-child {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+@media only all and (max-width: 1100px) {
+  .wrapper #hook #content-hook {
+    flex-direction: column;
+  }
+  .wrapper #hook #content-hook .start {
+    margin-bottom: 25px;
+  }
+}
+@media only all and (max-width: 575px) {
+  .wrapper #hook #content-hook .start {
+    flex-direction: column;
+    margin-bottom: 75px;
+  }
+}
+@media only all and (max-width: 380px) {
+  .wrapper #hook #content-hook .start {
+    margin-bottom: 45px;
+  }
+  .wrapper #hook #content-hook .start #t-text {
+    font-size: 24px !important;
+  }
+  .wrapper #hook #content-hook .start #t-hook {
+    font-size: 24px !important;
+  }
+  .wrapper #hook #content-hook .button-wrapper button {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 10px !important;
+  }
+}
+
+#pricing {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+#pricing #title-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#pricing #title-pricing #underline {
   margin-bottom: 0px !important;
   justify-content: center;
   margin-bottom: 70px !important;
@@ -632,9 +839,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 }
 #pricing #card {
   width: 100%;
-}
-#second-block .wrapper-content .container #title #title-block #underline::after {
-  left: 0.5%;
 }
 
 .wrapper-content {

@@ -54,6 +54,58 @@
                     margin-left: 10px !important;
                 }
             }
+
+            .button-wrapper:first-child {
+                margin-right: 10px !important;
+            }
+
+            .button-wrapper:last-child {
+                margin-left: 10px !important;
+                margin-right: 0 !important;
+            }
+        }
+
+        @include pe {
+            #content-hook {
+                flex-direction: column;
+
+                .start {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        @include ee  {
+            #content-hook {
+                .start {
+                    flex-direction: column;
+                    margin-bottom: 75px;
+                }
+            }
+        }
+
+        @include bt {
+            #content-hook {
+                .start {
+                    margin-bottom: 45px;
+    
+                    #t-text {
+                        font-size: $large !important;
+                    }
+    
+                    #t-hook {
+                        font-size: $large !important;
+                    }
+                }
+
+                .button-wrapper {
+                    button {
+                        padding-top: 10px !important;
+                        padding-bottom: 10px !important;
+                        font-size: $small !important;
+                    }
+                }
+            }
         }
     }
 }
