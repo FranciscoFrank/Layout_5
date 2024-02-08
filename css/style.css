@@ -13,6 +13,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -61,18 +63,18 @@ a, label, p {
   color: #999999;
 }
 
-.bg {
+#f-block {
   background-image: url(../images/background-first.jpeg);
 }
-.bg .wrapper-content {
+#f-block .wrapper-content {
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(21, 20, 26, 0.9);
 }
-.bg .wrapper-content header #main .row {
+#f-block .wrapper-content header #main .row {
   margin: 0 !important;
 }
-.bg .wrapper-content header #main #name-nav {
+#f-block .wrapper-content header #main #name-nav {
   width: 100% !important;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -80,40 +82,40 @@ a, label, p {
   align-items: center !important;
   margin-bottom: 45px !important;
 }
-.bg .wrapper-content header #main #name-nav p {
+#f-block .wrapper-content header #main #name-nav p {
   margin: 0 !important;
 }
-.bg .wrapper-content header #main #name-nav #name-company {
+#f-block .wrapper-content header #main #name-nav #name-company {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.bg .wrapper-content header #main #name-nav #name-company #main-title {
+#f-block .wrapper-content header #main #name-nav #name-company #main-title {
   font-weight: bold;
   font-size: 24px;
 }
-.bg .wrapper-content header #main #name-nav #name-company #main-title a {
+#f-block .wrapper-content header #main #name-nav #name-company #main-title a {
   text-decoration: none;
   color: #ffffff;
 }
-.bg .wrapper-content header #main #name-nav #name-company #theme {
+#f-block .wrapper-content header #main #name-nav #name-company #theme {
   margin-left: 10px;
   line-height: 1;
   font-size: 9px;
 }
-.bg .wrapper-content header #main #name-nav #name-company #theme a {
+#f-block .wrapper-content header #main #name-nav #name-company #theme a {
   text-decoration: none;
   color: #999999;
 }
-.bg .wrapper-content header #main #name-nav #navbar {
+#f-block .wrapper-content header #main #name-nav #navbar {
   display: flex;
   justify-content: flex-end;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav {
+#f-block .wrapper-content header #main #name-nav #navbar nav {
   display: flex;
   justify-content: flex-end !important;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav button {
+#f-block .wrapper-content header #main #name-nav #navbar nav button {
   padding: 0 !important;
   padding-right: 10px !important;
   padding-left: 10px !important;
@@ -122,14 +124,14 @@ a, label, p {
   border: 1px solid #ffffff !important;
   z-index: 4;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav button .navbar-toggler-icon {
+#f-block .wrapper-content header #main #name-nav #navbar nav button .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   color: #ffffff;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav button:hover {
+#f-block .wrapper-content header #main #name-nav #navbar nav button:hover {
   background-color: transparent !important;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu {
+#f-block .wrapper-content header #main #name-nav #navbar nav #burger-menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -140,7 +142,7 @@ a, label, p {
   transition: transform 0.3s ease;
   z-index: 5;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon {
+#f-block .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon {
   background-color: #f2f2f2;
   padding: 10px;
   display: flex;
@@ -150,36 +152,36 @@ a, label, p {
   height: fit-content;
   margin-bottom: 5px;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon img {
+#f-block .wrapper-content header #main #name-nav #navbar nav #burger-menu .close-icon img {
   cursor: pointer;
   height: auto;
   width: 20px;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav {
+#f-block .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav {
   padding: 15px;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav li a {
+#f-block .wrapper-content header #main #name-nav #navbar nav #burger-menu .navbar-nav li a {
   font-size: 20px;
   color: #1a1a1a !important;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav .active {
+#f-block .wrapper-content header #main #name-nav #navbar nav .active {
   transform: translateX(0) !important;
   position: fixed;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu {
   justify-content: flex-end;
   padding: 0;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu {
   flex-grow: unset;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li {
   font-size: 16px !important;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li:last-child a, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li:last-child a {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu li:last-child a, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu li:last-child a {
   padding-right: 0 !important;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a {
   padding: 0 !important;
   margin-top: 8px;
   margin-left: 8px;
@@ -187,11 +189,11 @@ a, label, p {
   padding-bottom: 8px !important;
   color: #ffffff;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover, .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:active, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:active {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:active, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:active {
   position: relative;
   text-decoration: none;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::before {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -200,7 +202,7 @@ a, label, p {
   height: 3px;
   background-color: #008ed6;
 }
-.bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after, .bg .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::after {
+#f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after, #f-block .wrapper-content header #main #name-nav #navbar nav #menu #main-menu a:hover::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -210,22 +212,22 @@ a, label, p {
   background-color: #008ed6;
 }
 @media only all and (max-width: 992px) {
-  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before {
+  #f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::before {
     content: "";
     width: 0;
     height: 0;
   }
-  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after {
+  #f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover::after {
     content: "";
     width: 0;
     height: 0;
   }
-  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover {
+  #f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu a:hover {
     color: #595959;
   }
 }
 @media only all and (max-width: 575px) {
-  .bg .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu {
+  #f-block .wrapper-content header #main #name-nav #navbar nav #menu #burger-menu {
     width: 45%;
   }
 }
@@ -340,7 +342,6 @@ main #wrapper-overview #overview #title-block #title-product #underline {
 main #wrapper-overview #overview #title-block #title-product #underline::before {
   position: relative;
   content: "";
-  right: 0.35%;
   top: 0;
   width: 25px;
   height: 3px;
@@ -350,7 +351,6 @@ main #wrapper-overview #overview #title-block #title-product #underline::after {
   position: relative;
   content: "";
   top: 0;
-  left: 0.35%;
   width: 25px;
   height: 3px;
   background-color: #008ed6;
@@ -595,37 +595,205 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   }
 }
 
-.bg {
+#s-block {
   background-image: url(../images/background-second.jpeg);
   height: -moz-fit-content;
   height: fit-content;
 }
-.bg .wrapper-content {
-  background-color: rgba(21, 20, 26, 0.6);
+#s-block .wrapper-content {
+  background-color: rgba(21, 20, 26, 0.8);
 }
-.bg .wrapper-content .container {
-  height: 640px;
+#s-block .wrapper-content #review-wrapper {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
 }
-.bg .wrapper-content .container #title {
+#s-block .wrapper-content #review-wrapper #title {
   width: 100%;
 }
-.bg .wrapper-content .container #title #title-block {
+#s-block .wrapper-content #review-wrapper #title #title-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bg .wrapper-content .container #title #title-block #what-is {
-  margin-top: 65px;
-}
-.bg .wrapper-content .container #title #title-block #title-text {
+#s-block .wrapper-content #review-wrapper #title #title-block #title-text {
   color: #ffffff;
 }
-.bg .wrapper-content .container #title #title-block #underline {
+#s-block .wrapper-content #review-wrapper #title #title-block #underline {
   margin-bottom: 0px !important;
   justify-content: center;
 }
-.bg .wrapper-content .container #title #title-block #underline::after {
-  left: 0.5%;
+#s-block .wrapper-content #review-wrapper #title #title-block #underline:before {
+  right: 0.25% !important;
+}
+#s-block .wrapper-content #review-wrapper #title #title-block #underline:after {
+  left: 0.25% !important;
+}
+#s-block .wrapper-content #review-wrapper #review {
+  width: 100%;
+}
+#s-block .wrapper-content #review-wrapper #review #slider {
+  margin-top: 85px;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
+  margin-bottom: 155px;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide {
+  padding-bottom: 0px !important;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 24px;
+  width: 96% !important;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author {
+  display: flex;
+  align-items: center;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author img {
+  margin-right: 25px !important;
+  border-radius: 50%;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-size: 16px;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned {
+  padding-bottom: 0px !important;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 24px;
+  width: 96% !important;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author {
+  display: flex;
+  align-items: center;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author img {
+  margin-right: 25px !important;
+  border-radius: 50%;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #name-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-size: 16px;
+}
+#s-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #job-author {
+  margin: 0 !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#s-block .wrapper-content #review-wrapper #review #slider ul {
+  margin-left: 5px;
+  z-index: 9;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+#s-block .wrapper-content #review-wrapper #review #slider ul li button::before {
+  color: transparent;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #999999;
+  background-color: transparent;
+}
+#s-block .wrapper-content #review-wrapper #review #slider ul .slick-active button::before {
+  margin-top: -2px;
+  height: 12px;
+  width: 12px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #15141a;
+}
+.wrapper #hook {
+  display: flex;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+.wrapper #hook .row > * {
+  padding: 0 !important;
+}
+.wrapper #hook #content-hook {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper #hook #content-hook .start {
+  text-align: center;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+}
+.wrapper #hook #content-hook .start p {
+  margin: 0;
+}
+.wrapper #hook #content-hook .start #t-text {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.wrapper #hook #content-hook .start #t-hook {
+  color: #ffffff;
+  font-weight: 100 !important;
+  font-size: 36px;
+}
+.wrapper #hook #content-hook .button-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper #hook #content-hook .button-wrapper #download {
+  margin-right: 10px !important;
+}
+.wrapper #hook #content-hook .button-wrapper #view {
+  margin-left: 10px !important;
+}
+
+#pricing {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+#pricing #title-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#pricing #title-pricing #underline {
+  margin-bottom: 0px !important;
+  justify-content: center;
+  margin-bottom: 70px !important;
+}
+#pricing #title-pricing #underline:before {
+  right: 0.25% !important;
+}
+#pricing #title-pricing #underline:after {
+  left: 0.25% !important;
+}
+#pricing #card {
+  width: 100%;
 }
 
 .wrapper-content {
@@ -751,57 +919,98 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-#review {
-  width: 100%;
-}
-#review #slider {
-  margin-top: 65px;
+#plan {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #999999;
+  margin: 15px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   padding: 0 !important;
-  display: flex;
-  flex-direction: row;
 }
-#review #slider .slick-list.draggable {
-  margin-bottom: 155px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide {
-  padding-bottom: 0px !important;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #text {
-  color: #ffffff;
-  font-style: italic;
-  font-size: 24px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author {
-  display: flex;
-  align-items: center;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author img {
-  margin-right: 25px !important;
-  border-radius: 50%;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
-  margin: 0 !important;
-  color: #ffffff;
-  font-size: 16px;
-}
-#review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
-  margin: 0 !important;
-  color: #ffffff;
+#plan #plan-title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 24px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #999999;
 }
-#review #slider .slick-dots {
+#plan #price-block {
+  width: 100%;
+  border-bottom: 1px solid #999999;
   display: flex;
-  flex-direction: row;
-  margin-bottom: 15px;
+  flex-direction: column;
+}
+#plan #price-block #price {
+  display: flex;
   justify-content: center;
+  vertical-align: top;
+}
+#plan #price-block #price p {
+  margin: 0;
+}
+#plan #price-block #price #currency {
+  margin-top: 13px;
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 600;
+}
+#plan #price-block #price #count {
+  color: #1a1a1a;
+  font-size: 60px;
+  font-weight: 600;
+}
+#plan #price-block #frequency {
+  margin-top: -20px;
+  font-size: 18px;
+}
+#plan #desc-plan {
+  width: 100%;
   align-items: center;
+  text-align: center;
+  margin-top: 40px !important;
+  margin-bottom: 30px !important;
 }
-#review #slider .slick-dots li button::before {
+#plan #desc-plan #text-plan {
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 40px;
   color: #999999;
-  font-size: 10px !important;
 }
-#review #slider .slick-dots .slick-active button::before {
-  font-size: 14px !important;
+#plan #desc-plan #text-plan span {
+  color: #008ed6;
+}
+#plan #desc-plan button {
+  color: #008ed6;
+}
+
+#plan:first-child {
+  margin-left: 0px !important;
+}
+
+#plan:last-child {
+  margin-right: 0px !important;
+}
+
+#plan:hover #plan-title {
+  color: #008ed6;
+}
+#plan:hover #price-block {
+  background-color: #008ed6;
+}
+#plan:hover #price-block #price #currency {
+  color: #ffffff;
+}
+#plan:hover #price-block #price #count {
+  color: #ffffff;
+}
+#plan:hover #price-block #frequency {
+  color: #ffffff;
+}
+#plan:hover #desc-plan button {
+  background-color: #008ed6;
   color: #ffffff;
 }

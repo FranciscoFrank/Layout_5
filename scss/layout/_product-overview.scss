@@ -41,7 +41,6 @@ main {
                     #underline::before {
                         position: relative;
                         content: '';
-                        right: 0.35%;
                         top: 0;
                         width: 25px;
                         height: 3px;
@@ -52,7 +51,6 @@ main {
                         position: relative;
                         content: '';
                         top: 0;
-                        left: 0.35%;
                         width: 25px;
                         height: 3px;
                         background-color: $accent-color;
