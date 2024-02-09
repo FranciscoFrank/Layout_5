@@ -73,18 +73,18 @@
             }
         }
 
-        button {
+        .button-link {
             color: $accent-color;
         }
     }
 }
 
 #plan:first-child {
-    margin-left: 0px !important;
+    margin-left: 10px !important;
 }
 
 #plan:last-child {
-    margin-right: 0px !important;
+    margin-right: 10px !important;
 }
 
 #plan:hover {
@@ -111,9 +111,65 @@
     }
 
     #desc-plan {
-        button {
+        .button-link {
+            border: 1px solid $accent-color;
             background-color: $accent-color;
             color: $second-accent-color;
         }
+    }
+}
+
+@include pe {
+    #plan:first-child {
+        margin: 0 auto !important;
+        margin-bottom: 55px !important;
+    }
+
+    #plan:last-child {
+        margin: 0 auto !important;
+    }
+
+    #plan {
+        width: 350px;
+        margin: 0 auto !important;
+        margin-bottom: 55px !important;
+    }
+}
+
+@include ee {
+    #plan:first-child {
+        margin: 0 auto;
+    }
+
+    #plan:last-child {
+        margin: 0 auto;
+    }
+
+    #plan {
+        width: 270px;
+        margin: 0 auto !important;
+        margin-bottom: 55px !important;
+
+        #desc-plan {
+            #text-plan {
+                .button-link {        
+                    font-size: $medium !important;
+                }
+            }
+        }
+    }
+}
+
+@include bt {
+    #what-is {
+        font-size: $x-small;
+    }
+
+    #title-text {
+        font-size: $large;
+    }
+
+    #main-text {
+        font-size: $average;
     }
 }

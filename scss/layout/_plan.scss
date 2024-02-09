@@ -28,5 +28,20 @@
 
     #card {
         width: 100%;
+
+
+        @include pe {
+            display: inline;
+            column-count: 2;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include ee {
+            display: inline;
+            column-count: 1;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

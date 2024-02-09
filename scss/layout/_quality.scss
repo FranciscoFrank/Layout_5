@@ -134,17 +134,13 @@
                 }
             }
 
-            @include hp {
+            @include ee {
                 #review {
                     #slider {
                         .slick-list.draggable {
                             margin-bottom: 90px !important;
 
-                            .slick-slide {
-                                padding-bottom: 0px !important;
-                                padding-right: 10px !important;
-                                padding-left: 10px !important;
-                                  
+                            .slick-slide {                                
                                 .slide-content {
                                     .text {
                                         font-size: $main !important;
@@ -155,6 +151,8 @@
                     }
                 }
             }
+
+
 
             @include bt {
                 #what-is {

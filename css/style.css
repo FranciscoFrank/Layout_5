@@ -250,14 +250,19 @@ a, label, p {
   font-size: 18px;
   margin-bottom: 60px;
 }
-.bg .wrapper-content #banner #text-photo #int-text button {
-  margin-right: 20px;
-  margin-bottom: 45px;
+.bg .wrapper-content #banner #text-photo #int-text .button-wrapper a:first-child {
+  margin-right: 10px !important;
+}
+.bg .wrapper-content #banner #text-photo #int-text .button-wrapper a:last-child {
+  margin-left: 10px !important;
 }
 @media only all and (max-width: 992px) {
   .bg .wrapper-content #banner #text-photo #int-text {
     margin: 0 auto;
     width: 100% !important;
+  }
+  .bg .wrapper-content #banner #text-photo .button-link {
+    margin-bottom: 65px;
   }
 }
 @media only all and (max-width: 575px) {
@@ -277,14 +282,6 @@ a, label, p {
   }
   .bg .wrapper-content #banner #text-photo #int-text #some-text {
     font-size: 14px;
-  }
-  .bg .wrapper-content #banner #text-photo #int-text .button-wrapper button {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    margin-right: 10px !important;
-    font-size: 12px !important;
   }
 }
 .bg .wrapper-content #banner #text-photo #photo {
@@ -336,26 +333,13 @@ main #wrapper-overview #overview #title-block #title-product #title-text {
   color: #1a1a1a;
 }
 main #wrapper-overview #overview #title-block #title-product #underline {
-  display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 25px;
 }
-main #wrapper-overview #overview #title-block #title-product #underline::before {
-  position: relative;
-  content: "";
-  top: 0;
-  width: 25px;
-  height: 3px;
-  background-color: #008ed6;
+main #wrapper-overview #overview #title-block #title-product #underline:before {
+  right: 0.25% !important;
 }
-main #wrapper-overview #overview #title-block #title-product #underline::after {
-  position: relative;
-  content: "";
-  top: 0;
-  width: 25px;
-  height: 3px;
-  background-color: #008ed6;
+main #wrapper-overview #overview #title-block #title-product #underline:after {
+  left: 0.25% !important;
 }
 @media only all and (max-width: 575px) {
   main #wrapper-overview #overview #title-block #what-is {
@@ -699,14 +683,9 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     margin-bottom: 90px !important;
   }
 }
-@media only all and (min-width: 992px) {
+@media only all and (max-width: 575px) {
   #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
     margin-bottom: 90px !important;
-  }
-  #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-slide, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned {
-    padding-bottom: 0px !important;
-    padding-right: 10px !important;
-    padding-left: 10px !important;
   }
   #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-slide .slide-content .text, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .slide-content .text {
     font-size: 18px !important;
@@ -818,6 +797,24 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 }
 #pricing #card {
   width: 100%;
+}
+@media only all and (max-width: 1100px) {
+  #pricing #card {
+    display: inline;
+    -moz-column-count: 2;
+         column-count: 2;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only all and (max-width: 575px) {
+  #pricing #card {
+    display: inline;
+    -moz-column-count: 1;
+         column-count: 1;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .wrapper-content {
@@ -990,16 +987,16 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 #plan #desc-plan #text-plan span {
   color: #008ed6;
 }
-#plan #desc-plan button {
+#plan #desc-plan .button-link {
   color: #008ed6;
 }
 
 #plan:first-child {
-  margin-left: 0px !important;
+  margin-left: 10px !important;
 }
 
 #plan:last-child {
-  margin-right: 0px !important;
+  margin-right: 10px !important;
 }
 
 #plan:hover #plan-title {
@@ -1017,11 +1014,53 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 #plan:hover #price-block #frequency {
   color: #ffffff;
 }
-#plan:hover #desc-plan button {
+#plan:hover #desc-plan .button-link {
+  border: 1px solid #008ed6;
   background-color: #008ed6;
   color: #ffffff;
 }
 
+@media only all and (max-width: 1100px) {
+  #plan:first-child {
+    margin: 0 auto !important;
+    margin-bottom: 55px !important;
+  }
+  #plan:last-child {
+    margin: 0 auto !important;
+  }
+  #plan {
+    width: 350px;
+    margin: 0 auto !important;
+    margin-bottom: 55px !important;
+  }
+}
+@media only all and (max-width: 575px) {
+  #plan:first-child {
+    margin: 0 auto;
+  }
+  #plan:last-child {
+    margin: 0 auto;
+  }
+  #plan {
+    width: 270px;
+    margin: 0 auto !important;
+    margin-bottom: 55px !important;
+  }
+  #plan #desc-plan #text-plan .button-link {
+    font-size: 14px !important;
+  }
+}
+@media only all and (max-width: 380px) {
+  #what-is {
+    font-size: 12px;
+  }
+  #title-text {
+    font-size: 24px;
+  }
+  #main-text {
+    font-size: 16px;
+  }
+}
 .button-link {
   display: inline-block;
   padding: 15px 25px;

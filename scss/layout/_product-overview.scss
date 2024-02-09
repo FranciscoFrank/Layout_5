@@ -32,29 +32,16 @@ main {
                     }
     
                     #underline {
-                        display: flex;
                         justify-content: center;
-                        width: 100%;
-                        margin-top: 25px;
                     }
-    
-                    #underline::before {
-                        position: relative;
-                        content: '';
-                        top: 0;
-                        width: 25px;
-                        height: 3px;
-                        background-color: $accent-color;
+            
+                    #underline:before {
+                        right: 0.25% !important;
                     }
-                    
-                    #underline::after {
-                        position: relative;
-                        content: '';
-                        top: 0;
-                        width: 25px;
-                        height: 3px;
-                        background-color: $accent-color;
-                    }
+            
+                    #underline:after {
+                        left: 0.25% !important;
+                    } 
                 }
     
                 @include ee {

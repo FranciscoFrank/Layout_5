@@ -23,9 +23,12 @@
                         margin-bottom: 60px;
                     }
 
-                    button {
-                        margin-right: 20px;
-                        margin-bottom: 45px;
+                    .button-wrapper a:first-child {
+                        margin-right: 10px !important;
+                    }
+        
+                    .button-wrapper a:last-child {
+                        margin-left: 10px !important;
                     }
                 }
 
@@ -33,6 +36,10 @@
                     #int-text {
                         margin: 0 auto;
                         width: 100% !important;
+                    }
+
+                    .button-link {
+                        margin-bottom: 65px;
                     }
                 }
 
@@ -60,17 +67,6 @@
 
                         #some-text {
                             font-size: $medium;
-                        }
-
-                        .button-wrapper {
-                            button {
-                                padding-left: 20px !important;
-                                padding-right: 20px !important;
-                                padding-top: 10px !important;
-                                padding-bottom: 10px !important;
-                                margin-right: 10px !important;
-                                font-size: $x-small !important;
-                            }
                         }
                     }  
                 }
