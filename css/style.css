@@ -826,7 +826,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   flex-direction: row;
   justify-content: space-between;
   padding-top: 60px;
-  padding-bottom: 250px;
+  padding-bottom: 400px;
 }
 #contact #contact-content {
   padding: 0;
@@ -859,6 +859,24 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   color: #999999;
   text-decoration: none;
 }
+@media only all and (max-width: 850px) {
+  #contact #our {
+    padding-bottom: 85px;
+  }
+}
+@media only all and (max-width: 620px) {
+  #contact #our {
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact #our #c {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #contact #our #c p {
+    font-size: 18px;
+  }
+}
 
 #map {
   height: 370px;
@@ -889,7 +907,9 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -35%);
+  max-width: 790px;
+  width: 100%;
 }
 .top-layer .form-container .input-text {
   display: flex;
@@ -897,11 +917,15 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 }
 .top-layer .form-container .input-text .inputs {
   margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+.top-layer .form-container .input-text .inputs label {
+  width: 100%;
 }
 .top-layer .form-container .input-text .inputs input {
   background-color: transparent;
   height: 50px;
-  width: 300px;
   margin-bottom: 20px !important;
   padding: 10px;
   padding-right: 10px;
@@ -909,6 +933,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   border: 1px solid #999999;
   color: #999999;
   font-weight: bold;
+  width: 100%;
   border-radius: 2px;
 }
 .top-layer .form-container .input-text .inputs #subject {
@@ -922,6 +947,8 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  max-width: 300px;
+  width: 100%;
 }
 .top-layer .form-container .input-text .textarea textarea {
   resize: none;
@@ -933,7 +960,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   border: 1px solid #999999;
   background-color: transparent;
   height: 190px;
-  width: 300px;
+  width: 100%;
   color: #999999;
 }
 .top-layer .form-container .input-text .textarea textarea:focus {
@@ -966,7 +993,35 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   border: 1px solid #ff0000 !important;
   box-shadow: inset 0 0 6px #F5192F;
 }
+@media only all and (max-width: 850px) {
+  .top-layer .form-container {
+    position: static;
+    max-width: 100% !important;
+    width: 100%;
+    transform: translate(0, 0);
+  }
+  .top-layer .form-container .input-text {
+    width: 100%;
+  }
+  .top-layer .form-container #button-submit input {
+    margin: 0 auto;
+  }
+}
 
+@media only all and (max-width: 620px) {
+  .form-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .form-container .input-text {
+    align-items: center;
+    flex-direction: column !important;
+  }
+  .form-container .input-text .textarea {
+    margin-left: 0 !important;
+    margin-bottom: 25px !important;
+  }
+}
 .wrapper-content {
   width: 100%;
   height: 100%;
@@ -1244,8 +1299,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 #contact #c {
   height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 195px;
   display: flex;
   flex-direction: column;
   text-align: center;

@@ -28,6 +28,20 @@
     }
 }
 
+//Form edits
+@mixin fe {
+    @media only all and (max-width: $fe) {
+        @content;
+    }
+}
+
+//C edits
+@mixin ce {
+    @media only all and (max-width: $ce) {
+        @content;
+    }
+}
+
 //Container edits & Burger menu edits
 @mixin ee {
     @media only all and (max-width: $ee) {

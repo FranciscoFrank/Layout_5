@@ -7,7 +7,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 60px;
-        padding-bottom: 250px;
+        padding-bottom: 400px;
     }
 
     #contact-content {
@@ -47,6 +47,28 @@
         a {
             color: $main-color;
             text-decoration: none;
+        }
+    }
+
+    @include fe {
+        #our {
+            padding-bottom: 85px;
+        }
+    }
+
+    @include ce {
+        #our {
+            align-items: center;
+            flex-direction: column;
+
+            #c {
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+                p {
+                    font-size: $main;
+                }
+            }
         }
     }
 }
