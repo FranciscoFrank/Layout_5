@@ -1,0 +1,27 @@
+@import "../abstracts/abstracts-dir";
+
+.button-link {
+    display: inline-block;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid $main-color;
+    background-color: transparent;
+    color: $second-accent-color;
+}
+  
+.button-link:hover {
+    color: $second-accent-color;
+    border: 1px solid $accent-color;
+    background-color: $accent-color;
+}
+
+@include bt {
+    .button-link {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        font-size: $small !important;
+    }
+}

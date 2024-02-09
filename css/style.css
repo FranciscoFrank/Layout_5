@@ -642,58 +642,30 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
   margin-bottom: 155px;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned {
   padding-bottom: 0px !important;
   padding-right: 10px !important;
   padding-left: 10px !important;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #text {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide .text, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .text {
   color: #ffffff;
   font-style: italic;
-  font-size: 24px;
+  font-size: 24px !important;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide .author, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .author {
   display: flex;
   align-items: center;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author img {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide .author img, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .author img {
   margin-right: 25px !important;
   border-radius: 50%;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #name-author {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide .author .texts p:first-child, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .author .texts p:first-child {
   margin: 0 !important;
   color: #ffffff;
   font-size: 16px;
 }
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide #author .texts #job-author {
-  margin: 0 !important;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 14px;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned {
-  padding-bottom: 0px !important;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #text {
-  color: #ffffff;
-  font-style: italic;
-  font-size: 24px;
-  width: 96% !important;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author {
-  display: flex;
-  align-items: center;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author img {
-  margin-right: 25px !important;
-  border-radius: 50%;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #name-author {
-  margin: 0 !important;
-  color: #ffffff;
-  font-size: 16px;
-}
-#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide.slick-cloned #author .texts #job-author {
+#second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-slide .author .texts p:last-child, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .author .texts p:last-child {
   margin: 0 !important;
   color: #ffffff;
   font-weight: bold;
@@ -727,6 +699,30 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     margin-bottom: 90px !important;
   }
 }
+@media only all and (min-width: 992px) {
+  #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable {
+    margin-bottom: 90px !important;
+  }
+  #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-slide, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned {
+    padding-bottom: 0px !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-slide .slide-content .text, #second-block .wrapper-content #review-wrapper #review #slider .slick-list.draggable .slick-track .slick-cloned .slide-content .text {
+    font-size: 18px !important;
+  }
+}
+@media only all and (max-width: 380px) {
+  #second-block .wrapper-content #review-wrapper #what-is {
+    font-size: 12px;
+  }
+  #second-block .wrapper-content #review-wrapper #title-text {
+    font-size: 24px;
+  }
+  #second-block .wrapper-content #review-wrapper #main-text {
+    font-size: 16px;
+  }
+}
 
 .wrapper {
   width: 100%;
@@ -752,7 +748,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  height: 50px;
 }
 .wrapper #hook #content-hook .start p {
   margin: 0;
@@ -771,18 +766,11 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   width: -moz-fit-content;
   width: fit-content;
 }
-.wrapper #hook #content-hook .button-wrapper #download {
+.wrapper #hook #content-hook .button-wrapper a:first-child {
   margin-right: 10px !important;
 }
-.wrapper #hook #content-hook .button-wrapper #view {
+.wrapper #hook #content-hook .button-wrapper a:last-child {
   margin-left: 10px !important;
-}
-.wrapper #hook #content-hook .button-wrapper:first-child {
-  margin-right: 10px !important;
-}
-.wrapper #hook #content-hook .button-wrapper:last-child {
-  margin-left: 10px !important;
-  margin-right: 0 !important;
 }
 @media only all and (max-width: 1100px) {
   .wrapper #hook #content-hook {
@@ -795,23 +783,14 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 @media only all and (max-width: 575px) {
   .wrapper #hook #content-hook .start {
     flex-direction: column;
-    margin-bottom: 75px;
   }
 }
 @media only all and (max-width: 380px) {
-  .wrapper #hook #content-hook .start {
-    margin-bottom: 45px;
-  }
   .wrapper #hook #content-hook .start #t-text {
     font-size: 24px !important;
   }
   .wrapper #hook #content-hook .start #t-hook {
     font-size: 24px !important;
-  }
-  .wrapper #hook #content-hook .button-wrapper button {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    font-size: 10px !important;
   }
 }
 
@@ -869,23 +848,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   padding: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-}
-
-button {
-  font-weight: bold;
-  font-size: 14px !important;
-  padding: 15px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  border-radius: 5px !important;
-  border: 1px solid #999999;
-  background-color: transparent;
-  color: #ffffff;
-}
-
-button:hover {
-  border: 1px solid #008ed6;
-  background-color: #008ed6;
 }
 
 .overlay {
@@ -1058,4 +1020,30 @@ button:hover {
 #plan:hover #desc-plan button {
   background-color: #008ed6;
   color: #ffffff;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #999999;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.button-link:hover {
+  color: #ffffff;
+  border: 1px solid #008ed6;
+  background-color: #008ed6;
+}
+
+@media only all and (max-width: 380px) {
+  .button-link {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 10px !important;
+  }
 }

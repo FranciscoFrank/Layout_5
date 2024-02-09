@@ -56,13 +56,13 @@
                                 padding-right: 10px !important;
                                 padding-left: 10px !important;
                                 
-                                #text {
+                                .text {
                                     color: $second-accent-color;
                                     font-style: italic;
-                                    font-size: $large;
+                                    font-size: $large !important;
                                 }
                         
-                                #author {
+                                .author {
                                     display: flex;
                                     align-items: center;
                         
@@ -71,58 +71,24 @@
                                         border-radius: 50%;
                                     }
                         
-                                    .texts {
-                                        #name-author {
-                                            margin: 0 !important;
-                                            color: $second-accent-color;
-                                            font-size: $average;
-                                        }
-                        
-                                        #job-author {
-                                            margin: 0 !important;
-                                            color: $second-accent-color;
-                                            font-weight: bold;
-                                            font-size: $medium;
-                                        }
-                                    } 
+                                    .texts p:first-child {
+                                        margin: 0 !important;
+                                        color: $second-accent-color;
+                                        font-size: $average;
+                                    }
+                                    
+                                    .texts p:last-child {
+                                        margin: 0 !important;
+                                        color: $second-accent-color;
+                                        font-weight: bold;
+                                        font-size: $medium;
+                                    }                                    
                                 } 
                             }
 
-                            .slick-slide.slick-cloned {
-                                padding-bottom: 0px !important;
-                                
-                                #text {
-                                    color: $second-accent-color;
-                                    font-style: italic;
-                                    font-size: $large;
-                                    width: 96% !important;
-                                }
-                        
-                                #author {
-                                    display: flex;
-                                    align-items: center;
-                        
-                                    img {
-                                        margin-right: 25px !important;
-                                        border-radius: 50%;
-                                    }
-                        
-                                    .texts {
-                                        #name-author {
-                                            margin: 0 !important;
-                                            color: $second-accent-color;
-                                            font-size: $average;
-                                        }
-                        
-                                        #job-author {
-                                            margin: 0 !important;
-                                            color: $second-accent-color;
-                                            font-weight: bold;
-                                            font-size: $medium;
-                                        }
-                                    } 
-                                } 
-                            }   
+                            .slick-cloned {
+                                @extend .slick-slide
+                            }                               
                         }
                     }
 
@@ -165,6 +131,42 @@
                             margin-bottom: 90px !important;
                         }
                     }
+                }
+            }
+
+            @include hp {
+                #review {
+                    #slider {
+                        .slick-list.draggable {
+                            margin-bottom: 90px !important;
+
+                            .slick-slide {
+                                padding-bottom: 0px !important;
+                                padding-right: 10px !important;
+                                padding-left: 10px !important;
+                                  
+                                .slide-content {
+                                    .text {
+                                        font-size: $main !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include bt {
+                #what-is {
+                    font-size: $x-small;
+                }
+
+                #title-text {
+                    font-size: $large;
+                }
+
+                #main-text {
+                    font-size: $average;
                 }
             }
         }

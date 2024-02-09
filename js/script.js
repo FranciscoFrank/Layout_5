@@ -53,7 +53,7 @@ $(document).ready(function(){
     pauseOnHover: true,
     responsive: [
       {
-          breakpoint: 1100,
+          breakpoint: 850,
           settings: {
               slidesToShow: 1,
           },
