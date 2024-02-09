@@ -60,3 +60,17 @@ $(document).ready(function(){
       },
   ]});
 });
+
+/*  Tracking button clicks  */
+document.addEventListener('DOMContentLoaded', function () {
+  /*  ID  */
+  var submitButton = document.getElementById('button-sub-sub');
+  var inputElements = document.querySelectorAll('.form-input');
+
+  /*  Adding a class to a button  */
+  submitButton.addEventListener('click', function() {
+      inputElements.forEach(function(inputElement) {
+          inputElement.classList.add('failed');
+      });
+  });
+});

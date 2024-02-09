@@ -1,0 +1,17 @@
+@import "../abstracts/abstracts-dir";
+
+#contact {
+    width: 100%;
+    background-color: $second-bg;
+    padding-top: 60px;  
+
+    #c {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+

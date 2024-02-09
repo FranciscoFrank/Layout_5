@@ -15,6 +15,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -817,6 +820,153 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   }
 }
 
+#contact #our {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 250px;
+}
+#contact #contact-content {
+  padding: 0;
+}
+#contact #contact-content #name {
+  width: 100%;
+}
+#contact #contact-content #name .title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact #contact-content #name .title-block #underline {
+  margin-bottom: 0px !important;
+  justify-content: center;
+}
+#contact #contact-content #name .title-block #underline:before {
+  right: 0.25% !important;
+}
+#contact #contact-content #name .title-block #underline:after {
+  left: 0.25% !important;
+}
+#contact #contact-content img {
+  padding-bottom: 15px;
+}
+#contact #contact-content p {
+  margin: 0;
+}
+#contact #contact-content a {
+  color: #999999;
+  text-decoration: none;
+}
+
+#map {
+  height: 370px;
+  max-width: 100%;
+}
+#map iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.top-layer {
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.top-layer .form-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #15141a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 85px;
+  padding-right: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-layer .form-container .input-text {
+  display: flex;
+  flex-direction: row;
+}
+.top-layer .form-container .input-text .inputs {
+  margin-bottom: 20px;
+}
+.top-layer .form-container .input-text .inputs input {
+  background-color: transparent;
+  height: 50px;
+  width: 300px;
+  margin-bottom: 20px !important;
+  padding: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  border: 1px solid #999999;
+  color: #999999;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.top-layer .form-container .input-text .inputs #subject {
+  margin-bottom: 0 !important;
+}
+.top-layer .form-container .input-text .inputs input:focus {
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+.top-layer .form-container .input-text .textarea {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.top-layer .form-container .input-text .textarea textarea {
+  resize: none;
+  border-radius: 2px;
+  padding-top: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #999999;
+  background-color: transparent;
+  height: 190px;
+  width: 300px;
+  color: #999999;
+}
+.top-layer .form-container .input-text .textarea textarea:focus {
+  outline: 0;
+  border: 1px solid #ffffff;
+}
+.top-layer .form-container #button-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.top-layer .form-container #button-submit input {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #999999;
+  background-color: transparent;
+  color: #999999;
+}
+.top-layer .form-container #button-submit input:hover {
+  color: #ffffff;
+  border: 1px solid #008ed6;
+  background-color: #008ed6;
+}
+.top-layer .form-container input.failed, .top-layer .form-container textarea.failed {
+  border: 1px solid #ff0000 !important;
+  box-shadow: inset 0 0 6px #F5192F;
+}
+
 .wrapper-content {
   width: 100%;
   height: 100%;
@@ -1085,4 +1235,19 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     padding-bottom: 10px !important;
     font-size: 10px !important;
   }
+}
+#contact {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 60px;
+}
+#contact #c {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }

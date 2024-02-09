@@ -1,0 +1,52 @@
+@import "../abstracts/abstracts-dir";
+
+#contact {
+    #our {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 250px;
+    }
+
+    #contact-content {
+        padding: 0;
+
+        #name {
+            width: 100%;
+
+            .title-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #underline {
+                    margin-bottom: 0px !important;
+                    justify-content: center;
+                }
+
+                #underline:before {
+                    right: 0.25% !important;
+                }
+
+                #underline:after {
+                    left: 0.25% !important;
+                }
+            }
+        }
+
+        img {
+            padding-bottom: 15px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
