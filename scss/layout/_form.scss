@@ -128,12 +128,6 @@
             .input-text {
                 width: 100%;
             }
-
-            #button-submit {
-                input {
-                    margin: 0 auto;
-                }
-            }
         }
     }
 }
@@ -150,6 +144,12 @@
             .textarea {
                 margin-left: 0 !important;
                 margin-bottom: 25px !important;
+            }
+        }
+
+        #button-submit {
+            input {
+                margin: 0 auto;
             }
         }
     }

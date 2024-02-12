@@ -8,14 +8,16 @@
         justify-content: space-between;
         padding-top: 60px;
         padding-bottom: 400px;
+
+        .col-4 {
+            width: fit-content;
+        }
     }
 
     #contact-content {
         padding: 0;
 
         #name {
-            width: 100%;
-
             .title-block {
                 display: flex;
                 flex-direction: column;
@@ -27,11 +29,11 @@
                 }
 
                 #underline:before {
-                    right: 0.25% !important;
+                    right: 0.5% !important;
                 }
 
                 #underline:after {
-                    left: 0.25% !important;
+                    left: 0.5% !important;
                 }
             }
         }

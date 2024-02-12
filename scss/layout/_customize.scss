@@ -14,7 +14,6 @@
             align-items: center;
 
             #s-photo {
-                width: fit-content;
                 height: 100%;
 
                 img {
@@ -24,14 +23,12 @@
             }
 
             #s-details {
-                .text {
-                    #what-is {
-                        margin: 0;
-                    }
+                #what-is {
+                    margin: 0;
+                }
 
-                    #main-text {
-                        width: 95% !important;
-                    }
+                #main-text {
+                    width: 95% !important;
                 }
             }
 

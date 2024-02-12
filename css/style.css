@@ -18,6 +18,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -339,10 +340,10 @@ main #wrapper-overview #overview #title-block #title-product #underline {
   justify-content: center;
 }
 main #wrapper-overview #overview #title-block #title-product #underline:before {
-  right: 0.25% !important;
+  right: 0.5% !important;
 }
 main #wrapper-overview #overview #title-block #title-product #underline:after {
-  left: 0.25% !important;
+  left: 0.5% !important;
 }
 @media only all and (max-width: 575px) {
   main #wrapper-overview #overview #title-block #what-is {
@@ -523,18 +524,16 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   align-items: center;
 }
 .wrapper-details .container #s #s-photo {
-  width: -moz-fit-content;
-  width: fit-content;
   height: 100%;
 }
 .wrapper-details .container #s #s-photo img {
   height: auto;
   width: 670px;
 }
-.wrapper-details .container #s #s-details .text #what-is {
+.wrapper-details .container #s #s-details #what-is {
   margin: 0;
 }
-.wrapper-details .container #s #s-details .text #main-text {
+.wrapper-details .container #s #s-details #main-text {
   width: 95% !important;
 }
 @media only all and (max-width: 1100px) {
@@ -596,9 +595,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   padding-top: 60px !important;
   padding-bottom: 60px !important;
 }
-#second-block .wrapper-content #review-wrapper #title {
-  width: 100%;
-}
 #second-block .wrapper-content #review-wrapper #title #title-block {
   display: flex;
   flex-direction: column;
@@ -612,10 +608,10 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   justify-content: center;
 }
 #second-block .wrapper-content #review-wrapper #title #title-block #underline:before {
-  right: 0.25% !important;
+  right: 0.5% !important;
 }
 #second-block .wrapper-content #review-wrapper #title #title-block #underline:after {
-  left: 0.25% !important;
+  left: 0.5% !important;
 }
 #second-block .wrapper-content #review-wrapper #review {
   width: 100%;
@@ -758,21 +754,38 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   .wrapper #hook #content-hook {
     flex-direction: column;
   }
-  .wrapper #hook #content-hook .start {
+  .wrapper #hook #content-hook .col-8 {
+    display: flex;
+    width: 100%;
+  }
+  .wrapper #hook #content-hook .col-8 .start {
+    margin: 0 auto;
     margin-bottom: 25px;
+  }
+  .wrapper #hook #content-hook .col-4 {
+    width: 50%;
+    display: flex;
+  }
+  .wrapper #hook #content-hook .col-4 .button-wrapper {
+    margin: 0 auto;
   }
 }
 @media only all and (max-width: 575px) {
-  .wrapper #hook #content-hook .start {
+  .wrapper #hook #content-hook .col-8 .start {
     flex-direction: column;
   }
-}
-@media only all and (max-width: 380px) {
-  .wrapper #hook #content-hook .start #t-text {
+  .wrapper #hook #content-hook .col-8 .start #t-text {
     font-size: 24px !important;
   }
-  .wrapper #hook #content-hook .start #t-hook {
+  .wrapper #hook #content-hook .col-8 .start #t-hook {
     font-size: 24px !important;
+  }
+  .wrapper #hook #content-hook .col-4 {
+    width: 100%;
+    display: flex;
+  }
+  .wrapper #hook #content-hook .col-4 .button-wrapper {
+    margin: 0 auto;
   }
 }
 
@@ -785,7 +798,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
 }
 #pricing #title-pricing #underline {
   margin-bottom: 0px !important;
@@ -797,9 +809,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
 }
 #pricing #title-pricing #underline:after {
   left: 0.25% !important;
-}
-#pricing #card {
-  width: 100%;
 }
 @media only all and (max-width: 1100px) {
   #pricing #card {
@@ -828,11 +837,12 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   padding-top: 60px;
   padding-bottom: 400px;
 }
+#contact #our .col-4 {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 #contact #contact-content {
   padding: 0;
-}
-#contact #contact-content #name {
-  width: 100%;
 }
 #contact #contact-content #name .title-block {
   display: flex;
@@ -844,10 +854,10 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   justify-content: center;
 }
 #contact #contact-content #name .title-block #underline:before {
-  right: 0.25% !important;
+  right: 0.5% !important;
 }
 #contact #contact-content #name .title-block #underline:after {
-  left: 0.25% !important;
+  left: 0.5% !important;
 }
 #contact #contact-content img {
   padding-bottom: 15px;
@@ -1003,9 +1013,6 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   .top-layer .form-container .input-text {
     width: 100%;
   }
-  .top-layer .form-container #button-submit input {
-    margin: 0 auto;
-  }
 }
 
 @media only all and (max-width: 620px) {
@@ -1021,7 +1028,52 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     margin-left: 0 !important;
     margin-bottom: 25px !important;
   }
+  .form-container #button-submit input {
+    margin: 0 auto;
+  }
 }
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #15141a;
+  flex: 0;
+}
+footer .col-12 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .col-12 a {
+  text-decoration: none;
+  color: #999999;
+}
+footer .col-12 .social-image {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 230px;
+}
+footer .col-12 .social-image a {
+  margin: 0 auto;
+}
+footer .col-12 .social-image img {
+  filter: grayscale(100%);
+}
+footer .col-12 .social-image img:hover {
+  filter: grayscale(0);
+}
+footer .col-12 .social-image img:nth-child(1), footer .col-12 img:nth-child(2), footer .col-12 img:nth-child(3), footer .col-12 img:nth-child(4), footer .col-12 img:nth-child(5) {
+  height: 20px;
+  width: auto;
+}
+footer .col-12 .copyright {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .wrapper-content {
   width: 100%;
   height: 100%;
@@ -1291,6 +1343,10 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
     font-size: 10px !important;
   }
 }
+main {
+  min-height: 100vh;
+}
+
 #contact {
   width: 100%;
   background-color: #f2f2f2;

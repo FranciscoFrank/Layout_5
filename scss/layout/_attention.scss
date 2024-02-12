@@ -58,30 +58,50 @@
         @include pe {
             #content-hook {
                 flex-direction: column;
+                
+                .col-8 {
+                    display: flex;
+                    width: 100%;
 
-                .start {
-                    margin-bottom: 25px;
-                }
-            }
-        }
-
-        @include ee  {
-            #content-hook {
-                .start {
-                    flex-direction: column;
-                }
-            }
-        }
-
-        @include bt {
-            #content-hook {
-                .start {  
-                    #t-text {
-                        font-size: $large !important;
+                    .start {
+                        margin: 0 auto;
+                        margin-bottom: 25px;
                     }
-    
-                    #t-hook {
-                        font-size: $large !important;
+                }
+
+                .col-4 {
+                    width: 50%;
+                    display: flex;
+
+                    .button-wrapper {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        @include ee {
+            #content-hook {
+                .col-8 {
+                    .start {  
+                        flex-direction: column;
+
+                        #t-text {
+                            font-size: $large !important;
+                        }
+        
+                        #t-hook {
+                            font-size: $large !important;
+                        }
+                    }
+                } 
+                
+                .col-4 {
+                    width: 100%;
+                    display: flex;
+
+                    .button-wrapper {
+                        margin: 0 auto;
                     }
                 }
             }
