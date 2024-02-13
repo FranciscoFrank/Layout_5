@@ -112,7 +112,7 @@
             }
         }
 
-        input.failed, textarea.failed {
+        input.failed:invalid, textarea.failed:invalid {
             border: 1px solid $failed !important; 
             box-shadow: inset 0 0 6px #F5192F;
         }

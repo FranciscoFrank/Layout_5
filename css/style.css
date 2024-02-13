@@ -344,7 +344,7 @@ a, label, p {
 main #wrapper-overview {
   padding: 0;
   width: 100%;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
   margin-bottom: 50px;
 }
 main #wrapper-overview #overview #title-block {
@@ -372,10 +372,10 @@ main #wrapper-overview #overview #title-block #title-product #underline {
   justify-content: center;
 }
 main #wrapper-overview #overview #title-block #title-product #underline:before {
-  right: 0.5% !important;
+  right: 0.2% !important;
 }
 main #wrapper-overview #overview #title-block #title-product #underline:after {
-  left: 0.5% !important;
+  left: 0.2% !important;
 }
 @media only all and (max-width: 575px) {
   main #wrapper-overview #overview #title-block #what-is {
@@ -1062,7 +1062,7 @@ main #wrapper-overview #overview #wrapper-advantage #icon-advantage #desc-advant
   border: 1px solid #008ed6;
   background-color: #008ed6;
 }
-.top-layer .form-container input.failed, .top-layer .form-container textarea.failed {
+.top-layer .form-container input.failed:invalid, .top-layer .form-container textarea.failed:invalid {
   border: 1px solid #ff0000 !important;
   box-shadow: inset 0 0 6px #F5192F;
 }
