@@ -26,7 +26,7 @@
     }
 
     #card {
-        @include pe {
+        @include cp {
             display: inline;
             column-count: 2;
             align-items: center;
@@ -38,6 +38,12 @@
             column-count: 1;
             align-items: center;
             justify-content: center;
+        }
+
+        @include bt {
+            .button-link {
+                font-size: $x-small !important;
+            }
         }
     }
 }

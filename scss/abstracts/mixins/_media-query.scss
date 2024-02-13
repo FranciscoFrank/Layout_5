@@ -35,6 +35,20 @@
     }
 }
 
+//Hook edits
+@mixin he {
+    @media only all and (max-width: $he) {
+        @content;
+    }
+}
+
+//Contacts edits
+@mixin coe {
+    @media only all and (max-width: $coe) {
+        @content;
+    }
+}
+
 //C edits
 @mixin ce {
     @media only all and (max-width: $ce) {

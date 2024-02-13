@@ -24,28 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
       burgerMenu.classList.remove('active');
     }
   });
-
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  $(document).ready(function() {
-    function calculateWidth() {
-      var photoWidth = $('#s-photo').width();
-      $('#s-details').css('width', 'calc(100% - ' + photoWidth + 'px)');
-    }
-
-    calculateWidth();
-
-    $(window).resize(function() {
-      calculateWidth();
-    });
-  });
 });
 
 $(document).ready(function(){
   $('.slider').slick({
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     infinite: true,
     autoplay: false,
     arrows: false,
@@ -53,21 +37,19 @@ $(document).ready(function(){
     pauseOnHover: true,
     responsive: [
       {
-          breakpoint: 850,
+          breakpoint: 900,
           settings: {
               slidesToShow: 1,
+              slidesToScroll: 1,
           },
       },
   ]});
 });
 
-/*  Tracking button clicks  */
 document.addEventListener('DOMContentLoaded', function () {
-  /*  ID  */
   var submitButton = document.getElementById('button-sub-sub');
   var inputElements = document.querySelectorAll('.form-input');
 
-  /*  Adding a class to a button  */
   submitButton.addEventListener('click', function() {
       inputElements.forEach(function(inputElement) {
           inputElement.classList.add('failed');

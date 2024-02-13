@@ -47,15 +47,15 @@
             }
 
             .button-wrapper a:first-child {
-                margin-right: 10px !important;
+                margin-right: 10px;
             }
 
             .button-wrapper a:last-child {
-                margin-left: 10px !important;
+                margin-left: 10px;
             }
         }
 
-        @include pe {
+        @include cp {
             #content-hook {
                 flex-direction: column;
                 
@@ -71,6 +71,33 @@
 
                 .col-4 {
                     width: 50%;
+                    display: flex;
+
+                    .button-wrapper {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        @include he {
+            #content-hook {
+                .col-8 {
+                    .start {  
+                        flex-direction: column;
+
+                        #t-text {
+                            font-size: $s-large !important;
+                        }
+        
+                        #t-hook {
+                            font-size: $s-large !important;
+                        }
+                    }
+                } 
+                
+                .col-4 {
+                    width: 100%;
                     display: flex;
 
                     .button-wrapper {
@@ -104,6 +131,16 @@
                         margin: 0 auto;
                     }
                 }
+            }
+        }
+
+        @include bt {
+            .button-wrapper a:first-child {
+                margin-right: 5px !important;
+            }
+
+            .button-wrapper a:last-child {
+                margin-left: 5px !important;
             }
         }
     }
