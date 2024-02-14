@@ -97,11 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       if (isValid) {
-          // Відкладаємо відправлення форми на 2 секунди
-          setTimeout(function() {
-              successMessage.style.display = 'block';
-              form.submit();
-          }, 2000); // 2000 мілісекунд = 2 секунди
+        successMessage.style.display = 'block';
+        setTimeout(function() {
+          form.submit();
+        }, 2000); // 2000 мілісекунд = 2 секунди
       }
   });
 });
