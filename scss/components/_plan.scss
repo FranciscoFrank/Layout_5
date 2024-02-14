@@ -119,10 +119,10 @@
     }
 }
 
-@include pe {
+@include cp {
     #plan:first-child {
         margin: 0 auto !important;
-        margin-bottom: 55px !important;
+        margin-bottom: 25px !important;
     }
 
     #plan:last-child {
@@ -131,7 +131,7 @@
 
     #plan {
         margin: 0 auto !important;
-        margin-bottom: 55px !important;
+        margin-bottom: 25px !important;
     }
 }
 
@@ -146,7 +146,7 @@
 
     #plan {
         margin: 0 auto !important;
-        margin-bottom: 55px !important;
+        margin-bottom: 25px !important;
 
         #desc-plan {
             #text-plan {

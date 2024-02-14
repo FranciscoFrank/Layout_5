@@ -23,6 +23,9 @@
             }
 
             #s-details {
+                display: flex;
+                flex-direction: column;
+
                 #what-is {
                     margin: 0;
                 }

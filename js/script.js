@@ -26,6 +26,37 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var element = document.getElementById('header-height');
+  var header = document.getElementById('header');
+
+  function updateHeight() {
+      var elementHeight = header.offsetHeight;
+      element.style.height = elementHeight + 'px';
+  }
+
+  window.onload = function() {
+    updateHeight();
+  }
+
+  window.onresize = function() {
+    updateHeight();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 0) {
+        header.classList.add('black-header');
+    } else {
+        header.classList.remove('black-header');
+    }
+  });
+});
+
 $(document).ready(function(){
   $('.slider').slick({
     slidesToShow: 2,
