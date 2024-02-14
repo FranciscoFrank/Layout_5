@@ -107,7 +107,7 @@
             }
         }
 
-        @include ee {
+        @include te2 {
             #content-hook {
                 .col-8 {
                     .start {  
@@ -121,7 +121,7 @@
                             font-size: $large !important;
                         }
                     }
-                } 
+                }
                 
                 .col-4 {
                     width: 100%;

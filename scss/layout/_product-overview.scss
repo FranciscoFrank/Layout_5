@@ -18,7 +18,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-bottom: 25px;
+                    margin-bottom: 50px;
     
                     #what-is {
                         margin-bottom: 0;
@@ -71,42 +71,9 @@ main {
                 width: 100% !important;
                 height: 100% !important;
                 margin: 0 !important;
-    
-                #icon-advantage {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    width: 280px;
-                    margin-bottom: 40px !important;
-    
-                    #title-advantage {
-                        margin-top: 30px;
-                        font-size: $large;
-                        color: $title-color;
-                        margin-bottom: 5px;
-                    }
-    
-                    #desc-advantage {
-                        width: 90%;
-                        text-align: center;
-                        font-size: $main;
-                    }
-                }
-    
+
                 @include ee {
                     flex-direction: column;
-                }
-    
-                @include bt {
-                    #icon-advantage {
-                        #title-advantage {
-                            font-size: $main !important; 
-                        }
-    
-                        #desc-advantage {
-                            font-size: $average !important; 
-                        }
-                    }
                 }
             }
         }

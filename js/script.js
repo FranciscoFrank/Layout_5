@@ -78,12 +78,32 @@ $(document).ready(function(){
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('MyForm');
   var submitButton = document.getElementById('button-sub-sub');
   var inputElements = document.querySelectorAll('.form-input');
+  var successMessage = document.getElementById('mess');
 
-  submitButton.addEventListener('click', function() {
+  submitButton.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      var isValid = true;
       inputElements.forEach(function(inputElement) {
-          inputElement.classList.add('failed');
+          if (inputElement.value === '') {
+              isValid = false;
+              inputElement.classList.add('failed');
+          } else {
+              inputElement.classList.remove('failed');
+          }
       });
+
+      if (isValid) {
+          // Відкладаємо відправлення форми на 2 секунди
+          setTimeout(function() {
+              successMessage.style.display = 'block';
+              form.submit();
+          }, 2000); // 2000 мілісекунд = 2 секунди
+      }
   });
 });
+
+

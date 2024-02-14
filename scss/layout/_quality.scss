@@ -141,16 +141,34 @@
                             .slick-slide {                                
                                 .slide-content {
                                     .text {
-                                        font-size: $main !important;
+                                        font-size: $average !important;
                                     }
+
+                                    .author {
+                                        display: flex;
+                                        align-items: center;
+                            
+                                        img {
+                                            height: 40px;
+                                            width: auto;
+                                            border-radius: 50%;
+                                            margin-right: 15px !important;
+                                        }
+                            
+                                        .texts p:first-child {
+                                            font-size: $average;
+                                        }
+                                        
+                                        .texts p:last-child {
+                                            font-size: $medium;
+                                        }                                    
+                                    } 
                                 }
                             }
                         }
                     }
                 }
             }
-
-
 
             @include bt {
                 #what-is {
@@ -163,6 +181,42 @@
 
                 #main-text {
                     font-size: $average;
+                }
+
+                #review {
+                    #slider {
+                        .slick-list.draggable {
+                            margin-bottom: 90px !important;
+
+                            .slick-slide {                                
+                                .slide-content {
+                                    .text {
+                                        font-size: $medium !important;
+                                    }
+
+                                    .author {
+                                        display: flex;
+                                        align-items: center;
+                            
+                                        img {
+                                            height: 40px;
+                                            width: auto;
+                                            border-radius: 50%;
+                                            margin-right: 15px !important;
+                                        }
+                            
+                                        .texts p:first-child {
+                                            font-size: $medium;
+                                        }
+                                        
+                                        .texts p:last-child {
+                                            font-size: $x-small;
+                                        }                                    
+                                    } 
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

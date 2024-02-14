@@ -1,8 +1,8 @@
 @import "../abstracts/abstracts-dir";
 
 #pricing {
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
 
     #title-pricing {
         display: flex;
@@ -31,9 +31,13 @@
             column-count: 2;
             align-items: center;
             justify-content: center;
+
+            #plan {
+                width: 322px;
+            }
         }
 
-        @include ee {
+        @include coe {
             display: inline;
             column-count: 1;
             align-items: center;
@@ -43,6 +47,10 @@
         @include bt {
             .button-link {
                 font-size: $x-small !important;
+            }
+
+            #plan {
+                width: 282px;
             }
         }
     }

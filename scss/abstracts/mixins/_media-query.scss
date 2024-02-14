@@ -63,6 +63,13 @@
     }
 }
 
+//Text edits v2.0
+@mixin te2 {
+    @media only all and (max-width: $te2) {
+        @content;
+    }
+}
+
 //Buttons edits & Text edits
 @mixin bt {
     @media only all and (max-width: $bt) {

@@ -19,7 +19,7 @@ footer {
         }
     
         .social-image {
-            padding-bottom: 10px;
+            padding-bottom: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -30,7 +30,7 @@ footer {
             }
 
             img {
-                filter: grayscale(100%);
+                filter: grayscale(100%) brightness(50%);
             }
 
             img:hover {
@@ -46,6 +46,11 @@ footer {
         .copyright {
             font-size: $medium;
             font-weight: 600;
+            filter: grayscale(100%) brightness(50%);
+        }
+
+        .copyright:hover {
+            color: $accent-color;
         }
     }
 }
