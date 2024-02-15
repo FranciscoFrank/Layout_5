@@ -79,54 +79,81 @@ document.addEventListener('DOMContentLoaded', function() {
 //
 document.addEventListener('DOMContentLoaded', function() {
   
-  //Receive item ID
+  // Отримання посилань на елементи DOM
   var header = document.getElementById('header');
   var nameNav = document.getElementById('name-nav');
+  var links = document.querySelectorAll('a[href^="#"]');
+  
+  // Оголошення змінної для поточного значення положення прокрутки
+  var scrollPosition = window.scrollY;
 
-  //
+  // Функція для встановлення відступів при завантаженні
   function setPaddingOnLoad() {
-
-    //
-    var scrollPosition = window.scrollY;
-
-    //
+    // Перевірка положення прокрутки
     if (scrollPosition > 20) {
       nameNav.style.paddingTop = '0';
       nameNav.style.paddingBottom = '0';
       header.classList.add('black-header');
-    }
-
-    //
-    else {
+    } else {
       header.classList.remove('black-header');
-      nameNav.style.paddingTop = '20px';
+      nameNav.style.paddingTop = '20px'; // Тут змінив висоту paddingTop на 20px
       nameNav.style.paddingBottom = '20px';
     }
   }
 
-  //Calling the function
+  // Виклик функції при завантаженні
   setPaddingOnLoad();
 
-
+  // Обробник події прокрутки
   document.addEventListener('scroll', function() {
+    // Оновлення значення положення прокрутки
+    scrollPosition = window.scrollY;
 
-    var scrollPosition = window.scrollY;
-
-
+    // Перевірка положення прокрутки та встановлення відповідних стилів
     if (scrollPosition > 20) {
       nameNav.style.transition = 'padding 0.5s';
       nameNav.style.paddingTop = '0';
       nameNav.style.paddingBottom = '0';
       header.classList.add('black-header');
-    }
-    
-    else {
+
+      // Додавання обробника подій на клік для кожного посилання
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href').slice(1);
+          var targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            var headerHeight = document.querySelector('header').offsetHeight;
+            window.scrollTo({
+              top: targetElement.offsetTop - headerHeight,
+              behavior: 'smooth' 
+            });
+          }
+        });
+      });
+    } else {
       header.classList.remove('black-header');
       nameNav.style.transition = 'padding 0.5s';
-      nameNav.style.paddingTop = '20px';
+      nameNav.style.paddingTop = '20px'; // Тут змінив висоту paddingTop на 20px
+
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href').slice(1);
+          var targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            var headerHeight = document.querySelector('header').offsetHeight;
+            window.scrollTo({
+              top: targetElement.offsetTop - headerHeight + 20,
+              behavior: 'smooth' 
+            });
+          }
+        });
+      });
     }
   });
 });
+
 
 //Initialising the feedback slider.
 $(document).ready(function(){
@@ -186,32 +213,3 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  
-
-  var links = document.querySelectorAll('a[href^="#"]');
-
-  
-  links.forEach(function(link) {
-      link.addEventListener('click', function(e) {
-          e.preventDefault();
-
-          var targetId = this.getAttribute('href').slice(1);
-          var targetElement = document.getElementById(targetId);
-
-          if (targetElement) {
-              var headerHeight = document.querySelector('header').offsetHeight;
-
-              window.scrollTo({
-                  top: targetElement.offsetTop - headerHeight,
-                  behavior: 'smooth' 
-              });
-          }
-      });
-  });
-});
-
-
-
