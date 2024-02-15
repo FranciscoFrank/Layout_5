@@ -47,8 +47,8 @@
                     }
 
                     a:hover {
-                        background-color: $hover-link;
-                        border-bottom: 3px solid $accent-color;
+                        font-weight: bold;
+                        text-decoration: underline 3px solid $accent-color;
                     }
                 }
             }

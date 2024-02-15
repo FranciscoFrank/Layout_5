@@ -128,8 +128,9 @@ a, label, p {
   color: #1a1a1a !important;
 }
 #first-block .wrapper-content #burger-menu .navbar-nav li a:hover {
-  background-color: #D1D2D2;
-  border-bottom: 3px solid #008ed6;
+  font-weight: bold;
+  -webkit-text-decoration: underline 3px solid #008ed6;
+  text-decoration: underline 3px solid #008ed6;
 }
 #first-block .wrapper-content .active {
   -webkit-transform: translateX(0) !important;
