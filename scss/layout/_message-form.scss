@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
 
+    //Styles fot the message container
     #mess-cont {
         padding: 25px;
         width: 100%;
@@ -33,6 +34,7 @@
         }
     }
 
+    //Adaptive for 620 pixels
     @include ce {
         #mess-cont {
             p {
@@ -46,6 +48,7 @@
         }
     }
 
+    //Adaptive for 420 pixels
     @include te2 {
         #mess-cont {
             p {

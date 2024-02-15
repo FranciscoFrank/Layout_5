@@ -76,47 +76,43 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', updateDetailsWidth);
 });
 
-//
+//Large script for the header (click on the link, normal display and responsive)
 document.addEventListener('DOMContentLoaded', function() {
   
-  // Отримання посилань на елементи DOM
+  //Receive item ID
   var header = document.getElementById('header');
   var nameNav = document.getElementById('name-nav');
   var links = document.querySelectorAll('a[href^="#"]');
-  
-  // Оголошення змінної для поточного значення положення прокрутки
   var scrollPosition = window.scrollY;
 
-  // Функція для встановлення відступів при завантаженні
+  //Function when loading a page
   function setPaddingOnLoad() {
-    // Перевірка положення прокрутки
     if (scrollPosition > 20) {
       nameNav.style.paddingTop = '0';
       nameNav.style.paddingBottom = '0';
       header.classList.add('black-header');
     } else {
       header.classList.remove('black-header');
-      nameNav.style.paddingTop = '20px'; // Тут змінив висоту paddingTop на 20px
+      nameNav.style.paddingTop = '20px';
       nameNav.style.paddingBottom = '20px';
     }
   }
 
-  // Виклик функції при завантаженні
+  //Calling a function
   setPaddingOnLoad();
 
-  // Обробник події прокрутки
+  //Functiont for tracking if a swipe has been made
   document.addEventListener('scroll', function() {
-    // Оновлення значення положення прокрутки
     scrollPosition = window.scrollY;
 
-    // Перевірка положення прокрутки та встановлення відповідних стилів
+    //If the scroll was
     if (scrollPosition > 20) {
       nameNav.style.transition = 'padding 0.5s';
       nameNav.style.paddingTop = '0';
       nameNav.style.paddingBottom = '0';
       header.classList.add('black-header');
 
-      // Додавання обробника подій на клік для кожного посилання
+      //Function for normal link navigation
       links.forEach(function(link) {
         link.addEventListener('click', function(e) {
           e.preventDefault();
@@ -131,11 +127,15 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       });
-    } else {
+    } 
+    
+    //If there was no scrolling through the site, or the beginning of the page
+    else {
       header.classList.remove('black-header');
       nameNav.style.transition = 'padding 0.5s';
-      nameNav.style.paddingTop = '20px'; // Тут змінив висоту paddingTop на 20px
+      nameNav.style.paddingTop = '20px';
 
+      //Function for normal link navigation in this case
       links.forEach(function(link) {
         link.addEventListener('click', function(e) {
           e.preventDefault();
@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
 
 //Initialising the feedback slider.
 $(document).ready(function(){
@@ -180,21 +179,23 @@ $(document).ready(function(){
   ]});
 });
 
-
+//Script for the form
 document.addEventListener('DOMContentLoaded', function () {
   
-
+  //Receive item ID
   var form = document.getElementById('MyForm');
   var submitButton = document.getElementById('button-sub-sub');
   var inputElements = document.querySelectorAll('.form-input');
   var successMessage = document.getElementById('mess');
 
-
+  //Function to track button clicks
   submitButton.addEventListener('click', function(event) {
       event.preventDefault();
 
-      
+      //Verify that the form is completed correctly
       var isValid = true;
+
+      //Checking the validity of the form
       inputElements.forEach(function(inputElement) {
           if (inputElement.value === '') {
               isValid = false;
@@ -204,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       });
 
-      
+      //If the form is completed correctly, we display a notification about it
       if (isValid) {
         successMessage.style.display = 'block';
         setTimeout(function() {

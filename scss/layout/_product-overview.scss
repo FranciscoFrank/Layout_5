@@ -12,6 +12,7 @@ main {
                 height: 100% !important;
                 margin: 0 !important;
     
+                //Styles for the block title
                 #title-product {
                     margin-top: 65px;
                     display: flex;
@@ -43,6 +44,7 @@ main {
                     }
                 }
     
+                //Adaptive 575 pixels
                 @include ee {
                     #what-is {
                         font-size: $x-small;
@@ -54,6 +56,7 @@ main {
                     }
                 }
     
+                //Adaptive 390 pixels
                 @include bt {
                     #title-text {
                         margin-top: 5px !important;
@@ -62,6 +65,7 @@ main {
                 }
             }
     
+            //Styles for a container with and overview
             #wrapper-advantage {
                 display: flex;
                 flex-direction: row;
@@ -71,12 +75,14 @@ main {
                 height: 100% !important;
                 margin: 0 !important;
 
+                //Adaptive for 575 pixels
                 @include ee {
                     flex-direction: column;
                 }
             }
         }
 
+        //Adaptive for 575 pixels
         @include ee {
             margin-bottom: 20px;
         }

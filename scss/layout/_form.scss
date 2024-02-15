@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
 
+    //Styles for a container with a form
     .form-container {
         position: absolute;
         display: flex;
@@ -22,6 +23,7 @@
         max-width: 790px;
         width: 100%;
     
+        //Styles for a container with the text input fields
         .input-text {
             display: flex;
             flex-direction: row;
@@ -35,6 +37,8 @@
                     width: 100%;
                 }
 
+
+                //Styles for text inputs fields
                 input {
                     background-color: transparent;
                     height: 50px;
@@ -59,7 +63,7 @@
                 }
             }          
 
-        
+            //Styles for the message field
             .textarea {
                 display: flex;
                 flex-direction: column;
@@ -88,6 +92,7 @@
             }
         }
     
+        //Styles for the submit button
         #button-submit {
             display: flex;
             justify-content: flex-end;
@@ -112,34 +117,37 @@
             }
         }
 
+        //Styles if the fiels are incorrect
         input.failed:invalid, textarea.failed:invalid {
             border: 1px solid $failed !important; 
             box-shadow: inset 0 0 6px #F5192F;
         }
     }
+}
 
-    @include fe {
-        .form-container {
-            position: static;
-            max-width: 100% !important;
+//Adaprive for 850 pixels
+@include fe {
+    .form-container {
+        position: static;
+        max-width: 100% !important;
+        width: 100%;
+        transform: translate(0, 0);
+
+        .input-text {
             width: 100%;
-            transform: translate(0, 0);
 
-            .input-text {
-                width: 100%;
+            .input {
+                margin-bottom: 20px !important;
+            }
 
-                .input {
-                    margin-bottom: 20px !important;
-                }
-
-                .textarea {
-                    max-width: 100%;
-                }
+            .textarea {
+                max-width: 100%;
             }
         }
     }
 }
 
+//Adaptive for 620 pixels
 @include ce {
     .form-container {
         padding-left: 0 !important;

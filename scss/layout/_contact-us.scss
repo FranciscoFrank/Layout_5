@@ -2,6 +2,8 @@
 
  
 #contact {
+
+    //Styles for the container
     #our {
         width: 85%;
         display: flex;
@@ -15,9 +17,24 @@
         }
     }
 
+    //Styles for contact wrappers
     #contact-content {
         padding: 0;
 
+        img {
+            padding-bottom: 15px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+
+        //Styles for text
         #name {
             .title-block {
                 display: flex;
@@ -38,27 +55,16 @@
                 }
             }
         }
-
-        img {
-            padding-bottom: 15px;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        a {
-            color: $main-color;
-            text-decoration: none;
-        }
     }
 
+    //Adaptive 850 pixels
     @include fe {
         #our {
             padding-bottom: 85px;
         }
     }
 
+    //Adaptive for 695 pixels
     @include coe {
         #our {
             align-items: center;

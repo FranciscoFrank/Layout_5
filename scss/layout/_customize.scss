@@ -8,10 +8,12 @@
         flex-direction: column;
         align-items: center;
 
+        //Styles the second block with details
         #s {
             width: 100% !important;
             display: flex;
 
+            //Styles for photo
             #s-photo {
                 height: 100%;
                 width: fit-content;
@@ -26,6 +28,7 @@
                 }
             }
 
+            //Styles for text
             #s-details {
                 display: flex;
                 flex-direction: column;
@@ -40,6 +43,18 @@
                 }
             }
 
+            //Adaptive for 1205 pixels
+            @include cp {
+                #s {
+                    #s-photo {
+                        img {
+                            width: 550px !important;
+                        }
+                    }
+                }
+            }
+
+            //Adaptive for 1100 pixels
             @include pe {
                 margin: 35px;
                 margin-left: 0px !important;
@@ -52,6 +67,7 @@
                 }
             }
 
+            //Adaptive for 992 pixels
             @include te {
                 #s-photo {
                     display: none;
@@ -67,6 +83,7 @@
                 }
             }
     
+            //Adaptive for 575 pixels
             @include ee {
                 #s-details {
                     align-items: center;
@@ -83,6 +100,7 @@
                 }
             }
     
+            //Adaptive for 390 pixels
             @include bt {
                 #s-details {
                     #what-is {
@@ -95,16 +113,6 @@
     
                     #main-text {
                         font-size: $average;
-                    }
-                }
-            }
-        }
-
-        @include cp {
-            #s {
-                #s-photo {
-                    img {
-                        width: 550px !important;
                     }
                 }
             }

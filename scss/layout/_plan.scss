@@ -4,6 +4,7 @@
     padding-top: 31px !important;
     padding-bottom: 30px !important;
 
+    //Styles for the block title
     #title-pricing {
         display: flex;
         flex-direction: column;
@@ -25,7 +26,9 @@
         }
     }
 
+    //Adaptive for a container with plans
     #card {
+        //Adaptive for 1205 pixels
         @include cp {
             display: inline;
             column-count: 2;
@@ -37,6 +40,7 @@
             }
         }
 
+        //Adaptive for 695 pixels
         @include coe {
             display: inline;
             column-count: 1;
@@ -44,6 +48,7 @@
             justify-content: center;
         }
 
+        //Adaptive for 390 pixels
         @include bt {
             .button-link {
                 font-size: $x-small !important;

@@ -1,7 +1,12 @@
+//Main import document
+//Import abstracts
 @import "./abstracts/abstracts-dir";
 
+//Import base
 @import "./base/base-dir";
 
+//Import layout
 @import "./layout/layout-dir";
 
+//Import components
 @import "./components/components-dir";

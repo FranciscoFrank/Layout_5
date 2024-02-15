@@ -8,6 +8,7 @@
         height: fit-content;
         background-color: rgba($third-bg, 0.9);
 
+        //Styles for burger menu
         #burger-menu {
             position: fixed;
             top: 0;
@@ -19,6 +20,7 @@
             transition: transform 0.3s ease;
             z-index: 12;
 
+            //Styles for the close icon
             .close-icon {
                 background-color: $second-bg;
                 padding: 10px;
@@ -35,6 +37,7 @@
                 }
             }
 
+            //Styles for navigation
             .navbar-nav {
                 padding: 15px;
 
@@ -54,11 +57,25 @@
             }
         }
         
+        //Styles for an active burger menu
         .active {
             transform: translateX(0) !important;
             position: fixed;
         }
 
+        //Adaptive
+        @include ee {
+            #burger-menu {
+                width: 50%;                                 
+            }
+        }
+
+        //The cap
+        #top {
+            margin-bottom: 55px;
+        }
+
+        //Styles for a scrolled header
         .black-header {
             background-color: $third-bg;
 
@@ -69,16 +86,7 @@
             }
         }
 
-        #top {
-            margin-bottom: 55px;
-        }
-
-        @include ee {
-            #burger-menu {
-                width: 50%;                                 
-            }
-        }
-
+        //Styles for the header
         header {
             position: fixed;
             width: 100%;
@@ -91,6 +99,7 @@
                     margin: 0 !important;
                 }
 
+                //Styles for the entire header block
                 #name-nav {
                     width: 100% !important;
                     display: flex;
@@ -136,7 +145,8 @@
                             }
                         }
                     }
-                        
+                    
+                    //Styles for navigation in the main header
                     #navbar {
                         display: flex;
                         justify-content: flex-end;
@@ -168,7 +178,7 @@
                                 justify-content: flex-end;
                                 padding: 0;
     
-                                #burger-menu, #main-menu {
+                                #main-menu {
                                     flex-grow: unset;
         
                                     li {
@@ -215,31 +225,12 @@
                                         background-color: $accent-color;
                                     }
                                 }
-    
-                                @include te {
-                                    #burger-menu {
-                                        a:hover::before {
-                                            content: "";
-                                            width: 0;
-                                            height: 0;
-                                        }
-                                        
-                                        a:hover::after {
-                                            content: "";
-                                            width: 0;
-                                            height: 0;
-                                        }   
-    
-                                        a:hover {
-                                            color: darken($main-color, 25%);
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
                 }
 
+                //Adaptive for 992 pixels
                 @include te {
                     #name-nav {
                         margin: 0 !important;

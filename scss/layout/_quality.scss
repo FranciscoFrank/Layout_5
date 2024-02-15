@@ -1,5 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
+//Styles for the quality block
 #second-block {
     background-image: url(../images/background-second.jpeg);
     height: fit-content;
@@ -11,6 +12,7 @@
             padding-top: 50px !important;
             padding-bottom: 33px !important;
 
+            //Styles for the block title
             #title {
                 #title-block {
                     display: flex;
@@ -36,6 +38,7 @@
                 }
             }
 
+            //Styles for the testimonial slider
             #review {
                 width: 100%;
             
@@ -84,20 +87,22 @@
                                 } 
                             }
 
+                            //Styles for cloning slides
                             .slick-cloned {
                                 @extend .slick-slide
                             }                               
                         }
-                    }
-
-                    ul {
+                    } 
+                    
+                    //Styles for dots
+                    ul { 
                         margin-left: 5px;
                         z-index: 9;
                         display: flex;
                         margin-bottom: 15px;
                         justify-content: center;
                         align-items: center;
-                    
+                        
                         li {
                             button::before {
                                 color: transparent;
@@ -122,6 +127,7 @@
                 }
             }
 
+            //Adaptive for 1100 pixels
             @include pe {
                 #review {
                     #slider {
@@ -132,6 +138,7 @@
                 }
             }
 
+            //Adaptive for 575 pixels
             @include ee {
                 #review {
                     #slider {
@@ -170,7 +177,9 @@
                 }
             }
 
+            //Adaptive for 390 pixels
             @include bt {
+                //Adaptive for block title
                 #what-is {
                     font-size: $x-small;
                 }
@@ -183,6 +192,7 @@
                     font-size: $average;
                 }
 
+                //Adaptive for slider
                 #review {
                     #slider {
                         .slick-list.draggable {
