@@ -45,14 +45,51 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.addEventListener('scroll', function() {
-    var header = document.getElementById('header');
-    var scrollPosition = window.scrollY;
+  const photoElement = document.getElementById('s-photo');
+  const detailsElement = document.getElementById('s-details');
 
-    if (scrollPosition > 0) {
-        header.classList.add('black-header');
+  function updateDetailsWidth() {
+    const photoWidth = photoElement.offsetWidth;
+    const parentWidth = photoElement.parentElement.offsetWidth;
+    detailsElement.style.width = `${100 - (photoWidth / parentWidth) * 100}%`;
+  }
+
+  updateDetailsWidth();
+
+  window.addEventListener('resize', updateDetailsWidth);
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.getElementById('header');
+  var nameNav = document.getElementById('name-nav');
+
+  function setPaddingOnLoad() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 20) {
+      nameNav.style.paddingTop = '0';
+      nameNav.style.paddingBottom = '0';
+      header.classList.add('black-header');
     } else {
-        header.classList.remove('black-header');
+      header.classList.remove('black-header');
+      nameNav.style.paddingTop = '20px';
+      nameNav.style.paddingBottom = '20px';
+    }
+  }
+
+  setPaddingOnLoad();
+
+  document.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 20) {
+      nameNav.style.transition = 'padding 0.5s';
+      nameNav.style.paddingTop = '0';
+      nameNav.style.paddingBottom = '0';
+      header.classList.add('black-header');
+    } else {
+      header.classList.remove('black-header');
+      nameNav.style.transition = 'padding 0.5s';
+      nameNav.style.paddingTop = '20px';
     }
   });
 });
@@ -100,9 +137,32 @@ document.addEventListener('DOMContentLoaded', function () {
         successMessage.style.display = 'block';
         setTimeout(function() {
           form.submit();
-        }, 2000); // 2000 мілісекунд = 2 секунди
+        }, 1000);
       }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          var targetId = this.getAttribute('href').slice(1);
+          var targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+              var headerHeight = document.querySelector('header').offsetHeight;
+
+              window.scrollTo({
+                  top: targetElement.offsetTop - headerHeight,
+                  behavior: 'smooth' 
+              });
+          }
+      });
+  });
+});
+
 
 

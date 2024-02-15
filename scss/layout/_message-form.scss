@@ -20,6 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         p {
             color: $second-accent-color;
@@ -33,9 +34,27 @@
     }
 
     @include ce {
-        #mess-count {
+        #mess-cont {
             p {
+                font-size: $large;
+            }
 
+            img {
+                width: 302px;
+                height: 297px;
+            }
+        }
+    }
+
+    @include te2 {
+        #mess-cont {
+            p {
+                font-size: $main;
+            }
+
+            img {
+                width: 242px;
+                height: 237px;
             }
         }
     }
