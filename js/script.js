@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //Script to set the width of a block of text
 document.addEventListener('DOMContentLoaded', function() {
   
-    //Receive item ID
+  //Receive item ID
   const photoElement = document.getElementById('s-photo');
   const detailsElement = document.getElementById('s-details');
 
@@ -76,24 +76,27 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', updateDetailsWidth);
 });
 
-
+//
 document.addEventListener('DOMContentLoaded', function() {
   
+  //Receive item ID
   var header = document.getElementById('header');
   var nameNav = document.getElementById('name-nav');
 
-  
+  //
   function setPaddingOnLoad() {
 
+    //
     var scrollPosition = window.scrollY;
 
-
+    //
     if (scrollPosition > 20) {
       nameNav.style.paddingTop = '0';
       nameNav.style.paddingBottom = '0';
       header.classList.add('black-header');
     }
-    
+
+    //
     else {
       header.classList.remove('black-header');
       nameNav.style.paddingTop = '20px';
@@ -101,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-
+  //Calling the function
   setPaddingOnLoad();
 
 

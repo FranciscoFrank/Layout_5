@@ -1,5 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
+//Styles for the hook block
 .wrapper {
     width: 100%;
     background-color: $third-bg;
@@ -20,6 +21,7 @@
             flex-direction: row;
             justify-content: space-between;
 
+            //Styles for text
             .start {
                 text-align: center;
                 display: flex;
@@ -42,6 +44,7 @@
                 }
             }
 
+            //Styles for buttons
             .button-wrapper {
                 width: fit-content;
             }
@@ -55,6 +58,7 @@
             }
         }
 
+        //Adaptive for 1205 pixels
         @include cp {
             #content-hook {
                 flex-direction: column;
@@ -80,6 +84,7 @@
             }
         }
 
+        //Adaptive for 780 pixels
         @include he {
             #content-hook {
                 .col-8 {
@@ -107,6 +112,7 @@
             }
         }
 
+        //Adaptive for 420 pixels
         @include te2 {
             #content-hook {
                 .col-8 {
@@ -134,6 +140,7 @@
             }
         }
 
+        //Adaptive for 390 pixels
         @include bt {
             .button-wrapper a:first-child {
                 margin-right: 5px !important;
