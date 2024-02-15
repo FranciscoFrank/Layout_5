@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FranciscoFranko/Layout_5#readme",
   "devDependencies": {
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^5.1.0"

@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
+const del = require('del').default;
 
 const paths = {
   scss: 'scss/**/*.scss',
@@ -15,6 +16,13 @@ gulp.task('styles', function() {
       console.error('Error in autoprefixer', err);
     })
     .pipe(gulp.dest(paths.dest));
+});
+
+gulp.task('clean-autoprefixer', function() {
+  return del([
+    'css/**/*.css',
+    '!css/**/*.min.css'
+  ]);
 });
 
 gulp.task('watch', function() {

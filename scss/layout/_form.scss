@@ -15,8 +15,7 @@
         padding-top: 47px;
         padding-bottom: 47px;
         padding-left: 85px;
-        padding-right: 85px;
-        position: absolute; 
+        padding-right: 85px; 
         top: 50%;
         left: 50%;
         transform: translate(-50%, -35%);
@@ -128,10 +127,10 @@
 //Adaprive for 850 pixels
 @include fe {
     .form-container {
-        position: static;
+        position: static !important;
         max-width: 100% !important;
-        width: 100%;
-        transform: translate(0, 0);
+        width: 100% !important;
+        transform: translate(0, 0) !important;
 
         .input-text {
             width: 100%;
