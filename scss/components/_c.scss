@@ -1,10 +1,12 @@
 @import "../abstracts/abstracts-dir";
 
+//Contact wrappers
 #contact {
     width: 100%;
     background-color: $second-bg;
     padding-top: 60px;  
 
+    //Wrapper for information in contacts
     #c {
         height: fit-content;
         width: 195px;

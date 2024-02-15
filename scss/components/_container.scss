@@ -1,11 +1,13 @@
 @import "../abstracts/abstracts-dir";
 
+//Edit styles for a container
 .container {
     max-width: 1170px !important; 
     padding: 0 !important; 
     margin: 0 auto;
     height: 100%;
 
+    //Adaptive
     @include cp {
         padding-left: 15px !important;
         padding-right: 15px !important;

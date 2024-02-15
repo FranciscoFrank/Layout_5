@@ -1,5 +1,6 @@
 @import "abstracts/variables/breack-point";
 
+//Media queries for the responsive
 //Container padding
 @mixin cp {
     @media only all and (max-width: $cp) {

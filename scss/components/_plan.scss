@@ -1,5 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
+//Styles for a container with information about plans
 #plan {
     width: 270px;
     display: flex;
@@ -88,6 +89,7 @@
     margin-right: 10px !important;
 }
 
+//If a user hovers over the plan
 #plan:hover {
     #plan-title {
         color: $accent-color;
@@ -120,6 +122,7 @@
     }
 }
 
+//Adaptive for 1205 pixels
 @include cp {
     #plan:first-child {
         margin: 0 auto !important;
@@ -135,7 +138,7 @@
         margin-bottom: 25px !important;
     }
 }
-
+//Adaptive for 575 pixels
 @include ee {
     #plan:first-child {
         margin: 0 auto;
@@ -159,6 +162,7 @@
     }
 }
 
+//Adaptive for 390 pixels
 @include bt {
     #what-is {
         font-size: $x-small;

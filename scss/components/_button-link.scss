@@ -1,5 +1,6 @@
 @import "../abstracts/abstracts-dir";
 
+//Styles for link buttons
 .button-link {
     display: inline-block;
     padding: 15px 25px;
@@ -11,13 +12,15 @@
     background-color: transparent;
     color: $second-accent-color;
 }
-  
+
+//Styles for active link buttons
 .button-link:hover {
     color: $second-accent-color;
     border: 1px solid $accent-color;
     background-color: $accent-color;
 }
 
+//Adaptive
 @include bt {
     .button-link {
         padding-top: 10px !important;

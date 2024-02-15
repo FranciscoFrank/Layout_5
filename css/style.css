@@ -122,8 +122,14 @@ a, label, p {
   padding: 15px;
 }
 #first-block .wrapper-content #burger-menu .navbar-nav li a {
+  padding-left: 10px;
+  width: 100%;
   font-size: 20px;
   color: #1a1a1a !important;
+}
+#first-block .wrapper-content #burger-menu .navbar-nav li a:hover {
+  background-color: #D1D2D2;
+  border-bottom: 3px solid #008ed6;
 }
 #first-block .wrapper-content .active {
   -webkit-transform: translateX(0) !important;
@@ -136,10 +142,8 @@ a, label, p {
 #first-block .wrapper-content .black-header #main #name-nav {
   margin: 0 !important;
 }
-#first-block .wrapper-content #header-height {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 45px;
+#first-block .wrapper-content #top {
+  margin-bottom: 55px;
 }
 @media only all and (max-width: 575px) {
   #first-block .wrapper-content #burger-menu {
@@ -386,7 +390,6 @@ main #wrapper-overview {
   padding: 0;
   width: 100%;
   border-bottom: 1px solid rgba(153, 153, 153, 0.2);
-  margin-bottom: 50px;
 }
 main #wrapper-overview #overview #title-block {
   width: 100% !important;
@@ -405,7 +408,7 @@ main #wrapper-overview #overview #title-block #title-product {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 main #wrapper-overview #overview #title-block #title-product #what-is {
   margin-bottom: 0;
@@ -496,6 +499,7 @@ main #wrapper-overview #overview #wrapper-advantage {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-top: 50px;
 }
 .container #f #f-details {
   display: -webkit-box;
@@ -640,13 +644,13 @@ main #wrapper-overview #overview #wrapper-advantage {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 40px;
-  margin-bottom: 65px;
+  margin-top: 43px;
+  margin-bottom: 70px;
   padding: 0 !important;
 }
 .wrapper-details .container #s #s-photo img {
   margin-left: -55px;
-  margin-bottom: -40px;
+  margin-bottom: -55px;
   width: 670px;
 }
 .wrapper-details .container #s #s-details {
@@ -733,8 +737,8 @@ main #wrapper-overview #overview #wrapper-advantage {
   background-color: rgba(21, 20, 26, 0.8);
 }
 #second-block .wrapper-content #review-wrapper {
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
+  padding-top: 50px !important;
+  padding-bottom: 33px !important;
 }
 #second-block .wrapper-content #review-wrapper #title #title-block {
   display: -webkit-box;
@@ -921,8 +925,8 @@ main #wrapper-overview #overview #wrapper-advantage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
+  padding-top: 57px !important;
+  padding-bottom: 57px !important;
 }
 .wrapper #hook .row > * {
   padding: 0 !important;
@@ -1059,7 +1063,7 @@ main #wrapper-overview #overview #wrapper-advantage {
 }
 
 #pricing {
-  padding-top: 30px !important;
+  padding-top: 31px !important;
   padding-bottom: 30px !important;
 }
 #pricing #title-pricing {
@@ -1080,7 +1084,7 @@ main #wrapper-overview #overview #wrapper-advantage {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 70px !important;
+  margin-bottom: 80px !important;
 }
 #pricing #title-pricing #underline:before {
   right: 0.25% !important;
@@ -1141,7 +1145,7 @@ main #wrapper-overview #overview #wrapper-advantage {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 60px;
-  padding-bottom: 400px;
+  padding-bottom: 370px;
 }
 #contact #our .col-4 {
   width: -webkit-fit-content;
@@ -1243,8 +1247,8 @@ main #wrapper-overview #overview #wrapper-advantage {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #15141a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 47px;
+  padding-bottom: 47px;
   padding-left: 85px;
   padding-right: 85px;
   position: absolute;
@@ -1405,7 +1409,7 @@ footer {
 }
 footer .col-12 {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1880,27 +1884,19 @@ main {
   font-size: 18px;
 }
 
-@media only all and (max-width: 390px) {
-  #icon-advantage #title-advantage {
-    font-size: 24px !important;
-  }
-  #icon-advantage #desc-advantage {
-    font-size: 16px !important;
-  }
-}
-@media only all and (max-width: 575px) {
-  #icon-advantage #title-advantage {
-    font-size: 24px !important;
-  }
-  #icon-advantage #desc-advantage {
-    font-size: 16px !important;
-  }
-}
 @media only all and (max-width: 575px) {
   #icon-advantage #title-advantage {
     font-size: 16px !important;
   }
   #icon-advantage #desc-advantage {
     font-size: 14px !important;
+  }
+}
+@media only all and (max-width: 390px) {
+  #icon-advantage #title-advantage {
+    font-size: 24px !important;
+  }
+  #icon-advantage #desc-advantage {
+    font-size: 16px !important;
   }
 }

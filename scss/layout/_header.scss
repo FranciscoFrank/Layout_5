@@ -40,8 +40,15 @@
 
                 li {
                     a {
+                        padding-left: 10px;
+                        width: 100%;
                         font-size: 20px;
                         color: $title-color !important;
+                    }
+
+                    a:hover {
+                        background-color: $hover-link;
+                        border-bottom: 3px solid $accent-color;
                     }
                 }
             }
@@ -62,10 +69,8 @@
             }
         }
 
-        #header-height {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-bottom: 45px;
+        #top {
+            margin-bottom: 55px;
         }
 
         @include ee {
