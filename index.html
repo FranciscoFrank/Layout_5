@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
     <title>LUCID</title>
 </head>
 <body>
@@ -392,14 +392,14 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="contacts">
+        <div class="section" id="contacts-map-form">
             <div class="container" id="contacts-content">
-                <div class="row" id="name">
+                <div class="row" id="name-block">
                     <div class="col-12">
                         <div class="title-block">
-                            <div id="what-is">STAY IN TOUCH</div>
-                            <div id="title-text">Contact us</div>
-                            <div id="underline"></div>
+                            <div class="what-is">STAY IN TOUCH</div>
+                            <div class="title-text">Contact us</div>
+                            <div class="underline"></div>
                         </div>
                     </div>
                 </div>
@@ -428,33 +428,32 @@
                 </div>
             </div>
             <form method="post" class="form-container" id="MyForm">
-                    <div class="input-text">
-                        <div class="inputs">
-                            <label>
-                                <input class="form-input" type="text" name="name" placeholder="NAME*" pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ' ]+" autocomplete="off" required>
-                            </label>
-                            <br>
+                <div class="wrapper-text-input">
+                    <div class="inputs">
+                        <label>
+                            <input class="form-input" type="text" name="name" placeholder="NAME*" pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ' ]+" autocomplete="off" required>
+                        </label>
+                        <br>
 
-                            <label>
-                                <input class="form-input" type="email" name="email" placeholder="EMAIL*" autocomplete="off" required>
-                            </label>
-                            <br>
+                        <label>
+                            <input class="form-input" type="email" name="email" placeholder="EMAIL*" autocomplete="off" required>
+                        </label>
+                        <br>
 
-                            <label>
-                                <input class="form-input" type="text" id="subject" name="subject" placeholder="SUBJECT*" autocomplete="off" required>
-                            </label>
-                            <br>
-                        </div>
-                        
-                        <div class="textarea">
-                            <label>
-                                <textarea class="form-input" name="message" placeholder="MESSAGE*" autocomplete="off" required></textarea>
-                            </label>
-                        </div>
+                        <label>
+                            <input class="form-input" type="text" id="subject" name="subject" placeholder="SUBJECT*" autocomplete="off" required>
+                        </label>
+                        <br>
+                    </div>    
+                    <div class="textarea">
+                        <label>
+                            <textarea class="form-input" name="message" placeholder="MESSAGE*" autocomplete="off" required></textarea>
+                        </label>
                     </div>
-                    <div id="button-submit">
-                        <input type="submit" class="button-sub-sub" value="SEND MESSAGE" form="MyForm">
-                    </div>
+                </div>
+                <div id="button-submit">
+                    <input type="submit" class="button-sub-sub" value="SEND MESSAGE" form="MyForm">
+                </div>
             </form>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.284243063817!2d-80.189501!3d25.763715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a41b62f9d6c1%3A0x5ba5b7c76f45b33b!2sYour%20Location!5e0!3m2!1sen!2suk!4v1644423066822!5m2!1sen!2suk" loading="lazy"></iframe>
@@ -500,7 +499,7 @@
     <div class="overlay" id="overlay"></div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>

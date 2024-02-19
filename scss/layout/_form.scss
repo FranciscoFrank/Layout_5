@@ -1,10 +1,10 @@
-.top-layer {
+#contacts-map-form {
     height: fit-content;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    //Styles for a container with a form
+    // Styles for a container with a form.
     .form-container {
         position: absolute;
         display: flex;
@@ -20,8 +20,8 @@
         max-width: 790px;
         width: 100%;
     
-        //Styles for a container with the text input fields
-        .input-text {
+        // Styles for a container with the text input fields.
+        .wrapper-text-input {
             display: flex;
             flex-direction: row;
     
@@ -32,35 +32,29 @@
         
                 label {
                     width: 100%;
-                }
 
+                    input {
+                        background-color: transparent;
+                        height: 50px;
+                        margin-bottom: 20px !important;
+                        padding: 10px;
+                        padding-right: 10px;
+                        font-size: $medium;
+                        border: 1px solid $main-color;
+                        color: $main-color;
+                        font-weight: bold;
+                        width: 100%;
+                        border-radius: 2px;
 
-                //Styles for text inputs fields
-                input {
-                    background-color: transparent;
-                    height: 50px;
-                    margin-bottom: 20px !important;
-                    padding: 10px;
-                    padding-right: 10px;
-                    font-size: $medium;
-                    border: 1px solid $main-color;
-                    color: $main-color;
-                    font-weight: bold;
-                    width: 100%;
-                    border-radius: 2px;
-                }
-
-                #subject {
-                    margin-bottom: 0 !important;
-                }
-
-                input:focus {
-                    outline: 0;
-                    border: 1px solid $second-accent-color
+                        &:focus {
+                            outline: 0;
+                            border: 1px solid $second-accent-color
+                        }
+                    }
                 }
             }          
 
-            //Styles for the message field
+            // Styles for the message field.
             .textarea {
                 display: flex;
                 flex-direction: column;
@@ -80,16 +74,16 @@
                     height: 190px;
                     width: 100%;
                     color: $main-color;
-                }
 
-                textarea:focus {
-                    outline: 0;
-                    border: 1px solid $second-accent-color;
+                    &:focus {
+                        outline: 0;
+                        border: 1px solid $second-accent-color;
+                    }
                 }
             }
         }
     
-        //Styles for the submit button
+        // Styles for the submit button.
         #button-submit {
             display: flex;
             justify-content: flex-end;
@@ -105,32 +99,30 @@
                 border: 1px solid $main-color;
                 background-color: transparent;
                 color: $main-color;
-            }
-              
-            input:hover {
-                color: $second-accent-color;
-                border: 1px solid $accent-color;
-                background-color: $accent-color;
+
+                &:hover {
+                    color: $second-accent-color;
+                    border: 1px solid $accent-color;
+                    background-color: $accent-color;
+                }
             }
         }
 
-        //Styles if the fiels are incorrect
+        // Styles if the fiels are incorrect.
         input.failed:invalid, textarea.failed:invalid {
             border: 1px solid $failed !important; 
             box-shadow: inset 0 0 6px #F5192F;
         }
     }
-}
 
-//Adaprive for 850 pixels
-@include fe {
-    .form-container {
+    // Adaprive for 850 pixels.
+    @include fe {
         position: static !important;
         max-width: 100% !important;
         width: 100% !important;
         transform: translate(0, 0) !important;
 
-        .input-text {
+        .wrapper-text-input {
             width: 100%;
 
             .input {
@@ -142,18 +134,16 @@
             }
         }
     }
-}
 
-//Adaptive for 620 pixels
-@include ce {
-    .form-container {
+    // Adaptive for 620 pixels.
+    @include ce {
         padding-left: 0 !important;
         padding-right: 0 !important;
-    
-        .input-text {
+        
+        .wrapper-text-input {
             align-items: center;
             flex-direction: column !important;
-    
+        
             .textarea {
                 margin-left: 0 !important;
                 margin-bottom: 25px !important;
@@ -168,3 +158,4 @@
         }
     }
 }
+

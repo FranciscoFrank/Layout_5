@@ -1,0 +1,45 @@
+//Styles for block with images on the background
+.bg {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+//Contact wrappers
+#our-contacts {
+    width: 100%;
+    background-color: $second-bg;
+    padding-top: 60px;  
+
+    //Wrapper for information in contacts
+    .wrapper-contacts {
+        height: fit-content;
+        width: 195px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+//Wrapper for icons in the overview block
+.circle {
+    border: 1px solid $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 30px;
+
+    //Adaptive
+    @include ee {
+        width: 85px;
+        height: 85px;
+        padding: 15px;
+    }
+}

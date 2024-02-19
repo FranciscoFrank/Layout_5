@@ -1,19 +1,6 @@
-#contact {
-    // Styles for the container.
-    #our-contacts {
-        width: 85%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 60px;
-        padding-bottom: 370px;
+#contacts-map-form {
 
-        .col-4 {
-            width: fit-content;
-        }
-    }
-
-    //Styles for contact wrappers
+            // Styles for contact wrappers.
     #contacts-content {
         padding: 0;
 
@@ -30,52 +17,62 @@
             text-decoration: none;
         }
 
-        //Styles for text
-        #name {
-            .title-block {
+            // Styles for title block.
+            #name-block {
+                .title-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    #underline {
+                        margin-bottom: 0px !important;
+                        justify-content: center;
+                    }
+
+                    #underline:before {
+                        right: 0.5% !important;
+                    }
+
+                    #underline:after {
+                        left: 0.5% !important;
+                    }
+                }
+            }
+
+            // Styles for the container.
+            #our-contacts {
+                width: 85%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                #underline {
-                    margin-bottom: 0px !important;
-                    justify-content: center;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 60px;
+                padding-bottom: 370px;
+            
+                .col-4 {
+                    width: fit-content;
                 }
 
-                #underline:before {
-                    right: 0.5% !important;
+                // Adaptive 850 pixels.
+                @include fe {
+                    padding-bottom: 85px;
                 }
 
-                #underline:after {
-                    left: 0.5% !important;
-                }
-            }
-        }
-    }
+                // Adaptive for 695 pixels.
+                @include coe {
+                    align-items: center;
+                    flex-direction: column;
+                    padding-top: 15px !important;
+                    padding-bottom: 40px !important;
 
-    //Adaptive 850 pixels
-    @include fe {
-        #our-contacts {
-            padding-bottom: 85px;
-        }
-    }
+                    .wrapper-contacts {
+                        margin-top: 25px;
+                        margin-bottom: 25px;
 
-    //Adaptive for 695 pixels
-    @include coe {
-        #our-contacts {
-            align-items: center;
-            flex-direction: column;
-            padding-top: 15px !important;
-            padding-bottom: 40px !important;
-
-            #wrapper-contacts {
-                margin-top: 25px;
-                margin-bottom: 25px;
-
-                p {
-                    font-size: $main;
+                        p {
+                            font-size: $main;
+                        }
+                    }
                 }
             }
         }
-    }
 }
