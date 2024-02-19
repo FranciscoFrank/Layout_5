@@ -1,10 +1,6 @@
-@import "../abstracts/abstracts-dir";
-
- 
 #contact {
-
-    //Styles for the container
-    #our {
+    // Styles for the container.
+    #our-contacts {
         width: 85%;
         display: flex;
         flex-direction: row;
@@ -18,7 +14,7 @@
     }
 
     //Styles for contact wrappers
-    #contact-content {
+    #contacts-content {
         padding: 0;
 
         img {
@@ -59,20 +55,20 @@
 
     //Adaptive 850 pixels
     @include fe {
-        #our {
+        #our-contacts {
             padding-bottom: 85px;
         }
     }
 
     //Adaptive for 695 pixels
     @include coe {
-        #our {
+        #our-contacts {
             align-items: center;
             flex-direction: column;
             padding-top: 15px !important;
             padding-bottom: 40px !important;
 
-            #c {
+            #wrapper-contacts {
                 margin-top: 25px;
                 margin-bottom: 25px;
 

@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -60,7 +39,7 @@ input, button {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Source Sans Pro" !important;
   font-size: 18px;
   color: #999999;
 }
@@ -914,7 +893,7 @@ main #wrapper-overview #overview #wrapper-advantage {
   }
 }
 
-#contact #our {
+#contact #our-contacts {
   width: 85%;
   display: flex;
   flex-direction: row;
@@ -922,64 +901,64 @@ main #wrapper-overview #overview #wrapper-advantage {
   padding-top: 60px;
   padding-bottom: 370px;
 }
-#contact #our .col-4 {
+#contact #our-contacts .col-4 {
   width: -moz-fit-content;
   width: fit-content;
 }
-#contact #contact-content {
+#contact #contacts-content {
   padding: 0;
 }
-#contact #contact-content img {
+#contact #contacts-content img {
   padding-bottom: 15px;
 }
-#contact #contact-content p {
+#contact #contacts-content p {
   margin: 0;
 }
-#contact #contact-content a {
+#contact #contacts-content a {
   color: #999999;
   text-decoration: none;
 }
-#contact #contact-content #name .title-block {
+#contact #contacts-content #name .title-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#contact #contact-content #name .title-block #underline {
+#contact #contacts-content #name .title-block #underline {
   margin-bottom: 0px !important;
   justify-content: center;
 }
-#contact #contact-content #name .title-block #underline:before {
+#contact #contacts-content #name .title-block #underline:before {
   right: 0.5% !important;
 }
-#contact #contact-content #name .title-block #underline:after {
+#contact #contacts-content #name .title-block #underline:after {
   left: 0.5% !important;
 }
 @media only all and (max-width: 850px) {
-  #contact #our {
+  #contact #our-contacts {
     padding-bottom: 85px;
   }
 }
 @media only all and (max-width: 695px) {
-  #contact #our {
+  #contact #our-contacts {
     align-items: center;
     flex-direction: column;
     padding-top: 15px !important;
     padding-bottom: 40px !important;
   }
-  #contact #our #c {
+  #contact #our-contacts #wrapper-contacts {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  #contact #our #c p {
+  #contact #our-contacts #wrapper-contacts p {
     font-size: 18px;
   }
 }
 
-#map {
+.map {
   height: 370px;
   max-width: 100%;
 }
-#map iframe {
+.map iframe {
   height: 100%;
   width: 100%;
   border: none;
@@ -1125,7 +1104,7 @@ main #wrapper-overview #overview #wrapper-advantage {
     margin: 0 auto;
   }
 }
-#mess {
+.message-form {
   position: fixed;
   display: none;
   width: 100%;
@@ -1135,7 +1114,7 @@ main #wrapper-overview #overview #wrapper-advantage {
   align-items: center;
   justify-content: center;
 }
-#mess #mess-cont {
+.message-form #message-content {
   padding: 25px;
   width: 100%;
   height: 100%;
@@ -1147,28 +1126,28 @@ main #wrapper-overview #overview #wrapper-advantage {
   align-items: center;
   text-align: center;
 }
-#mess #mess-cont p {
+.message-form #message-content p {
   color: #ffffff;
   font-size: 36px;
 }
-#mess #mess-cont img {
+.message-form #message-content img {
   width: 362px;
   height: 357px;
 }
 @media only all and (max-width: 620px) {
-  #mess #mess-cont p {
+  .message-form #message-content p {
     font-size: 24px;
   }
-  #mess #mess-cont img {
+  .message-form #message-content img {
     width: 302px;
     height: 297px;
   }
 }
 @media only all and (max-width: 420px) {
-  #mess #mess-cont p {
+  .message-form #message-content p {
     font-size: 18px;
   }
-  #mess #mess-cont img {
+  .message-form #message-content img {
     width: 242px;
     height: 237px;
   }
@@ -1191,32 +1170,33 @@ footer .col-12 a {
   text-decoration: none;
   color: #999999;
 }
-footer .col-12 .social-image {
+footer .col-12 .footer-image {
   padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 230px;
 }
-footer .col-12 .social-image a {
+footer .col-12 .footer-image a {
   margin: 0 auto;
 }
-footer .col-12 .social-image img {
+footer .col-12 .footer-image img {
   filter: grayscale(100%) brightness(50%);
 }
-footer .col-12 .social-image img:hover {
+footer .col-12 .footer-image img:hover {
   filter: grayscale(0);
 }
-footer .col-12 .social-image img:nth-child(1), footer .col-12 .social-image img:nth-child(2), footer .col-12 .social-image img:nth-child(3), footer .col-12 .social-image img:nth-child(4), footer .col-12 .social-image img:nth-child(5) {
+footer .col-12 .footer-image img:nth-child(1), footer .col-12 .footer-image img:nth-child(2), footer .col-12 .footer-image img:nth-child(3), footer .col-12 .footer-image img:nth-child(4), footer .col-12 .footer-image img:nth-child(5) {
   height: 20px;
   width: auto;
 }
-footer .col-12 .copyright {
+footer .col-12 .footer-copyright {
   font-size: 14px;
   font-weight: 600;
   filter: grayscale(100%) brightness(50%);
 }
-footer .col-12 .copyright:hover {
+footer .col-12 .footer-copyright:hover {
+  filter: grayscale(50%);
   color: #008ed6;
 }
 
@@ -1291,7 +1271,7 @@ footer .col-12 .copyright:hover {
   }
 }
 
-#main-text {
+s #main-text {
   font-size: 18px !important;
   color: #999999;
 }
@@ -1303,25 +1283,19 @@ footer .col-12 .copyright:hover {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
-
-#underline::before {
+#underline::before, #underline::after {
   position: relative;
   content: "";
-  right: 0;
-  top: 0;
   width: 25px;
   height: 3px;
+  top: 0;
   background-color: #008ed6;
 }
-
+#underline::before {
+  right: 0;
+}
 #underline::after {
-  position: relative;
-  content: "";
-  top: 0;
   left: 1%;
-  width: 25px;
-  height: 3px;
-  background-color: #008ed6;
 }
 
 .bg {
@@ -1504,7 +1478,7 @@ main {
   background-color: #f2f2f2;
   padding-top: 60px;
 }
-#contact #c {
+#contact #wrapper-contacts {
   height: -moz-fit-content;
   height: fit-content;
   width: 195px;

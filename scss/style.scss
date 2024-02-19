@@ -1,12 +1,17 @@
-//Main import document
-//Import abstracts
-@import "./abstracts/abstracts-dir";
+// Main import document.
+// 
+@import "./abstracts/mixins/media-query";
+@import "./abstracts/variables/breackpoints";
+@import "./abstracts/variables/color";
+@import "./abstracts/variables/font-family";
+@import "./abstracts/variables/font-size";
 
-//Import base
-@import "./base/base-dir";
+// Import base.
+@import "./base/reset";
+@import "./base/typography";
 
-//Import layout
-@import "./layout/layout-dir";
+// Import layout.
+@import "./layout/layout";
 
-//Import components
-@import "./components/components-dir";
+// Import components.
+@import "./components/components";

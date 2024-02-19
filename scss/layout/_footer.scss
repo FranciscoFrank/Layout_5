@@ -1,12 +1,10 @@
-@import "../abstracts/abstracts-dir";
-
 footer {
     width: 100%;
     height: auto;
     background-color: $third-bg;
     flex: 0;
 
-    //Styles for content in the footer
+    // Styles for content in the footer.
     .col-12 {
         padding-top: 50px;
         padding-bottom: 45px;
@@ -19,8 +17,8 @@ footer {
             color: $main-color;
         }
     
-        //Styles for social media icons and their container
-        .social-image {
+        // Styles for social media icons and their container.
+        .footer-image {
             padding-bottom: 20px;
             display: flex;
             flex-direction: row;
@@ -39,24 +37,23 @@ footer {
                 filter: grayscale(0);
             }
 
-            //Height for social media icons
+            // Height for social media icons.
             img:nth-child(1), img:nth-child(2), img:nth-child(3), img:nth-child(4), img:nth-child(5) {
                 height: 20px;
                 width: auto;
             }
         }
 
-        
-    
-        //Styles for copyright
-        .copyright {
+        // Styles for copyright.
+        .footer-copyright {
             font-size: $medium;
             font-weight: 600;
             filter: grayscale(100%) brightness(50%);
-        }
 
-        .copyright:hover {
-            color: $accent-color;
+            &:hover {
+                filter: grayscale(50%);
+                color: $accent-color;
+            }
         }
     }
 }

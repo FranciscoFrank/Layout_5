@@ -1,6 +1,4 @@
-@import "../abstracts/abstracts-dir";
-
-#mess {
+.message-form {
     position: fixed;
     display: none;
     width: 100%;
@@ -11,7 +9,7 @@
     justify-content: center;
 
     //Styles fot the message container
-    #mess-cont {
+    #message-content {
         padding: 25px;
         width: 100%;
         height: 100%;
@@ -36,7 +34,7 @@
 
     //Adaptive for 620 pixels
     @include ce {
-        #mess-cont {
+        #message-content {
             p {
                 font-size: $large;
             }
@@ -50,7 +48,7 @@
 
     //Adaptive for 420 pixels
     @include te2 {
-        #mess-cont {
+        #message-content {
             p {
                 font-size: $main;
             }

@@ -1,8 +1,8 @@
-@import "../abstracts/abstracts-dir";
+@import "../abstracts/variables/font-family";
 
 //Settings for the typography
 body {
-    font-family: $SSP, $ss !important;
+    font-family: $BaseFonts !important;
     font-size: $main;
     color: $main-color;
 }

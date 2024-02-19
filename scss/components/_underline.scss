@@ -1,30 +1,25 @@
-@import "../abstracts/abstracts-dir";
-
-//Styles for decorative accents
+// Styles for decorative accents.
 #underline {
     display: flex;
     width: 100%;
     margin: 25px;
     margin-left: 0px !important;
     margin-right: 0px !important;
-}
 
-#underline::before {
-    position: relative;
-    content: '';
-    right: 0;
-    top: 0;
-    width: 25px;
-    height: 3px;
-    background-color: $accent-color;
-}
+    &::before, &::after {
+        position: relative;
+        content: '';
+        width: 25px;
+        height: 3px;
+        top: 0;
+        background-color: $accent-color;
+    }
 
-#underline::after {
-    position: relative;
-    content: '';
-    top: 0;
-    left: 1%;
-    width: 25px;
-    height: 3px;
-    background-color: $accent-color;
+    &::before {
+        right: 0;
+    }
+
+    &::after {
+        left: 1%;
+    }
 }
