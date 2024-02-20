@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   
   //Receive item ID
-  const photoElement = document.getElementById('s-photo');
-  const detailsElement = document.getElementById('s-details');
+  const photoElement = document.getElementById('right-photo');
+  const detailsElement = document.getElementById('customize-details');
 
   //Updating the block width
   function updateDetailsWidth() {

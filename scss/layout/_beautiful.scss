@@ -4,7 +4,7 @@
     align-items: center;
 
     //Styles for the first block with details
-    #f {
+    #beautiful {
         width: 100% !important;
         display: flex;
         padding-bottom: 10px !important;
@@ -12,22 +12,30 @@
         padding-top: 50px;
 
         //Styles for wrapper with information and photos
-        #f-details {
+        #beautiful-details {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-top: 4.5%;
 
-            #what-is {
+            .what-is {
                 margin: 0;
             }
 
-            #title-text {
+            .title-text {
                 margin: 0;
             }
 
-            #main-text {
+            .main-text {
                 width: 83%;
+            }
+
+            .underline {
+                justify-content: flex-start;
+
+                &::before {
+                    right: 0;
+                }
             }
 
             .details {
@@ -59,33 +67,28 @@
 
         //Adaptive for 992 pixels
         @include te {
-            #f-photo {
+            #beatiful-photo {
                 display: none;
             }
 
-            #f-details {
+            #beautiful-details {
                 width: 100%;
                 margin: 0;
-
-                #underline::before, #underline::before {
-                    right: 0;
-                    left: 0;
-                }
             }
         }
 
         //Adaprive for 575 pixels
         @include ee {
-            #f-details {
+            #beautiful-details {
                 align-items: center;
                 text-align: center;
 
-                #underline {
+                .underline {
                     align-items: center;
                     justify-content: center;
                 }
 
-                #main-text {
+                .main-text {
                     width: 75%;
                     font-size: $average !important;
                 }
@@ -108,16 +111,16 @@
 
         //Adaptive for 390 pixels
         @include bt {
-            #f-details {
-                #what-is {
+            #beautiful-details {
+                .what-is {
                     font-size: $x-small;
                 }
 
-                #title-text {
+                .title-text {
                     font-size: $large;
                 }
 
-                #main-text {
+                .main-text {
                     font-size: $average !important;
                 }
 

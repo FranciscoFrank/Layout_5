@@ -17,6 +17,10 @@
         background-color: $accent-color;
     }
 
+    @include te2 {
+        font-size: $x-small;
+    }
+
     @include bt {
         padding-top: 10px !important;
         padding-bottom: 10px !important;

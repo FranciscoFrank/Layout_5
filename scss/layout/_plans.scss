@@ -9,18 +9,10 @@
         align-items: center;
         text-align: center;
 
-        #underline {
-            margin-bottom: 0px !important;
+        .underline {
             justify-content: center;
+            margin-bottom: 0px !important;
             margin-bottom: 80px !important;
-        }
-
-        #underline:before {
-            right: 0.25% !important;
-        }
-
-        #underline:after {
-            left: 0.25% !important;
         }
     }
 

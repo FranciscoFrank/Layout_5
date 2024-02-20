@@ -84,7 +84,7 @@
         }
     
         // Styles for the submit button.
-        #button-submit {
+        .wrapper-button-submit {
             display: flex;
             justify-content: flex-end;
 
@@ -110,52 +110,52 @@
 
         // Styles if the fiels are incorrect.
         input.failed:invalid, textarea.failed:invalid {
-            border: 1px solid $failed !important; 
+            border: 1px solid $form-failed !important; 
             box-shadow: inset 0 0 6px #F5192F;
         }
-    }
 
-    // Adaprive for 850 pixels.
-    @include fe {
-        position: static !important;
-        max-width: 100% !important;
-        width: 100% !important;
-        transform: translate(0, 0) !important;
+        // Adaprive for 850 pixels.
+        @include fe {
+            position: static !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            transform: translate(0, 0) !important;
 
-        .wrapper-text-input {
-            width: 100%;
+            .wrapper-text-input {
+                width: 100%;
 
-            .input {
-                margin-bottom: 20px !important;
-            }
+                .input {
+                    margin-bottom: 20px !important;
+                }
 
-            .textarea {
-                max-width: 100%;
-            }
-        }
-    }
-
-    // Adaptive for 620 pixels.
-    @include ce {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        
-        .wrapper-text-input {
-            align-items: center;
-            flex-direction: column !important;
-        
-            .textarea {
-                margin-left: 0 !important;
-                margin-bottom: 25px !important;
-                max-width: 300px !important;
+                .textarea {
+                    max-width: 100%;
+                }
             }
         }
 
-        #button-submit {
-            input {
-                margin: 0 auto;
+        // Adaptive for 620 pixels.
+        @include ce {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            
+            .wrapper-text-input {
+                align-items: center;
+                flex-direction: column !important;
+            
+                .textarea {
+                    margin-left: 0 !important;
+                    margin-bottom: 25px !important;
+                    max-width: 300px !important;
+                }
             }
-        }
+
+            .wrapper-button-submit {
+                input {
+                    margin: 0 auto;
+                }
+            }
+        }      
     }
 }
 

@@ -12,27 +12,13 @@
 
             // Styles for the block title.
             #title {
-                #title-block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
         
-                    #title-text {
-                        color: $second-accent-color;
-                    }
-        
-                    #underline {
-                        margin-bottom: 0px !important;
-                        justify-content: center;
-                    }
-
-                    #underline:before {
-                        right: 0.5% !important;
-                    }
-    
-                    #underline:after {
-                        left: 0.5% !important;
-                    }
+                .title-text {
+                    color: $second-accent-color;
                 }
             }
 
@@ -58,7 +44,7 @@
                                 .text {
                                     color: $second-accent-color;
                                     font-style: italic;
-                                    font-size: $large !important;
+                                    font-size: $large;
                                 }
                         
                                 .author {
@@ -89,6 +75,43 @@
                             .slick-cloned {
                                 @extend .slick-slide
                             }                               
+                        }
+
+                        // Adaptive for 575 pixels.
+                        @include ee {
+                            margin-bottom: 90px !important;
+
+                            .text {
+                                font-size: $average !important;
+                            }
+
+                            .author {
+                                display: flex;
+                                align-items: center;
+                                                
+                                img {
+                                    height: 40px;
+                                    width: auto;
+                                    border-radius: 50%;
+                                    margin-right: 15px !important;
+                                }
+                                                
+                                .texts p {
+                                    &:first-child {
+                                        font-size: $average;
+                                    }
+
+                                    &:last-child {
+                                        font-size: $medium;
+                                    }
+                                }                                  
+                            } 
+                        }
+
+                        // Adaptive for 1100 pixels.
+                        @include pe {
+                            margin-bottom: 90px !important;
+                        
                         }
                     } 
                     
@@ -125,68 +148,18 @@
                 }
             }
 
-            // Adaptive for 1100 pixels.
-            @include pe {
-                #review {
-                    #slider {
-                        .slick-list.draggable {
-                            margin-bottom: 90px !important;
-                        }
-                    }
-                }
-            }
-
-            // Adaptive for 575 pixels.
-            @include ee {
-                #review {
-                    #slider {
-                        .slick-list.draggable {
-                            margin-bottom: 90px !important;
-
-                            .slick-slide {                                
-                                .slide-content {
-                                    .text {
-                                        font-size: $average !important;
-                                    }
-
-                                    .author {
-                                        display: flex;
-                                        align-items: center;
-                            
-                                        img {
-                                            height: 40px;
-                                            width: auto;
-                                            border-radius: 50%;
-                                            margin-right: 15px !important;
-                                        }
-                            
-                                        .texts p:first-child {
-                                            font-size: $average;
-                                        }
-                                        
-                                        .texts p:last-child {
-                                            font-size: $medium;
-                                        }                                    
-                                    } 
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
             // Adaptive for 390 pixels.
             @include bt {
                 // Adaptive for block title.
-                #what-is {
+                .what-is {
                     font-size: $x-small;
                 }
 
-                #title-text {
+                .title-text {
                     font-size: $large;
                 }
 
-                #main-text {
+                .main-text {
                     font-size: $average;
                 }
 

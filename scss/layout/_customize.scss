@@ -7,12 +7,12 @@
         align-items: center;
 
         //Styles the second block with details
-        #s {
+        #customize {
             width: 100% !important;
             display: flex;
 
             //Styles for photo
-            #s-photo {
+            #customize-photo {
                 height: 100%;
                 width: fit-content;
                 margin-top: 43px;
@@ -24,31 +24,27 @@
                     margin-bottom: -55px;
                     width: 670px;
                 }
+
+                //Adaptive for 1205 pixels
+                @include cp {
+                    img {
+                        width: 550px !important;
+                    }
+                }
             }
 
             //Styles for text
-            #s-details {
+            #customize-details {
                 display: flex;
                 flex-direction: column;
                 margin: auto 0;
 
-                #what-is {
+                .what-is {
                     margin: 0;
                 }
 
-                #main-text {
+                .main-text {
                     width: 85% !important;
-                }
-            }
-
-            //Adaptive for 1205 pixels
-            @include cp {
-                #s {
-                    #s-photo {
-                        img {
-                            width: 550px !important;
-                        }
-                    }
                 }
             }
 
@@ -71,13 +67,8 @@
                     display: none;
                 }
     
-                #s-details {
+                #customize-details {
                     width: 100% !important;
-    
-                    #underline::before, #underline::before {
-                        right: 0;
-                        left: 0;
-                    }
                 }
             }
     
@@ -100,16 +91,16 @@
     
             //Adaptive for 390 pixels
             @include bt {
-                #s-details {
-                    #what-is {
+                #customize-details {
+                    .what-is {
                         font-size: $x-small;
                     }
     
-                    #title-text {
+                    .title-text {
                         font-size: $large;
                     }
     
-                    #main-text {
+                    .main-text {
                         font-size: $average;
                     }
                 }

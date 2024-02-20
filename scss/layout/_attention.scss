@@ -20,7 +20,7 @@
             justify-content: space-between;
 
             //Styles for text
-            .start {
+            .attention-text {
                 text-align: center;
                 display: flex;
                 width: fit-content;
@@ -29,13 +29,13 @@
                     margin: 0;
                 }
 
-                #t-text {
+                .first-text {
                     color: $second-accent-color;
                     font-size: $s-large;
                     font-weight: 600;
                 }
 
-                #t-hook {
+                .second-text {
                     color: $second-accent-color;
                     font-weight: 100 !important;
                     font-size: $s-large;
@@ -43,16 +43,18 @@
             }
 
             //Styles for buttons
-            .button-wrapper {
+            .attention-button {
                 width: fit-content;
-            }
 
-            .button-wrapper a:first-child {
-                margin-right: 10px;
-            }
-
-            .button-wrapper a:last-child {
-                margin-left: 10px;
+                a {
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                    
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                }
             }
         }
 
@@ -65,17 +67,17 @@
                     display: flex;
                     width: 100%;
 
-                    .start {
+                    .attention-text {
                         margin: 0 auto;
                         margin-bottom: 25px;
                     }
                 }
 
                 .col-4 {
-                    width: 50%;
+                    width: 100%;
                     display: flex;
 
-                    .button-wrapper {
+                    .attention-button {
                         margin: 0 auto;
                     }
                 }
@@ -86,14 +88,14 @@
         @include he {
             #content-hook {
                 .col-8 {
-                    .start {  
+                    .attention-text {  
                         flex-direction: column;
 
-                        #t-text {
+                        .first-text {
                             font-size: $s-large !important;
                         }
         
-                        #t-hook {
+                        .second-text {
                             font-size: $s-large !important;
                         }
                     }
@@ -103,7 +105,7 @@
                     width: 100%;
                     display: flex;
 
-                    .button-wrapper {
+                    .attention-button {
                         margin: 0 auto;
                     }
                 }
@@ -114,14 +116,14 @@
         @include te2 {
             #content-hook {
                 .col-8 {
-                    .start {  
+                    .attention-text {  
                         flex-direction: column;
 
-                        #t-text {
+                        .first-text {
                             font-size: $large !important;
                         }
         
-                        #t-hook {
+                        .second-text {
                             font-size: $large !important;
                         }
                     }
@@ -131,7 +133,7 @@
                     width: 100%;
                     display: flex;
 
-                    .button-wrapper {
+                    .attention-button {
                         margin: 0 auto;
                     }
                 }
@@ -140,12 +142,16 @@
 
         //Adaptive for 390 pixels
         @include bt {
-            .button-wrapper a:first-child {
-                margin-right: 5px !important;
-            }
+            .attention-button {
+                a {
+                    &:first-child {
+                        margin-right: 5px !important;
+                    }
 
-            .button-wrapper a:last-child {
-                margin-left: 5px !important;
+                    &:last-child {
+                        margin-left: 5px !important;
+                    }
+                }
             }
         }
     }

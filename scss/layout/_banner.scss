@@ -12,13 +12,13 @@
                 #int-text {
                     padding: 0 !important; 
 
-                    #title-text {
+                    .title-text {
                         font-size: $x-large;
                         color: $second-accent-color;
                         line-height: 1;
                     }
 
-                    #some-text {
+                    .some-text {
                         width: 83%;
                         font-size: $main;
                         margin-bottom: 60px;
@@ -48,15 +48,15 @@
                 //Adaptive for title for 575 pixels
                 @include ee {
                     #int-text {
-                        #what-is {
+                        .what-is {
                             font-size: $x-small;
                         }
 
-                        #title-text {
+                        .title-text {
                             font-size: $s-large;
                         }
 
-                        #some-text {
+                        .some-text {
                             font-size: $average;
                         }
                     }

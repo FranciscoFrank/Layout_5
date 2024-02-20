@@ -1,44 +1,35 @@
 #contacts-map-form {
 
-            // Styles for contact wrappers.
-    #contacts-content {
-        padding: 0;
+    // Styles for contact wrappers.
+    .contacts-container {
+        width: 100%;
+        background-color: $second-bg;
+        padding-top: 60px;  
 
-        img {
-            padding-bottom: 15px;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        a {
-            color: $main-color;
-            text-decoration: none;
-        }
-
+        #contacts-content {
+            padding: 0;
+    
+            img {
+                padding-bottom: 15px;
+            }
+    
+            p {
+                margin: 0;
+            }
+    
+            a {
+                color: $main-color;
+                text-decoration: none;
+            }
+    
             // Styles for title block.
             #name-block {
-                .title-block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    #underline {
-                        margin-bottom: 0px !important;
-                        justify-content: center;
-                    }
-
-                    #underline:before {
-                        right: 0.5% !important;
-                    }
-
-                    #underline:after {
-                        left: 0.5% !important;
-                    }
-                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
-
+    
             // Styles for the container.
             #our-contacts {
                 width: 85%;
@@ -47,27 +38,28 @@
                 justify-content: space-between;
                 padding-top: 60px;
                 padding-bottom: 370px;
-            
+                
                 .col-4 {
                     width: fit-content;
                 }
-
+    
                 // Adaptive 850 pixels.
                 @include fe {
+                    width: 100%;
                     padding-bottom: 85px;
                 }
-
+    
                 // Adaptive for 695 pixels.
                 @include coe {
                     align-items: center;
                     flex-direction: column;
                     padding-top: 15px !important;
                     padding-bottom: 40px !important;
-
+    
                     .wrapper-contacts {
                         margin-top: 25px;
                         margin-bottom: 25px;
-
+    
                         p {
                             font-size: $main;
                         }
@@ -75,4 +67,5 @@
                 }
             }
         }
+    }
 }
