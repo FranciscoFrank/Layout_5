@@ -231,6 +231,7 @@ a, label, p {
   font-size: 48px;
   color: #ffffff;
   line-height: 1;
+  margin-bottom: 16px !important;
 }
 .bg .wrapper-content #banner #text-photo #int-text .some-text {
   width: 83%;
