@@ -1,4 +1,4 @@
-//Styles for the hook block
+// Styles for the attention block.
 .wrapper {
     width: 100%;
     background-color: $third-bg;
@@ -19,7 +19,7 @@
             flex-direction: row;
             justify-content: space-between;
 
-            //Styles for text
+            // Styles for text.
             .attention-text {
                 text-align: center;
                 display: flex;
@@ -42,7 +42,7 @@
                 }
             }
 
-            //Styles for buttons
+            // Styles for buttons.
             .attention-button {
                 width: fit-content;
 
@@ -55,12 +55,23 @@
                         margin-left: 10px;
                     }
                 }
-            }
-        }
 
-        //Adaptive for 1205 pixels
-        @include cp {
-            #content-hook {
+                //Adaptive for 390 pixels.
+                @include xx-small {
+                    a {
+                        &:first-child {
+                            margin-right: 5px !important;
+                        }
+
+                        &:last-child {
+                            margin-left: 5px !important;
+                        }
+                    }
+                }
+            }
+
+            // Adaptive for 1205 pixels.
+            @include x-large {
                 flex-direction: column;
                 
                 .col-8 {
@@ -82,11 +93,9 @@
                     }
                 }
             }
-        }
 
-        //Adaptive for 780 pixels
-        @include he {
-            #content-hook {
+            // Adaptive for 850 pixels.
+            @include l-large {
                 .col-8 {
                     .attention-text {  
                         flex-direction: column;
@@ -110,11 +119,9 @@
                     }
                 }
             }
-        }
 
-        //Adaptive for 420 pixels
-        @include te2 {
-            #content-hook {
+            //Adaptive for 420 pixels
+            @include x-small {
                 .col-8 {
                     .attention-text {  
                         flex-direction: column;
@@ -135,21 +142,6 @@
 
                     .attention-button {
                         margin: 0 auto;
-                    }
-                }
-            }
-        }
-
-        //Adaptive for 390 pixels
-        @include bt {
-            .attention-button {
-                a {
-                    &:first-child {
-                        margin-right: 5px !important;
-                    }
-
-                    &:last-child {
-                        margin-left: 5px !important;
                     }
                 }
             }

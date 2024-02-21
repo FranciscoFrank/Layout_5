@@ -1,17 +1,18 @@
 // Main import document.
-// 
+// Import of mixins.
 @import "./abstracts/mixins/media-query";
-@import "./abstracts/variables/breackpoints";
+
+// Import variables.
 @import "./abstracts/variables/color";
 @import "./abstracts/variables/font-family";
 @import "./abstracts/variables/font-size";
 
-// Import base.
+// Importing base.
 @import "./base/reset";
 @import "./base/typography";
 
-// Import layout.
+// Importing a layout.
 @import "./layout/layout";
 
-// Import components.
+// Import of components.
 @import "./components/components";

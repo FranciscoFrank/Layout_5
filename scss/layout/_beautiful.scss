@@ -1,9 +1,10 @@
+// Styles for the first dip into block.
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    //Styles for the first block with details
+    // Styles for the first block with details.
     #beautiful {
         width: 100% !important;
         display: flex;
@@ -11,7 +12,7 @@
         flex-direction: row;
         padding-top: 50px;
 
-        //Styles for wrapper with information and photos
+        // Styles for wrapper with information and photos.
         #beautiful-details {
             display: flex;
             flex-direction: column;
@@ -63,23 +64,9 @@
                     }
                 }
             }
-        }
 
-        //Adaptive for 992 pixels
-        @include te {
-            #beatiful-photo {
-                display: none;
-            }
-
-            #beautiful-details {
-                width: 100%;
-                margin: 0;
-            }
-        }
-
-        //Adaprive for 575 pixels
-        @include ee {
-            #beautiful-details {
+            // Adaprive for 575 pixels.
+            @include small {
                 align-items: center;
                 text-align: center;
 
@@ -107,11 +94,9 @@
                     }
                 }
             }
-        }
 
-        //Adaptive for 390 pixels
-        @include bt {
-            #beautiful-details {
+            // Adaptive for 390 pixels.
+            @include xx-small {
                 .what-is {
                     font-size: $x-small;
                 }
@@ -133,6 +118,22 @@
                             width: auto;
                         }
                     }
+                }
+            }
+        }
+
+        // Adaptive for 992 pixels.
+        @include large {
+            #beatiful-photo {
+                display: none;
+            }
+
+            #beautiful-details {
+                width: 100%;
+                margin: 0;
+
+                .main-text {
+                    width: 100%;
                 }
             }
         }

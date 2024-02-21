@@ -1,11 +1,6 @@
 // Styles for the quality block.
 #second-block {
-    background-image: url(../images/background-second.jpeg);
-    height: fit-content;
-
     .wrapper-content {
-        background-color: rgba($third-bg, 0.8);
-
         #review-wrapper {
             padding-top: 50px !important;
             padding-bottom: 33px !important;
@@ -77,8 +72,24 @@
                             }                               
                         }
 
+                        // Adaptive for 1205 pixels.
+                        @include x-large {
+                            margin-bottom: 90px !important;
+                        
+                            .text {
+                                font-size: 20px !important;
+                            }
+                        }
+
+                        // Adaptive for 992 pixels.
+                        @include large {
+                            .text {
+                                font-size: $main !important;
+                            }
+                        }
+
                         // Adaptive for 575 pixels.
-                        @include ee {
+                        @include small {
                             margin-bottom: 90px !important;
 
                             .text {
@@ -108,11 +119,7 @@
                             } 
                         }
 
-                        // Adaptive for 1100 pixels.
-                        @include pe {
-                            margin-bottom: 90px !important;
                         
-                        }
                     } 
                     
                     // Styles for dots.
@@ -149,7 +156,7 @@
             }
 
             // Adaptive for 390 pixels.
-            @include bt {
+            @include xx-small {
                 // Adaptive for block title.
                 .what-is {
                     font-size: $x-small;

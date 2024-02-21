@@ -1,3 +1,4 @@
+// Styles for messages about successful form submission.
 .message-form {
     position: fixed;
     display: none;
@@ -8,7 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    //Styles fot the message container
+    // Styles fot the message container.
     #message-content {
         padding: 25px;
         width: 100%;
@@ -30,11 +31,9 @@
             width: 362px;
             height: 357px;
         }
-    }
 
-    //Adaptive for 620 pixels
-    @include ce {
-        #message-content {
+        // Adaptive for 575 pixels.
+        @include small {
             p {
                 font-size: $large;
             }
@@ -44,11 +43,9 @@
                 height: 297px;
             }
         }
-    }
 
-    //Adaptive for 420 pixels
-    @include te2 {
-        #message-content {
+        // Adaptive for 420 pixels.
+        @include x-small {
             p {
                 font-size: $main;
             }
@@ -59,4 +56,8 @@
             }
         }
     }
+
+    
+
+   
 }

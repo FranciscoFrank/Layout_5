@@ -1,79 +1,49 @@
-@import "abstracts/variables/breackpoints";
-
-//Media queries for the responsive
-//Container padding
-@mixin cp {
-    @media only all and (max-width: $cp) {
+// Media queries for the responsive.
+// Extra large screen.
+@mixin x-large {
+    @media only all and (max-width: 1205px) {
         @content;        
     }
 }
 
-//Photo edits
-@mixin pe {
-    @media only all and (max-width: $pe) {
+// Large screens.
+@mixin large {
+    @media only all and (max-width: 992px) {
         @content;
     }
 }
 
-//Hide photo
-@mixin hp {
-    @media only all and (min-width: $hp) {
+// Less large screens.
+@mixin l-large {
+    @media only all and (max-width: 850px) {
         @content;
     }
 }
 
-//Text edits
-@mixin te {
-    @media only all and (max-width: $hp) {
+// Medium screens.
+@mixin medium {
+    @media only all and (max-width: 695px) {
         @content;
     }
 }
 
-//Form edits
-@mixin fe {
-    @media only all and (max-width: $fe) {
+// Small screens.
+@mixin small {
+    @media only all and (max-width: 575px) {
         @content;
     }
 }
 
-//Hook edits
-@mixin he {
-    @media only all and (max-width: $he) {
+// Extra small screens.
+@mixin x-small {
+    @media only all and (max-width: 420px) {
         @content;
     }
 }
 
-//Contacts edits
-@mixin coe {
-    @media only all and (max-width: $coe) {
-        @content;
-    }
-}
-
-//C edits
-@mixin ce {
-    @media only all and (max-width: $ce) {
-        @content;
-    }
-}
-
-//Container edits & Burger menu edits
-@mixin ee {
-    @media only all and (max-width: $ee) {
-        @content;
-    }
-}
-
-//Text edits v2.0
-@mixin te2 {
-    @media only all and (max-width: $te2) {
-        @content;
-    }
-}
-
-//Buttons edits & Text edits
-@mixin bt {
-    @media only all and (max-width: $bt) {
+// Extra extra small screens.
+@mixin xx-small {
+    @media only all and (max-width: 390px) {
         @content;
     }
 }

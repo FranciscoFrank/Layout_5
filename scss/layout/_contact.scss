@@ -1,3 +1,4 @@
+// Styles for a block with a form, contacts, and a map.
 #contacts-map-form {
 
     // Styles for contact wrappers.
@@ -44,13 +45,13 @@
                 }
     
                 // Adaptive 850 pixels.
-                @include fe {
+                @include l-large {
                     width: 100%;
                     padding-bottom: 85px;
                 }
     
                 // Adaptive for 695 pixels.
-                @include coe {
+                @include medium {
                     align-items: center;
                     flex-direction: column;
                     padding-top: 15px !important;

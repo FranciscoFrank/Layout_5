@@ -1,11 +1,12 @@
 // Styles for link buttons.
 .button-link {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: $average;
     border: 1px solid $main-color;
     background-color: transparent;
     color: $second-accent-color;
@@ -17,13 +18,13 @@
         background-color: $accent-color;
     }
 
-    @include te2 {
+    @include x-small {
         font-size: $x-small;
     }
 
-    @include bt {
+    @include xx-small {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
-        font-size: $small !important;
+        font-size: 10px !important;
     }
 }

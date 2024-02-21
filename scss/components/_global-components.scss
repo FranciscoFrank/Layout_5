@@ -1,9 +1,9 @@
-//Styles for a container with content on a page
+// Styles for a container with content on a page.
 main {
     min-height: 100vh;
 }
 
-//Styles for block with images on the background
+// Styles for block with images on the background.
 .bg {
     padding: 0;
     margin: 0;
@@ -13,21 +13,33 @@ main {
     background-repeat: no-repeat;
 }
 
-//Edit styles for a container
+// Styles for backing a block with a header and a banner.
+#first-block {
+    background-image: url(../images/background-first.jpeg);
+    height: fit-content;
+}
+
+// Styles for Quality block backing.
+#second-block {
+    background-image: url(../images/background-second.jpeg);
+    height: fit-content;
+}
+
+// Edit styles for a container.
 .container {
     max-width: 1170px !important; 
     padding: 0 !important; 
     margin: 0 auto;
     height: 100%;
 
-    //Adaptive
-    @include cp {
+    // Adaptive for 1205 pixels
+    @include x-large {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
 }
 
-//Correcting styles for columns
+// Correcting styles for columns.
 .col-6 {
     height: fit-content !important;
     padding: 0 !important;
@@ -35,7 +47,7 @@ main {
     padding-bottom: 10px !important;
 }
 
-//Wrapper for information in contacts
+//  Wrapper for information in contacts.
 .wrapper-contacts {
     height: fit-content;
     width: 195px;
@@ -45,7 +57,7 @@ main {
     align-items: center;
 }
 
-//Wrapper for icons in the overview block
+// Wrapper for icons in the overview block.
 .circle {
     border: 1px solid $main-color;
     display: flex;
@@ -56,21 +68,21 @@ main {
     height: 90px;
     padding: 30px;
 
-    //Adaptive
-    @include ee {
+    // Adaptive.
+    @include small {
         width: 85px;
         height: 85px;
         padding: 15px;
     }
 }
 
-//Styles for text in a block with details
+// Styles for text in a block with details.
 .main-text {
     font-size: $main !important;
     color: $main-color
 }
 
-//Styles for overlay
+// Styles for overlay.
 .overlay {
     display: none;
     position: absolute;
@@ -82,15 +94,17 @@ main {
     z-index: 11;
 }
 
-//Styles for explaining what the block is for
+// Styles for explaining what the block is for.
 .what-is {
+    margin: 0;
     font-weight: bold;
     font-size: $medium;
     color: $accent-color;
 }
 
-//Styles for the block title
+// Styles for the block title.
 .title-text {
+    margin: 0;
     font-weight: 600;
     font-size: $s-large;
     color: $title-color;
@@ -122,10 +136,10 @@ main {
     }
 }
 
-//Styles for toning backdrops
+// Styles for toning backdrops.
 .wrapper-content {
+    background-color: rgba($third-bg, 0.85);
     width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
     height: fit-content;

@@ -1,3 +1,4 @@
+// Styles for the form.
 #contacts-map-form {
     height: fit-content;
     justify-content: center;
@@ -32,11 +33,11 @@
         
                 label {
                     width: 100%;
+                    margin-bottom: 20px;
 
                     input {
                         background-color: transparent;
                         height: 50px;
-                        margin-bottom: 20px !important;
                         padding: 10px;
                         padding-right: 10px;
                         font-size: $medium;
@@ -109,13 +110,14 @@
         }
 
         // Styles if the fiels are incorrect.
-        input.failed:invalid, textarea.failed:invalid {
+
+        .focus:invalid, .activated:focus:invalid {
             border: 1px solid $form-failed !important; 
             box-shadow: inset 0 0 6px #F5192F;
         }
 
         // Adaprive for 850 pixels.
-        @include fe {
+        @include l-large {
             position: static !important;
             max-width: 100% !important;
             width: 100% !important;
@@ -134,14 +136,18 @@
             }
         }
 
-        // Adaptive for 620 pixels.
-        @include ce {
+        // Adaptive for 575 pixels.
+        @include small {
             padding-left: 0 !important;
             padding-right: 0 !important;
             
             .wrapper-text-input {
                 align-items: center;
                 flex-direction: column !important;
+
+                .inputs {
+                    margin-bottom: 0;
+                }
             
                 .textarea {
                     margin-left: 0 !important;

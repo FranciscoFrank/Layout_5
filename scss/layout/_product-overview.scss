@@ -14,7 +14,7 @@ main {
                 text-align: center;
                 margin: 0 !important;
     
-                //Styles for the block title
+                // Styles for the block title.
                 #title-product {
     
                     .what-is {
@@ -28,8 +28,8 @@ main {
                         color: $title-color;
                     }
 
-                    //Adaptive 575 pixels
-                    @include ee {
+                    // Adaptive 575 pixels.
+                    @include small {
                         .what-is {
                             font-size: $x-small;
                         }
@@ -40,8 +40,8 @@ main {
                         }
                     }
         
-                    //Adaptive 390 pixels
-                    @include bt {
+                    // Adaptive 390 pixels.
+                    @include xx-small {
                         .title-text {
                             margin-top: 5px !important;
                             font-size: $large;
@@ -50,7 +50,7 @@ main {
                 }
             }
     
-            //Styles for a container with and overview
+            // Styles for a container with and overview.
             #wrapper-advantage {
                 display: flex;
                 flex-direction: row;
@@ -61,15 +61,15 @@ main {
                 margin: 0 !important;
                 margin-top: 55px !important;
 
-                //Adaptive for 575 pixels
-                @include ee {
+                // Adaptive for 575 pixels.
+                @include small {
                     flex-direction: column;
                 }
             }
         }
 
-        //Adaptive for 575 pixels
-        @include ee {
+        // Adaptive for 575 pixels.
+        @include small {
             margin-bottom: 20px;
         }
     }

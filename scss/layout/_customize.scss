@@ -1,3 +1,4 @@
+// Styles for the second dip into block.
 .wrapper-details {
     background-color: $second-bg;
 
@@ -6,34 +7,34 @@
         flex-direction: column;
         align-items: center;
 
-        //Styles the second block with details
+        // Styles the second block with details.
         #customize {
             width: 100% !important;
             display: flex;
 
-            //Styles for photo
+            // Styles for photo.
             #customize-photo {
                 height: 100%;
-                width: fit-content;
                 margin-top: 43px;
                 margin-bottom: 70px;
                 padding: 0 !important;
 
                 img {
-                    margin-left: -55px;
-                    margin-bottom: -55px;
+                    margin-left: -100px;
+                    margin-bottom: -75px;
                     width: 670px;
                 }
 
-                //Adaptive for 1205 pixels
-                @include cp {
+                // Adaptive for 1205 pixels.
+                @include x-large {
                     img {
+                        margin-left: -55px;
                         width: 550px !important;
                     }
                 }
             }
 
-            //Styles for text
+            // Styles for text.
             #customize-details {
                 display: flex;
                 flex-direction: column;
@@ -44,54 +45,34 @@
                 }
 
                 .main-text {
-                    width: 85% !important;
+                    width: 80% !important;
                 }
-            }
 
-            //Adaptive for 1100 pixels
-            @include pe {
-                margin: 35px;
-                margin-left: 0px !important;
-                margin-right: 0px !important;
-
-                #s-photo {
-                    img {
-                        width: 450px !important;
+                .underline {
+                    justify-content: flex-start;
+    
+                    &::before {
+                        right: 0;
                     }
                 }
-            }
 
-            //Adaptive for 992 pixels
-            @include te {
-                #s-photo {
-                    display: none;
-                }
-    
-                #customize-details {
-                    width: 100% !important;
-                }
-            }
-    
-            //Adaptive for 575 pixels
-            @include ee {
-                #s-details {
+                // Adaptive for 575 pixels.
+                @include small {
                     align-items: center;
                     text-align: center;
     
-                    #underline {
+                    .underline {
                         align-items: center;
                         justify-content: center;
                     }
     
-                    #main-text {
+                    .main-text {
                         font-size: $average !important;
                     }
                 }
-            }
-    
-            //Adaptive for 390 pixels
-            @include bt {
-                #customize-details {
+
+                // Adaptive for 390 pixels.
+                @include xx-small {
                     .what-is {
                         font-size: $x-small;
                     }
@@ -102,6 +83,29 @@
     
                     .main-text {
                         font-size: $average;
+                    }
+                }
+            }
+
+            // Adaptive for 1205 pixels.
+            @include x-large {
+                margin: 35px;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+
+            // Adaptive for 992 pixels.
+            @include large {
+                #customize-photo {
+                    display: none;
+                }
+    
+                #customize-details {
+                    width: 100%;
+                    margin: 0;
+
+                    .main-text {
+                        width: 100% !important;
                     }
                 }
             }

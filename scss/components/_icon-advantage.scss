@@ -1,4 +1,4 @@
-//Styles for the container in the overview block
+// Styles for the container in the overview block.
 #icon-advantage {
     display: flex;
     align-items: center;
@@ -19,8 +19,8 @@
         font-size: $main;
     }
 
-    //Adaptive for 575 pixels
-    @include ee {
+    // Adaptive for 575 pixels.
+    @include small {
         #title-advantage {
             font-size: $average !important; 
         }
@@ -30,8 +30,8 @@
         }
     }
 
-    //Adaptive for 390 pixels
-    @include bt {
+    // Adaptive for 390 pixels.
+    @include xx-small {
         #title-advantage {
             font-size: $large !important; 
         }

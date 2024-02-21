@@ -1,4 +1,4 @@
-//Styles for a container with information about plans
+// Styles for a container with information about plans.
 #plan {
     width: 270px;
     display: flex;
@@ -45,7 +45,7 @@
 
             #count {
                 color: $title-color;
-                font-size: $size-count;
+                font-size: 60px;
                 font-weight: 600;
             }
         }
@@ -88,7 +88,7 @@
     margin-right: 10px !important;
 }
 
-//If a user hovers over the plan
+// If a user hovers over the plan.
 #plan:hover {
     #plan-title {
         color: $accent-color;
@@ -121,8 +121,8 @@
     }
 }
 
-//Adaptive for 1205 pixels
-@include cp {
+// Adaptive for 1205 pixels.
+@include x-large {
     #plan:first-child {
         margin: 0 auto !important;
         margin-bottom: 25px !important;
@@ -137,8 +137,8 @@
         margin-bottom: 25px !important;
     }
 }
-//Adaptive for 575 pixels
-@include ee {
+// Adaptive for 575 pixels.
+@include small {
     #plan:first-child {
         margin: 0 auto;
     }
@@ -161,17 +161,17 @@
     }
 }
 
-//Adaptive for 390 pixels
-@include bt {
-    #what-is {
+// Adaptive for 390 pixels.
+@include xx-small {
+    .what-is {
         font-size: $x-small;
     }
 
-    #title-text {
+    .title-text {
         font-size: $large;
     }
 
-    #main-text {
+    .main-text {
         font-size: $average;
     }
 }
