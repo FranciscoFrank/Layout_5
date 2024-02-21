@@ -47,6 +47,9 @@ a, label, p {
   color: #999999;
 }
 
+.wrapper-content .active {
+  transform: translateX(0) !important;
+}
 .wrapper-content #burger-menu {
   position: fixed;
   top: 0;
@@ -86,10 +89,6 @@ a, label, p {
   font-weight: bold;
   -webkit-text-decoration: underline 3px solid #008ed6;
           text-decoration: underline 3px solid #008ed6;
-}
-.wrapper-content #burger-menu .active {
-  transform: translateX(0) !important;
-  position: fixed;
 }
 @media only all and (max-width: 575px) {
   .wrapper-content #burger-menu {

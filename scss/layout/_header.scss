@@ -1,6 +1,12 @@
 // Styles for the entire header block.
 .wrapper-content {
 
+
+    // Styles for an active burger menu.
+    .active {
+        transform: translateX(0) !important;
+    }
+
     // Styles for burger menu.
     #burger-menu {
         position: fixed;
@@ -29,7 +35,7 @@
                 cursor: pointer;
                 height: auto;
                 width: 20px;
-            }
+            } 
         }
 
         // Styles for navigation.
@@ -49,12 +55,6 @@
                     text-decoration: underline 3px solid $accent-color;
                 }
             }
-        }
-        
-        // Styles for an active burger menu.
-        .active {
-            transform: translateX(0) !important;
-            position: fixed;
         }
 
         // Adaptive for 575 pixels.
